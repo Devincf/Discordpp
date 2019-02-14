@@ -15,6 +15,10 @@ namespace discordpp
 {
 Bot::Bot(const std::string &token) : m_lastS(0), m_token(token), m_heartbeat_timer(m_ioservice, m_heartbeatInterval), m_currentState(constants::Starting), m_gateway(this)
 {
+    m_guilds = std::map<Snowflake,Guild>();
+    m_dmChannels = std::map<Snowflake,Channel>();
+    m_globalUsers = std::map<Snowflake,std::shared_ptr<User>>();
+
     try
     {
         m_gateway.connect();
@@ -65,7 +69,7 @@ void Bot::heartbeat()
     { //Todo: Add ACK Check
         DEBUG("[ERROR] NO HEARTBEAT ACK RECIEVED ERROR");
     }
-    DEBUG("Heartbeat");
+    //DEBUG("Heartbeat");
     Json::Value payload;
     payload["op"] = constants::Heartbeat;
     payload["d"] = m_lastS;
@@ -135,15 +139,21 @@ void Bot::processDispatchEvent(const Json::Value &msg)
     }
     else if (dispatchEvent == "TYPING_START")
     {
+        bool dmMessage = false;
         Snowflake channel_id = payload["channel_id"];
-        std::map<Snowflake, Guild>::iterator guild_it = m_guilds.find(Snowflake(payload["guild_id"]));
+        std::map<Snowflake, Guild>::iterator guild_it = m_guilds.find(payload["guild_id"]);
         if (guild_it == m_guilds.end())
         {
-            DEBUG("Unknown guild in MESSAGE_CREATE event");
-            DEBUG(payload.toStyledString());
-            return;
+            std::map<Snowflake, Channel>::iterator dm_it = m_dmChannels.find(payload["channel_id"]);
+            if (dm_it == m_dmChannels.end())
+            {
+                DEBUG("Unknown guild and Channel in TYPING_START event");
+                DEBUG(payload.toStyledString());
+                return;
+            }
+            dmMessage = true;
         }
-        std::map<Snowflake, std::shared_ptr<User>>::iterator it = m_globalUsers.find(Snowflake(payload["user_id"]));
+        std::map<Snowflake, std::shared_ptr<User>>::iterator it = m_globalUsers.find(payload["user_id"]);
         if (it == m_globalUsers.end())
         {
             DEBUG("Unknown user started typing!");
@@ -151,20 +161,30 @@ void Bot::processDispatchEvent(const Json::Value &msg)
         }
         else
         {
-            DEBUG(payload["timestamp"] << "  " << guild_it->second.name << "[" << channel_id << "] : " << it->second->userName << " started typing");
+            if(dmMessage)
+                DEBUG(payload["timestamp"] << " [" <<  channel_id << "] : " << it->second->userName << " started typing in dm");
+            else
+                DEBUG(payload["timestamp"] << "  " << guild_it->second.name << "[" << channel_id << "] : " << it->second->userName << " started typing");
         }
     }
     else if (dispatchEvent == "MESSAGE_CREATE")
     {
+        bool dmMessage = false;
         Snowflake channel_id = payload["channel_id"];
-        std::map<Snowflake, Guild>::iterator guild_it = m_guilds.find(Snowflake(payload["guild_id"]));
+        std::map<Snowflake, Guild>::iterator guild_it = m_guilds.find(payload["guild_id"]);
         if (guild_it == m_guilds.end())
         {
-            DEBUG("Unknown guild in MESSAGE_CREATE event");
-            DEBUG(payload.toStyledString());
-            return;
+            std::map<Snowflake, Channel>::iterator dm_it = m_dmChannels.find(payload["channel_id"]);
+            if (dm_it == m_dmChannels.end())
+            {
+
+                DEBUG("Unknown guild and Channel in MESSAGE_CREATE event");
+                DEBUG(payload.toStyledString());
+                return;
+            }
+            dmMessage = true;
         }
-        std::map<Snowflake, std::shared_ptr<User>>::iterator it = m_globalUsers.find(Snowflake(payload["author"]["id"]));
+        std::map<Snowflake, std::shared_ptr<User>>::iterator it = m_globalUsers.find(payload["author"]["id"]);
         if (it == m_globalUsers.end())
         {
             DEBUG("Unknown user in MESSAGE_CREATE event");
@@ -173,7 +193,10 @@ void Bot::processDispatchEvent(const Json::Value &msg)
         }
         else
         {
-            DEBUG(payload["timestamp"] << "  " << guild_it->second.name << "[" << channel_id << "] " << it->second->userName << " : " << payload["content"].asString());
+            if (dmMessage)
+                DEBUG(payload["timestamp"] << "  " << "[" << channel_id << "] " << it->second->userName << " : " << payload["content"].asString());
+            else
+                DEBUG(payload["timestamp"] << "  " << guild_it->second.name << "[" << channel_id << "] " << it->second->userName << " : " << payload["content"].asString());
         }
     }
     else if (dispatchEvent == "CHANNEL_CREATE")
@@ -181,7 +204,13 @@ void Bot::processDispatchEvent(const Json::Value &msg)
         int type = payload["type"].asInt();
         if (type == ChannelType::DM || type == ChannelType::GROUP_DM)
         {
-            
+            std::map<Snowflake, Channel>::iterator dmit = m_dmChannels.find(payload["id"]);
+            if (dmit == m_dmChannels.end())
+            {
+                Channel c(payload);
+                m_dmChannels.insert(std::make_pair(payload["id"], c));
+                DEBUG("Added channel " << c.id);
+            }
         }
     }
     else
@@ -189,7 +218,7 @@ void Bot::processDispatchEvent(const Json::Value &msg)
         DEBUG("Unknown Dispatch Event [ " << msg["t"].asString() << " ] encountered");
         DEBUG(msg["d"].toStyledString());
     }
-}
+} // namespace discordpp
 
 void Bot::verifyBot()
 {

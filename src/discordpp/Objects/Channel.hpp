@@ -3,7 +3,7 @@
  * @author Devin-Can Firat (devinc.firat@gmail.com)
  * @brief Contains a wrapper class for Discord Channels
  * @version 0.1
- * @date 2019-02-14 06:11
+ * @date 2019-02-14 06:11pm
  * 
  * @copyright Copyright (c) 2019
  * 

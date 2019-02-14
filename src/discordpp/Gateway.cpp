@@ -113,7 +113,7 @@ void Gateway::on_open(const websocketpp::connection_hdl &hdl)
 
 void Gateway::on_message(const websocketpp::connection_hdl &hdl, const message_ptr &msgptr)
 {
-    DEBUG("Gateway::onMessage");
+    //DEBUG("Gateway::onMessage");
     Json::Value root;
     std::stringstream ss;
     ss << msgptr->get_payload();

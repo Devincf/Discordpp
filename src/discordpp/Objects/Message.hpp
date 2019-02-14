@@ -3,7 +3,7 @@
  * @author Devin-Can Firat (devinc.firat@gmail.com)
  * @brief wrapper class for message objects
  * @version 0.1
- * @date 2019-02-14 07:03
+ * @date 2019-02-14 07:03pm
  * 
  * @copyright Copyright (c) 2019
  * 
