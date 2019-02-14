@@ -23,6 +23,7 @@ Channel::~Channel()
 Channel::Channel(const Json::Value& payload)
 {
     DEBUG(payload.toStyledString());
+    DEBUG("____________________________________________________________");
 }
 
 } // namespace discordpp

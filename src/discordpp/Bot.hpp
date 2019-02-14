@@ -123,6 +123,11 @@ private:
   /**
    * @brief Gateway object used for communicating with the discord gateway
    */
+  /**
+   * @brief Map of all the private Channels the bot is in
+   */
+  std::map<Snowflake,Channel> m_dmChannels;
+
   Gateway m_gateway;
 };
 } // namespace discordpp

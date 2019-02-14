@@ -8,3 +8,6 @@ vscode/settings.json
 CMakeCache.txt
 CMakeFiles
 cmake_install.cmake
+
+#vscode
+.vscode

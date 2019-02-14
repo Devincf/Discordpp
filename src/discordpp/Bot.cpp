@@ -114,51 +114,74 @@ void Bot::processDispatchEvent(const Json::Value &msg)
     else if (dispatchEvent == "GUILD_CREATE")
     {
         Guild g(payload);
-            for (unsigned int i = 0; i < payload["members"].size(); i++)
+        for (unsigned int i = 0; i < payload["members"].size(); i++)
+        {
+            Json::Value currentMember = payload["members"][i];
+            Snowflake snowflake = currentMember["user"]["id"];
+            std::map<Snowflake, std::shared_ptr<User>>::iterator it = m_globalUsers.find(snowflake);
+            if (it != m_globalUsers.end())
             {
-                Json::Value currentMember = payload["members"][i];
-                Snowflake snowflake = currentMember["user"]["id"];
-                std::map<Snowflake, std::shared_ptr<User>>::iterator it = m_globalUsers.find(snowflake);
-                if (it != m_globalUsers.end())
-                {
-                    g.addUser(it->second);
-                }
-                else
-                {
-                    std::shared_ptr<User> u = std::make_shared<User>(currentMember);
-                    m_globalUsers.insert(std::make_pair(snowflake, u));
-                    g.addUser(u);
-                }
+                g.addUser(it->second);
             }
-            m_guilds.insert(std::make_pair(Snowflake(payload["id"]),g));
-            DEBUG(g.name << " loaded with " << g.memberCount << " Members " << g.roles.size() << " roles and " << g.emojis.size() << " emojis");
+            else
+            {
+                std::shared_ptr<User> u = std::make_shared<User>(currentMember);
+                m_globalUsers.insert(std::make_pair(snowflake, u));
+                g.addUser(u);
+            }
+        }
+        m_guilds.insert(std::make_pair(Snowflake(payload["id"]), g));
+        DEBUG(g.name << " loaded with " << g.memberCount << " Members " << g.roles.size() << " roles and " << g.emojis.size() << " emojis");
     }
-    else if(dispatchEvent == "TYPING_START"){
+    else if (dispatchEvent == "TYPING_START")
+    {
         Snowflake channel_id = payload["channel_id"];
-        std::map<Snowflake,Guild>::iterator guild_it = m_guilds.find(Snowflake(payload["guild_id"]));
-        if(guild_it == m_guilds.end()){
+        std::map<Snowflake, Guild>::iterator guild_it = m_guilds.find(Snowflake(payload["guild_id"]));
+        if (guild_it == m_guilds.end())
+        {
             DEBUG("Unknown guild in MESSAGE_CREATE event");
+            DEBUG(payload.toStyledString());
             return;
         }
-        std::map<Snowflake,std::shared_ptr<User>>::iterator it = m_globalUsers.find(Snowflake(payload["user_id"]));
-        if(it == m_globalUsers.end()){
+        std::map<Snowflake, std::shared_ptr<User>>::iterator it = m_globalUsers.find(Snowflake(payload["user_id"]));
+        if (it == m_globalUsers.end())
+        {
             DEBUG("Unknown user started typing!");
-        }else{
+            DEBUG(payload.toStyledString());
+        }
+        else
+        {
             DEBUG(payload["timestamp"] << "  " << guild_it->second.name << "[" << channel_id << "] : " << it->second->userName << " started typing");
         }
-    }else if(dispatchEvent == "MESSAGE_CREATE"){
+    }
+    else if (dispatchEvent == "MESSAGE_CREATE")
+    {
         Snowflake channel_id = payload["channel_id"];
-        std::map<Snowflake,Guild>::iterator guild_it = m_guilds.find(Snowflake(payload["guild_id"]));
-        if(guild_it == m_guilds.end()){
+        std::map<Snowflake, Guild>::iterator guild_it = m_guilds.find(Snowflake(payload["guild_id"]));
+        if (guild_it == m_guilds.end())
+        {
             DEBUG("Unknown guild in MESSAGE_CREATE event");
+            DEBUG(payload.toStyledString());
             return;
         }
-        std::map<Snowflake,std::shared_ptr<User>>::iterator it = m_globalUsers.find(Snowflake(payload["author"]["id"]));
-        if(it == m_globalUsers.end()){
+        std::map<Snowflake, std::shared_ptr<User>>::iterator it = m_globalUsers.find(Snowflake(payload["author"]["id"]));
+        if (it == m_globalUsers.end())
+        {
             DEBUG("Unknown user in MESSAGE_CREATE event");
+            DEBUG(payload.toStyledString());
             return;
-        }else{
-            DEBUG(payload["timestamp"] << "  " << guild_it->second.name << "[" << channel_id << "] " << it->second->userName <<" : " << payload["content"].asString());
+        }
+        else
+        {
+            DEBUG(payload["timestamp"] << "  " << guild_it->second.name << "[" << channel_id << "] " << it->second->userName << " : " << payload["content"].asString());
+        }
+    }
+    else if (dispatchEvent == "CHANNEL_CREATE")
+    {
+        int type = payload["type"].asInt();
+        if (type == ChannelType::DM || type == ChannelType::GROUP_DM)
+        {
+            
         }
     }
     else

@@ -17,8 +17,6 @@ namespace discordpp
     Guild::~Guild(){}
     Guild::Guild(const Json::Value& guild)
     {
-        DEBUG(guild["channels"].toStyledString());
-
         id = guild["id"];
         name = guild["name"].asString();
         DEBUG("Loading Guild " << name << "( " << id << " )");
@@ -56,6 +54,11 @@ namespace discordpp
         verificationLevel = guild["verification_level"].asInt();
         widgetChannelId = guild["widget_channel_id"];
         widgetEnabled = guild["widget_enabled"].asBool();
+        for(unsigned int i = 0;i<guild["channels"].size();i++){
+            channels.push_back(guild["channels"][i]);
+        }
+
+
     }
 
 
