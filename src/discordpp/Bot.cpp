@@ -133,6 +133,16 @@ void Bot::processDispatchEvent(const Json::Value &msg)
             m_guilds.push_back(g);
             DEBUG(g.name << " loaded with " << g.memberCount << " Members " << g.roles.size() << " roles and " << g.emojis.size() << " emojis");
     }
+    else if(dispatchEvent == "TYPING_START"){
+        Snowflake channel_id = payload["channel_id"];
+        Snowflake guild_id = payload["guild_id"];
+        std::map<Snowflake,std::shared_ptr<User>>::iterator it = m_globalUsers.find(Snowflake(payload["user_id"]));
+        if(it == m_globalUsers.end()){
+            DEBUG("Unknown user started typing!");
+        }else{
+            DEBUG(it->second->userName << " started typing in guild " << guild_id << " in channel " << channel_id << " at " << payload["timestamp"]);
+        }
+    }
     else
     {
         DEBUG("Unknown Dispatch Event [ " << msg["t"].asString() << " ] encountered");
