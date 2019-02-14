@@ -26,9 +26,7 @@ Discord++ itself is open source with a [public repository](https://github.com/De
 To be updated
 
 ```sh
-$ cd dillinger
-$ npm install -d
-$ node app
+$ git clone https://github.com/Devincf/Discordpp.git
 ```
 
 ### Development
