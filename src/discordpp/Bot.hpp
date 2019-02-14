@@ -117,9 +117,9 @@ private:
    */
   std::map<Snowflake, std::shared_ptr<User>> m_globalUsers;
   /**
-   * @brief Vector of all the guilds the bot is in
+   * @brief Map of all the guilds the bot is in
    */
-  std::vector<Guild> m_guilds;
+  std::map<Snowflake,Guild> m_guilds;
   /**
    * @brief Gateway object used for communicating with the discord gateway
    */

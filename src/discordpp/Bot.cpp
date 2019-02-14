@@ -130,17 +130,35 @@ void Bot::processDispatchEvent(const Json::Value &msg)
                     g.addUser(u);
                 }
             }
-            m_guilds.push_back(g);
+            m_guilds.insert(std::make_pair(Snowflake(payload["id"]),g));
             DEBUG(g.name << " loaded with " << g.memberCount << " Members " << g.roles.size() << " roles and " << g.emojis.size() << " emojis");
     }
     else if(dispatchEvent == "TYPING_START"){
         Snowflake channel_id = payload["channel_id"];
-        Snowflake guild_id = payload["guild_id"];
+        std::map<Snowflake,Guild>::iterator guild_it = m_guilds.find(Snowflake(payload["guild_id"]));
+        if(guild_it == m_guilds.end()){
+            DEBUG("Unknown guild in MESSAGE_CREATE event");
+            return;
+        }
         std::map<Snowflake,std::shared_ptr<User>>::iterator it = m_globalUsers.find(Snowflake(payload["user_id"]));
         if(it == m_globalUsers.end()){
             DEBUG("Unknown user started typing!");
         }else{
-            DEBUG(it->second->userName << " started typing in guild " << guild_id << " in channel " << channel_id << " at " << payload["timestamp"]);
+            DEBUG(payload["timestamp"] << "  " << guild_it->second.name << "[" << channel_id << "] : " << it->second->userName << " started typing");
+        }
+    }else if(dispatchEvent == "MESSAGE_CREATE"){
+        Snowflake channel_id = payload["channel_id"];
+        std::map<Snowflake,Guild>::iterator guild_it = m_guilds.find(Snowflake(payload["guild_id"]));
+        if(guild_it == m_guilds.end()){
+            DEBUG("Unknown guild in MESSAGE_CREATE event");
+            return;
+        }
+        std::map<Snowflake,std::shared_ptr<User>>::iterator it = m_globalUsers.find(Snowflake(payload["author"]["id"]));
+        if(it == m_globalUsers.end()){
+            DEBUG("Unknown user in MESSAGE_CREATE event");
+            return;
+        }else{
+            DEBUG(payload["timestamp"] << "  " << guild_it->second.name << "[" << channel_id << "] " << it->second->userName <<" : " << payload["content"].asString());
         }
     }
     else
