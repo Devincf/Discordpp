@@ -6,41 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/lumi/Programming/cpp/Discord++/src/discordpp/Bot.cpp
-Bot.hpp
-/home/lumi/Programming/cpp/Discord++/src/discordpp/Bot.hpp
-
-/home/lumi/Programming/cpp/Discord++/src/discordpp/Bot.hpp
-boost/asio/io_service.hpp
--
-boost/asio/steady_timer.hpp
--
-boost/asio.hpp
--
-boost/thread.hpp
--
-map
--
-Gateway.hpp
-/home/lumi/Programming/cpp/Discord++/src/discordpp/Gateway.hpp
-Objects/Guild.hpp
-/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Guild.hpp
-constants.hpp
-/home/lumi/Programming/cpp/Discord++/src/discordpp/constants.hpp
-
-/home/lumi/Programming/cpp/Discord++/src/discordpp/Gateway.hpp
-boost/bind.hpp
--
-websocketpp/config/asio_client.hpp
--
-websocketpp/client.hpp
--
-json/json.h
-/home/lumi/Programming/cpp/Discord++/src/discordpp/json/json.h
+/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Channel.hpp
+Snowflake.hpp
+/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Snowflake.hpp
 
 /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Emoji.hpp
 Snowflake.hpp
 /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Snowflake.hpp
+
+/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Guild.cpp
+Guild.hpp
+/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Guild.hpp
+../constants.hpp
+/home/lumi/Programming/cpp/Discord++/src/discordpp/constants.hpp
 
 /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Guild.hpp
 vector
@@ -53,6 +31,8 @@ Role.hpp
 /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Role.hpp
 User.hpp
 /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/User.hpp
+Channel.hpp
+/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Channel.hpp
 
 /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Role.hpp
 Snowflake.hpp

@@ -37,6 +37,7 @@ add_executable(Discordpp    "src/discordpp/jsoncpp.cpp"
                             "src/discordpp/Objects/User.cpp"
                             "src/discordpp/Objects/Emoji.cpp"
                             "src/discordpp/Objects/Role.cpp"
+                            "src/discordpp/Objects/Channel.cpp"
                             "src/discordpp/Objects/Guild.cpp"
                             
                             "src/discordpp/Gateway.cpp"

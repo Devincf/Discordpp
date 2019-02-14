@@ -18,6 +18,7 @@
 #include "Emoji.hpp"
 #include "Role.hpp"
 #include "User.hpp"
+#include "Channel.hpp"
 
 namespace discordpp
 {
@@ -162,6 +163,11 @@ public:
    * @brief Vector of shared_ptr of all the users in the Guild
    */
   std::vector<std::shared_ptr<User>> members;
+
+  /**
+     * @brief vector of all the channels within the guild
+     */
+  std::vector<Channel> channels;
 
   //Todo: add voice states,channels,presences
   //Todo: Create own timestamp format

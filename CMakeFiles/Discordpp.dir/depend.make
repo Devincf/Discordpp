@@ -4,6 +4,7 @@
 CMakeFiles/Discordpp.dir/src/discordpp/Bot.cpp.o: src/discordpp/Bot.cpp
 CMakeFiles/Discordpp.dir/src/discordpp/Bot.cpp.o: src/discordpp/Bot.hpp
 CMakeFiles/Discordpp.dir/src/discordpp/Bot.cpp.o: src/discordpp/Gateway.hpp
+CMakeFiles/Discordpp.dir/src/discordpp/Bot.cpp.o: src/discordpp/Objects/Channel.hpp
 CMakeFiles/Discordpp.dir/src/discordpp/Bot.cpp.o: src/discordpp/Objects/Emoji.hpp
 CMakeFiles/Discordpp.dir/src/discordpp/Bot.cpp.o: src/discordpp/Objects/Guild.hpp
 CMakeFiles/Discordpp.dir/src/discordpp/Bot.cpp.o: src/discordpp/Objects/Role.hpp
@@ -15,6 +16,7 @@ CMakeFiles/Discordpp.dir/src/discordpp/Bot.cpp.o: src/discordpp/json/json.h
 CMakeFiles/Discordpp.dir/src/discordpp/Gateway.cpp.o: src/discordpp/Bot.hpp
 CMakeFiles/Discordpp.dir/src/discordpp/Gateway.cpp.o: src/discordpp/Gateway.cpp
 CMakeFiles/Discordpp.dir/src/discordpp/Gateway.cpp.o: src/discordpp/Gateway.hpp
+CMakeFiles/Discordpp.dir/src/discordpp/Gateway.cpp.o: src/discordpp/Objects/Channel.hpp
 CMakeFiles/Discordpp.dir/src/discordpp/Gateway.cpp.o: src/discordpp/Objects/Emoji.hpp
 CMakeFiles/Discordpp.dir/src/discordpp/Gateway.cpp.o: src/discordpp/Objects/Guild.hpp
 CMakeFiles/Discordpp.dir/src/discordpp/Gateway.cpp.o: src/discordpp/Objects/Role.hpp
@@ -23,11 +25,18 @@ CMakeFiles/Discordpp.dir/src/discordpp/Gateway.cpp.o: src/discordpp/Objects/User
 CMakeFiles/Discordpp.dir/src/discordpp/Gateway.cpp.o: src/discordpp/constants.hpp
 CMakeFiles/Discordpp.dir/src/discordpp/Gateway.cpp.o: src/discordpp/json/json.h
 
+CMakeFiles/Discordpp.dir/src/discordpp/Objects/Channel.cpp.o: src/discordpp/Objects/Channel.cpp
+CMakeFiles/Discordpp.dir/src/discordpp/Objects/Channel.cpp.o: src/discordpp/Objects/Channel.hpp
+CMakeFiles/Discordpp.dir/src/discordpp/Objects/Channel.cpp.o: src/discordpp/Objects/Snowflake.hpp
+CMakeFiles/Discordpp.dir/src/discordpp/Objects/Channel.cpp.o: src/discordpp/constants.hpp
+CMakeFiles/Discordpp.dir/src/discordpp/Objects/Channel.cpp.o: src/discordpp/json/json.h
+
 CMakeFiles/Discordpp.dir/src/discordpp/Objects/Emoji.cpp.o: src/discordpp/Objects/Emoji.cpp
 CMakeFiles/Discordpp.dir/src/discordpp/Objects/Emoji.cpp.o: src/discordpp/Objects/Emoji.hpp
 CMakeFiles/Discordpp.dir/src/discordpp/Objects/Emoji.cpp.o: src/discordpp/Objects/Snowflake.hpp
 CMakeFiles/Discordpp.dir/src/discordpp/Objects/Emoji.cpp.o: src/discordpp/json/json.h
 
+CMakeFiles/Discordpp.dir/src/discordpp/Objects/Guild.cpp.o: src/discordpp/Objects/Channel.hpp
 CMakeFiles/Discordpp.dir/src/discordpp/Objects/Guild.cpp.o: src/discordpp/Objects/Emoji.hpp
 CMakeFiles/Discordpp.dir/src/discordpp/Objects/Guild.cpp.o: src/discordpp/Objects/Guild.cpp
 CMakeFiles/Discordpp.dir/src/discordpp/Objects/Guild.cpp.o: src/discordpp/Objects/Guild.hpp
@@ -58,6 +67,7 @@ CMakeFiles/Discordpp.dir/src/discordpp/jsoncpp.cpp.o: src/discordpp/jsoncpp.cpp
 
 CMakeFiles/Discordpp.dir/src/example/main.cpp.o: src/discordpp/Bot.hpp
 CMakeFiles/Discordpp.dir/src/example/main.cpp.o: src/discordpp/Gateway.hpp
+CMakeFiles/Discordpp.dir/src/example/main.cpp.o: src/discordpp/Objects/Channel.hpp
 CMakeFiles/Discordpp.dir/src/example/main.cpp.o: src/discordpp/Objects/Emoji.hpp
 CMakeFiles/Discordpp.dir/src/example/main.cpp.o: src/discordpp/Objects/Guild.hpp
 CMakeFiles/Discordpp.dir/src/example/main.cpp.o: src/discordpp/Objects/Role.hpp

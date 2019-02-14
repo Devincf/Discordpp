@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Discordpp.dir/src/discordpp/Objects/User.cpp.o"
   "CMakeFiles/Discordpp.dir/src/discordpp/Objects/Emoji.cpp.o"
   "CMakeFiles/Discordpp.dir/src/discordpp/Objects/Role.cpp.o"
+  "CMakeFiles/Discordpp.dir/src/discordpp/Objects/Channel.cpp.o"
   "CMakeFiles/Discordpp.dir/src/discordpp/Objects/Guild.cpp.o"
   "CMakeFiles/Discordpp.dir/src/discordpp/Gateway.cpp.o"
   "CMakeFiles/Discordpp.dir/src/discordpp/Bot.cpp.o"

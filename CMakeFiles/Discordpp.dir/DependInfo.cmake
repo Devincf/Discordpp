@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/lumi/Programming/cpp/Discord++/src/discordpp/Bot.cpp" "/home/lumi/Programming/cpp/Discord++/CMakeFiles/Discordpp.dir/src/discordpp/Bot.cpp.o"
   "/home/lumi/Programming/cpp/Discord++/src/discordpp/Gateway.cpp" "/home/lumi/Programming/cpp/Discord++/CMakeFiles/Discordpp.dir/src/discordpp/Gateway.cpp.o"
+  "/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Channel.cpp" "/home/lumi/Programming/cpp/Discord++/CMakeFiles/Discordpp.dir/src/discordpp/Objects/Channel.cpp.o"
   "/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Emoji.cpp" "/home/lumi/Programming/cpp/Discord++/CMakeFiles/Discordpp.dir/src/discordpp/Objects/Emoji.cpp.o"
   "/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Guild.cpp" "/home/lumi/Programming/cpp/Discord++/CMakeFiles/Discordpp.dir/src/discordpp/Objects/Guild.cpp.o"
   "/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Role.cpp" "/home/lumi/Programming/cpp/Discord++/CMakeFiles/Discordpp.dir/src/discordpp/Objects/Role.cpp.o"

@@ -177,6 +177,33 @@ src/discordpp/Gateway.cpp.s:
 	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Gateway.cpp.s
 .PHONY : src/discordpp/Gateway.cpp.s
 
+src/discordpp/Objects/Channel.o: src/discordpp/Objects/Channel.cpp.o
+
+.PHONY : src/discordpp/Objects/Channel.o
+
+# target to build an object file
+src/discordpp/Objects/Channel.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Objects/Channel.cpp.o
+.PHONY : src/discordpp/Objects/Channel.cpp.o
+
+src/discordpp/Objects/Channel.i: src/discordpp/Objects/Channel.cpp.i
+
+.PHONY : src/discordpp/Objects/Channel.i
+
+# target to preprocess a source file
+src/discordpp/Objects/Channel.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Objects/Channel.cpp.i
+.PHONY : src/discordpp/Objects/Channel.cpp.i
+
+src/discordpp/Objects/Channel.s: src/discordpp/Objects/Channel.cpp.s
+
+.PHONY : src/discordpp/Objects/Channel.s
+
+# target to generate assembly for a file
+src/discordpp/Objects/Channel.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Objects/Channel.cpp.s
+.PHONY : src/discordpp/Objects/Channel.cpp.s
+
 src/discordpp/Objects/Emoji.o: src/discordpp/Objects/Emoji.cpp.o
 
 .PHONY : src/discordpp/Objects/Emoji.o
@@ -381,6 +408,9 @@ help:
 	@echo "... src/discordpp/Gateway.o"
 	@echo "... src/discordpp/Gateway.i"
 	@echo "... src/discordpp/Gateway.s"
+	@echo "... src/discordpp/Objects/Channel.o"
+	@echo "... src/discordpp/Objects/Channel.i"
+	@echo "... src/discordpp/Objects/Channel.s"
 	@echo "... src/discordpp/Objects/Emoji.o"
 	@echo "... src/discordpp/Objects/Emoji.i"
 	@echo "... src/discordpp/Objects/Emoji.s"
