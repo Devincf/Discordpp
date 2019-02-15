@@ -41,8 +41,9 @@ public:
   /**
    * @brief Construct a new Guild object
    * @param payload the payload to use to construct the Guild object
+   * @param is this Guild being constructed from a GUILD_CREATE event
    */
-  Guild(const Json::Value &payload);
+  Guild(const nlohmann::json &payload, bool guildCreate = true);
 
   /**
    * @brief Manually adds a User to the Guild. This should always be called after first checking the global user map.

@@ -11,6 +11,8 @@
 
 #include "Bot.hpp"
 
+#include "jsonutils.hpp"
+
 namespace discordpp
 {
 Bot::Bot(const std::string &token) : m_lastS(0), m_token(token), m_heartbeat_timer(m_ioservice, m_heartbeatInterval), m_currentState(constants::Starting), m_gateway(this)
@@ -42,14 +44,13 @@ Bot::~Bot()
     //disconnect Gateway and cleanup
 }
 
-void Bot::eventProc(const Json::Value &payload)
+void Bot::eventProc(const nlohmann::json &payload)
 {
-    if (payload["s"] != Json::Value::null)
+    if (!payload["s"].is_null())
     {
-        m_lastS = payload["s"].asInt();
+        m_lastS = payload["s"].get<int>();
     }
-
-    switch (payload["op"].asInt())
+    switch (payload["op"].get<int>())
     {
     case constants::Dispatch:
         processDispatchEvent(payload);
@@ -70,10 +71,10 @@ void Bot::heartbeat()
         DEBUG("[ERROR] NO HEARTBEAT ACK RECIEVED ERROR");
     }
     //DEBUG("Heartbeat");
-    Json::Value payload;
+    nlohmann::json payload;
     payload["op"] = constants::Heartbeat;
     payload["d"] = m_lastS;
-    m_gateway.getEndpoint().send(m_gateway.getHandle(), payload.toStyledString(), websocketpp::frame::opcode::text);
+    m_gateway.sendPayload(payload);
     m_heartbeat_timer.expires_at(m_heartbeat_timer.expires_at() + m_heartbeatInterval);
     m_heartbeat_timer.async_wait(boost::bind(&Bot::heartbeat, this));
     m_lastHeartbeatACK = false;
@@ -95,24 +96,24 @@ void Bot::onHeartbeatACK()
     }
 }
 
-void Bot::onHello(const Json::Value &payload)
+void Bot::onHello(const nlohmann::json &payload)
 {
-    m_heartbeatInterval = std::chrono::milliseconds{payload["d"]["heartbeat_interval"].asInt()};
+    m_heartbeatInterval = std::chrono::milliseconds{payload["d"]["heartbeat_interval"].get<int>()};
     m_heartbeat_timer.async_wait(boost::bind(&Bot::heartbeat, this));
-    DEBUG("Starting Heartbeat Timer with an interval of " << payload["d"]["heartbeat_interval"].asInt() << " seconds");
+    DEBUG("Starting Heartbeat Timer with an interval of " << payload["d"]["heartbeat_interval"].get<int>() << " seconds");
     boost::thread t(boost::bind(&boost::asio::io_service::run, &m_ioservice));
     t.detach();
     DEBUG("Detaching Heartbeat Thread");
 }
 
-void Bot::processDispatchEvent(const Json::Value &msg)
+void Bot::processDispatchEvent(const nlohmann::json &msg)
 {
-    std::string dispatchEvent = msg["t"].asString();
-    Json::Value payload = msg["d"];
+    std::string dispatchEvent = msg["t"].get<std::string>();
+    nlohmann::json payload = msg["d"];
     if (dispatchEvent == "READY")
     {
-        m_currentSessionId = payload["session_id"].asString();
-        m_botUser = User(payload["user"]);
+        m_currentSessionId = payload["session_id"].get<std::string>();
+        m_botUser = User(payload["user"], true);
         m_currentState = constants::VerificationAccepted;
     }
     else if (dispatchEvent == "GUILD_CREATE")
@@ -120,8 +121,8 @@ void Bot::processDispatchEvent(const Json::Value &msg)
         Guild g(payload);
         for (unsigned int i = 0; i < payload["members"].size(); i++)
         {
-            Json::Value currentMember = payload["members"][i];
-            Snowflake snowflake = currentMember["user"]["id"];
+            nlohmann::json currentMember = payload["members"][i];
+            Snowflake snowflake = util::tryGetSnowflake("id", currentMember["user"]);
             std::map<Snowflake, std::shared_ptr<User>>::iterator it = m_globalUsers.find(snowflake);
             if (it != m_globalUsers.end())
             {
@@ -148,7 +149,7 @@ void Bot::processDispatchEvent(const Json::Value &msg)
             if (dm_it == m_dmChannels.end())
             {
                 DEBUG("Unknown guild and Channel in TYPING_START event");
-                DEBUG(payload.toStyledString());
+                DEBUG(payload.dump(4));
                 return;
             }
             dmMessage = true;
@@ -157,7 +158,7 @@ void Bot::processDispatchEvent(const Json::Value &msg)
         if (it == m_globalUsers.end())
         {
             DEBUG("Unknown user started typing!");
-            DEBUG(payload.toStyledString());
+            DEBUG(payload.dump(4));
         }
         else
         {
@@ -179,7 +180,7 @@ void Bot::processDispatchEvent(const Json::Value &msg)
             {
 
                 DEBUG("Unknown guild and Channel in MESSAGE_CREATE event");
-                DEBUG(payload.toStyledString());
+                DEBUG(payload.dump(4));
                 return;
             }
             dmMessage = true;
@@ -188,20 +189,21 @@ void Bot::processDispatchEvent(const Json::Value &msg)
         if (it == m_globalUsers.end())
         {
             DEBUG("Unknown user in MESSAGE_CREATE event");
-            DEBUG(payload.toStyledString());
+            DEBUG(payload.dump(4));
             return;
         }
         else
         {
             if (dmMessage)
-                DEBUG(payload["timestamp"] << "  " << "[" << channel_id << "] " << it->second->userName << " : " << payload["content"].asString());
+                DEBUG(payload["timestamp"] << "  " << "[" << channel_id << "] " << it->second->userName << " : " << payload["content"].get<std::string>());
             else
-                DEBUG(payload["timestamp"] << "  " << guild_it->second.name << "[" << channel_id << "] " << it->second->userName << " : " << payload["content"].asString());
+                DEBUG(payload["timestamp"] << "  " << guild_it->second.name << "[" << channel_id << "] " << it->second->userName << " : " << payload["content"].get<std::string>());
         }
     }
     else if (dispatchEvent == "CHANNEL_CREATE")
     {
-        int type = payload["type"].asInt();
+        DEBUG("asd");
+        int type = payload["type"].get<int>();
         if (type == ChannelType::DM || type == ChannelType::GROUP_DM)
         {
             std::map<Snowflake, Channel>::iterator dmit = m_dmChannels.find(payload["id"]);
@@ -215,14 +217,16 @@ void Bot::processDispatchEvent(const Json::Value &msg)
     }
     else
     {
-        DEBUG("Unknown Dispatch Event [ " << msg["t"].asString() << " ] encountered");
-        DEBUG(msg["d"].toStyledString());
+        DEBUG("Unknown Dispatch Event [ " << msg["t"].get<std::string>() << " ] encountered");
+        DEBUG(msg["d"].dump(4));
     }
 } // namespace discordpp
 
 void Bot::verifyBot()
 {
-    Json::Value payload, shard;
+    DEBUG("verify");
+    nlohmann::json payload;
+
     payload["op"] = constants::Identify;
     payload["d"]["token"] = m_token;
     payload["d"]["properties"]["$os"] = "linux";
@@ -230,17 +234,19 @@ void Bot::verifyBot()
     payload["d"]["properties"]["$device"] = "disco";
     payload["d"]["compress"] = false;
     payload["d"]["large_threshold"] = 250;
-    shard.append(0);
-    shard.append(1);
-    payload["d"]["shard"] = shard;
-    payload["d"]["presence"]["game"] = Json::Value::null;
+    payload["d"]["shard"] = {0,1};
+    payload["d"]["presence"]["game"] = nullptr;
     payload["d"]["presence"]["status"] = "online";
-    payload["d"]["presence"]["since"] = Json::Value::null;
+    payload["d"]["presence"]["since"] = nullptr;
     payload["d"]["presence"]["afk"] = false;
 
     DEBUG("Sending Verify Payload");
+    //DEBUG(payload.dump());
+    nlohmann::json json;
+    json["op"] = 2;
     m_gateway.sendPayload(payload);
     m_currentState = constants::VerificationSent;
+    DEBUG("verify complete");
 }
 
 } // namespace discordpp

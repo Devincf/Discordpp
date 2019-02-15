@@ -16,7 +16,7 @@
 #include <websocketpp/config/asio_client.hpp>
 #include <websocketpp/client.hpp>
 
-#include "json/json.h"
+#include "libs/nlohmann/json.hpp"
 
 typedef websocketpp::client<websocketpp::config::asio_tls_client> client;
 
@@ -94,7 +94,7 @@ public:
    * @brief Used to send json payloads to the gateway connection
    * @param payload 
    */
-  void sendPayload(const Json::Value &payload);
+  void sendPayload(const nlohmann::json &payload);
   /**
    * @brief Get the gateway connection handle
    * @return websocketpp::connection_hdl& 

@@ -339,33 +339,6 @@ src/discordpp/Objects/User.cpp.s:
 	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Objects/User.cpp.s
 .PHONY : src/discordpp/Objects/User.cpp.s
 
-src/discordpp/jsoncpp.o: src/discordpp/jsoncpp.cpp.o
-
-.PHONY : src/discordpp/jsoncpp.o
-
-# target to build an object file
-src/discordpp/jsoncpp.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/jsoncpp.cpp.o
-.PHONY : src/discordpp/jsoncpp.cpp.o
-
-src/discordpp/jsoncpp.i: src/discordpp/jsoncpp.cpp.i
-
-.PHONY : src/discordpp/jsoncpp.i
-
-# target to preprocess a source file
-src/discordpp/jsoncpp.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/jsoncpp.cpp.i
-.PHONY : src/discordpp/jsoncpp.cpp.i
-
-src/discordpp/jsoncpp.s: src/discordpp/jsoncpp.cpp.s
-
-.PHONY : src/discordpp/jsoncpp.s
-
-# target to generate assembly for a file
-src/discordpp/jsoncpp.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/jsoncpp.cpp.s
-.PHONY : src/discordpp/jsoncpp.cpp.s
-
 src/example/main.o: src/example/main.cpp.o
 
 .PHONY : src/example/main.o
@@ -426,9 +399,6 @@ help:
 	@echo "... src/discordpp/Objects/User.o"
 	@echo "... src/discordpp/Objects/User.i"
 	@echo "... src/discordpp/Objects/User.s"
-	@echo "... src/discordpp/jsoncpp.o"
-	@echo "... src/discordpp/jsoncpp.i"
-	@echo "... src/discordpp/jsoncpp.s"
 	@echo "... src/example/main.o"
 	@echo "... src/example/main.i"
 	@echo "... src/example/main.s"

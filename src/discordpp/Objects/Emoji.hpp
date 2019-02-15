@@ -35,7 +35,7 @@ class Emoji
     * @brief Construct a new Emoji object
     * @param payload The json payload to use when constructing the Emoji
     */
-    Emoji(const Json::Value &payload);
+    Emoji(const nlohmann::json &payload);
     /**
     * @brief Id of the Emoji
     */

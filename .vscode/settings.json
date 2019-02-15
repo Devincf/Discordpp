@@ -58,6 +58,8 @@
         "__nullptr": "cpp",
         "algorithm": "cpp",
         "strstream": "cpp",
-        "*.ipp": "cpp"
+        "*.ipp": "cpp",
+        "forward_list": "cpp",
+        "valarray": "cpp"
     }
 }

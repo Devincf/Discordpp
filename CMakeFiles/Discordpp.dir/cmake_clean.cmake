@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Discordpp.dir/src/discordpp/jsoncpp.cpp.o"
   "CMakeFiles/Discordpp.dir/src/discordpp/Objects/Snowflake.cpp.o"
   "CMakeFiles/Discordpp.dir/src/discordpp/Objects/User.cpp.o"
   "CMakeFiles/Discordpp.dir/src/discordpp/Objects/Emoji.cpp.o"

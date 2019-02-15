@@ -48,7 +48,7 @@ public:
    * @brief Triggered after the gateway recieves an event through the websocket
    * @param payload the content of the event
    */
-  void eventProc(const Json::Value &payload);
+  void eventProc(const nlohmann::json &payload);
 
 private:
   /**
@@ -59,7 +59,7 @@ private:
    * @brief Triggered when recieving the HELLO event from the gateway
    * @param payload containing the heartbeat interval
    */
-  void onHello(const Json::Value &payload);
+  void onHello(const nlohmann::json &payload);
   /**
    * @brief Triggered when the Bot recieves a Heartbeat ACK event
    */
@@ -68,7 +68,7 @@ private:
    * @brief Used to process different dispatch events
    * @param payload containing all the event data
    */
-  void processDispatchEvent(const Json::Value &payload);
+  void processDispatchEvent(const nlohmann::json &payload);
   /**
    * @brief Function that sends the VERIFY payload to the gateway to verify the connection
    */

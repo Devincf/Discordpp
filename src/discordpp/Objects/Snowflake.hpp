@@ -14,7 +14,7 @@
 #include <cstdint>
 #include <string>
 
-#include "../json/json.h"
+#include "../libs/nlohmann/json.hpp"
 
 namespace discordpp
 {
@@ -33,7 +33,7 @@ class Snowflake
      * @brief Construct a new Snowflake object using a json payload
      * @param payload json that contains the snowflake
      */
-    Snowflake(const Json::Value &payload);
+    Snowflake(const nlohmann::json &payload);
     /**
      * @brief Construct a new Snowflake object using a string
      * @param snowflake string that contains the snowflake

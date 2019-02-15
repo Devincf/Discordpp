@@ -11,19 +11,30 @@
 #include "User.hpp"
 
 #include "../constants.hpp"
+#include "../jsonutils.hpp"
 
 namespace discordpp
 {
 
-
-  User::User(){}
-  User::~User(){}
-  User::User(const Json::Value& user)
+User::User() {}
+User::~User() {}
+User::User(const nlohmann::json &user, bool hello)
+{
+  DEBUG(user.dump(2));
+  if (hello)
   {
-        discriminator = user["user"]["discriminator"].asString();
-        isBot = user["user"]["bot"].asBool();
-        userId = user["user"]["id"];
-        userName = user["user"]["username"].asString();
+    discriminator = user["discriminator"].get<std::string>();
+    isBot = user["bot"].get<bool>();
+    userId = user["id"];
+    userName = user["username"].get<std::string>();
   }
-
+  else
+  {
+    userId = user["user"]["id"];
+    userName = user["user"]["username"].get<std::string>();
+    discriminator = user["user"]["discriminator"].get<std::string>();
+    isBot = util::tryGetJson<bool>("bot", user["user"]);
+  }
 }
+
+} // namespace discordpp

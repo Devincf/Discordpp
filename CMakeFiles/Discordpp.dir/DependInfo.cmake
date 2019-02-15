@@ -12,7 +12,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Role.cpp" "/home/lumi/Programming/cpp/Discord++/CMakeFiles/Discordpp.dir/src/discordpp/Objects/Role.cpp.o"
   "/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Snowflake.cpp" "/home/lumi/Programming/cpp/Discord++/CMakeFiles/Discordpp.dir/src/discordpp/Objects/Snowflake.cpp.o"
   "/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/User.cpp" "/home/lumi/Programming/cpp/Discord++/CMakeFiles/Discordpp.dir/src/discordpp/Objects/User.cpp.o"
-  "/home/lumi/Programming/cpp/Discord++/src/discordpp/jsoncpp.cpp" "/home/lumi/Programming/cpp/Discord++/CMakeFiles/Discordpp.dir/src/discordpp/jsoncpp.cpp.o"
   "/home/lumi/Programming/cpp/Discord++/src/example/main.cpp" "/home/lumi/Programming/cpp/Discord++/CMakeFiles/Discordpp.dir/src/example/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

@@ -35,8 +35,9 @@ public:
   /**
    * @brief Construct a new User object using a given json payload
    * @param payload json payload containing user information
+   * @param if user is being created from the onHello event
    */
-  User(const Json::Value &payload);
+  User(const nlohmann::json &payload, bool hello=false);
 
   //Todo: Implement more User stuff
   /**
@@ -55,6 +56,9 @@ public:
    * @brief Whether the User is a bot or not
    */
   bool isBot;
+
+
+  //Todo: implement other members
 };
 } // namespace discordpp
 

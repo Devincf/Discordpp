@@ -19,7 +19,7 @@ Message::Message()
 Message::~Message()
 {
 }
-Message::Message(const Json::Value &payload)
+Message::Message(const nlohmann::json &payload)
 {
 }
 } // namespace discordpp

@@ -33,7 +33,7 @@ class Role
      * @brief Construct a new Role object using a json payload
      * @param payload the json data to construct the role
      */
-    Role(const Json::Value &payload);
+    Role(const nlohmann::json &payload);
     /**
      * @brief The role id
      */

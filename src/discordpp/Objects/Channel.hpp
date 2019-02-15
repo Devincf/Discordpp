@@ -40,7 +40,7 @@ class Channel
     * @brief Construct a new Channel object with a given payload
     * @param payload to use for constructing the channel
     */
-    Channel(const Json::Value &payload);
+    Channel(const nlohmann::json &payload);
 
     /**
      * @brief The channel id

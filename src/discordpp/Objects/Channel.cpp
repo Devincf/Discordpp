@@ -11,6 +11,7 @@
 
 #include "Channel.hpp"
 #include "../constants.hpp"
+#include "../jsonutils.hpp"
 
 namespace discordpp
 {
@@ -20,23 +21,26 @@ Channel::Channel()
 Channel::~Channel()
 {
 }
-Channel::Channel(const Json::Value& payload)
+Channel::Channel(const nlohmann::json &payload)
 {
+    DEBUG(payload.dump(2));
     id = payload["id"];
-    type = static_cast<ChannelType>(payload["type"].asInt());
-    guildId = payload["guild_id"];
-    position = payload["position"].asInt();
-    name = payload["name"].asString();
-    topic = payload["topic"].asString();
-    nsfw = payload["nsfw"].asBool();
-    lastMessageId = payload["last_message_id"];
-    bitrate = payload["bitrate"].asInt();
-    userLimit = payload["user_limit"].asInt();
-    rateLimitPerUser = payload["rate_limit_per_user"].asInt();
-    icon = payload["icon"].asString();
-    ownerId = payload["owner_id"];
-    appId = payload["application_id"];
-    parentId = payload["parent_id"];
+    type = static_cast<ChannelType>(payload["type"].get<int>());
+    
+    guildId = util::tryGetSnowflake("guild_id", payload);
+    position = util::tryGetJson<int>("position",payload);
+    name = util::tryGetJson<std::string>("name",payload);
+    topic = util::tryGetJson<std::string>("topic", payload);
+    nsfw = util::tryGetJson<bool>("nsfw", payload);
+    lastMessageId = util::tryGetSnowflake("last_message_id", payload);
+    bitrate = util::tryGetJson<int>("bitrate", payload);
+    userLimit = util::tryGetJson<int>("user_limit", payload);
+    rateLimitPerUser = util::tryGetJson<int>("rate_limit_per_user", payload);
+    icon = util::tryGetJson<std::string>("icon", payload);
+    ownerId = util::tryGetSnowflake("owner_id", payload);
+    appId = util::tryGetSnowflake("application_id", payload);
+    parentId = util::tryGetSnowflake("parent_id", payload);
+    DEBUG("loaded Channel");
 }
 
 } // namespace discordpp

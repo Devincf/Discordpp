@@ -5,14 +5,14 @@
 
 
 #include "../constants.hpp"
-#include "../json/json.h"
+#include "../libs/nlohmann/json.hpp"
 
 namespace discordpp::event
 {
 
 struct EventData
 {
-    Json::Value json;
+    nlohmann::json json;
     constants::BotState botState;
     websocketpp::connection_hdl &hdl;
 };

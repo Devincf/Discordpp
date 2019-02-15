@@ -12,7 +12,8 @@ CMakeFiles/Discordpp.dir/src/discordpp/Bot.cpp.o
  /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Snowflake.hpp
  /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/User.hpp
  /home/lumi/Programming/cpp/Discord++/src/discordpp/constants.hpp
- /home/lumi/Programming/cpp/Discord++/src/discordpp/json/json.h
+ /home/lumi/Programming/cpp/Discord++/src/discordpp/jsonutils.hpp
+ /home/lumi/Programming/cpp/Discord++/src/discordpp/libs/nlohmann/json.hpp
 CMakeFiles/Discordpp.dir/src/discordpp/Gateway.cpp.o
  /home/lumi/Programming/cpp/Discord++/src/discordpp/Bot.hpp
  /home/lumi/Programming/cpp/Discord++/src/discordpp/Gateway.cpp
@@ -24,18 +25,19 @@ CMakeFiles/Discordpp.dir/src/discordpp/Gateway.cpp.o
  /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Snowflake.hpp
  /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/User.hpp
  /home/lumi/Programming/cpp/Discord++/src/discordpp/constants.hpp
- /home/lumi/Programming/cpp/Discord++/src/discordpp/json/json.h
+ /home/lumi/Programming/cpp/Discord++/src/discordpp/libs/nlohmann/json.hpp
 CMakeFiles/Discordpp.dir/src/discordpp/Objects/Channel.cpp.o
  /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Channel.cpp
  /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Channel.hpp
  /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Snowflake.hpp
  /home/lumi/Programming/cpp/Discord++/src/discordpp/constants.hpp
- /home/lumi/Programming/cpp/Discord++/src/discordpp/json/json.h
+ /home/lumi/Programming/cpp/Discord++/src/discordpp/jsonutils.hpp
+ /home/lumi/Programming/cpp/Discord++/src/discordpp/libs/nlohmann/json.hpp
 CMakeFiles/Discordpp.dir/src/discordpp/Objects/Emoji.cpp.o
  /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Emoji.cpp
  /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Emoji.hpp
  /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Snowflake.hpp
- /home/lumi/Programming/cpp/Discord++/src/discordpp/json/json.h
+ /home/lumi/Programming/cpp/Discord++/src/discordpp/libs/nlohmann/json.hpp
 CMakeFiles/Discordpp.dir/src/discordpp/Objects/Guild.cpp.o
  /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Channel.hpp
  /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Emoji.hpp
@@ -45,26 +47,25 @@ CMakeFiles/Discordpp.dir/src/discordpp/Objects/Guild.cpp.o
  /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Snowflake.hpp
  /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/User.hpp
  /home/lumi/Programming/cpp/Discord++/src/discordpp/constants.hpp
- /home/lumi/Programming/cpp/Discord++/src/discordpp/json/json.h
+ /home/lumi/Programming/cpp/Discord++/src/discordpp/jsonutils.hpp
+ /home/lumi/Programming/cpp/Discord++/src/discordpp/libs/nlohmann/json.hpp
 CMakeFiles/Discordpp.dir/src/discordpp/Objects/Role.cpp.o
  /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Role.cpp
  /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Role.hpp
  /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Snowflake.hpp
- /home/lumi/Programming/cpp/Discord++/src/discordpp/json/json.h
+ /home/lumi/Programming/cpp/Discord++/src/discordpp/libs/nlohmann/json.hpp
 CMakeFiles/Discordpp.dir/src/discordpp/Objects/Snowflake.cpp.o
  /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Snowflake.cpp
  /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Snowflake.hpp
  /home/lumi/Programming/cpp/Discord++/src/discordpp/constants.hpp
- /home/lumi/Programming/cpp/Discord++/src/discordpp/json/json.h
+ /home/lumi/Programming/cpp/Discord++/src/discordpp/libs/nlohmann/json.hpp
 CMakeFiles/Discordpp.dir/src/discordpp/Objects/User.cpp.o
  /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Snowflake.hpp
  /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/User.cpp
  /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/User.hpp
  /home/lumi/Programming/cpp/Discord++/src/discordpp/constants.hpp
- /home/lumi/Programming/cpp/Discord++/src/discordpp/json/json.h
-CMakeFiles/Discordpp.dir/src/discordpp/jsoncpp.cpp.o
- /home/lumi/Programming/cpp/Discord++/src/discordpp/json/json.h
- /home/lumi/Programming/cpp/Discord++/src/discordpp/jsoncpp.cpp
+ /home/lumi/Programming/cpp/Discord++/src/discordpp/jsonutils.hpp
+ /home/lumi/Programming/cpp/Discord++/src/discordpp/libs/nlohmann/json.hpp
 CMakeFiles/Discordpp.dir/src/example/main.cpp.o
  /home/lumi/Programming/cpp/Discord++/src/discordpp/Bot.hpp
  /home/lumi/Programming/cpp/Discord++/src/discordpp/Gateway.hpp
@@ -75,5 +76,5 @@ CMakeFiles/Discordpp.dir/src/example/main.cpp.o
  /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Snowflake.hpp
  /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/User.hpp
  /home/lumi/Programming/cpp/Discord++/src/discordpp/constants.hpp
- /home/lumi/Programming/cpp/Discord++/src/discordpp/json/json.h
+ /home/lumi/Programming/cpp/Discord++/src/discordpp/libs/nlohmann/json.hpp
  /home/lumi/Programming/cpp/Discord++/src/example/main.cpp

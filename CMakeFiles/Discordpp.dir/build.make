@@ -57,22 +57,9 @@ include CMakeFiles/Discordpp.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Discordpp.dir/flags.make
 
-CMakeFiles/Discordpp.dir/src/discordpp/jsoncpp.cpp.o: CMakeFiles/Discordpp.dir/flags.make
-CMakeFiles/Discordpp.dir/src/discordpp/jsoncpp.cpp.o: src/discordpp/jsoncpp.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lumi/Programming/cpp/Discord++/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Discordpp.dir/src/discordpp/jsoncpp.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Discordpp.dir/src/discordpp/jsoncpp.cpp.o -c /home/lumi/Programming/cpp/Discord++/src/discordpp/jsoncpp.cpp
-
-CMakeFiles/Discordpp.dir/src/discordpp/jsoncpp.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Discordpp.dir/src/discordpp/jsoncpp.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lumi/Programming/cpp/Discord++/src/discordpp/jsoncpp.cpp > CMakeFiles/Discordpp.dir/src/discordpp/jsoncpp.cpp.i
-
-CMakeFiles/Discordpp.dir/src/discordpp/jsoncpp.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Discordpp.dir/src/discordpp/jsoncpp.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lumi/Programming/cpp/Discord++/src/discordpp/jsoncpp.cpp -o CMakeFiles/Discordpp.dir/src/discordpp/jsoncpp.cpp.s
-
 CMakeFiles/Discordpp.dir/src/discordpp/Objects/Snowflake.cpp.o: CMakeFiles/Discordpp.dir/flags.make
 CMakeFiles/Discordpp.dir/src/discordpp/Objects/Snowflake.cpp.o: src/discordpp/Objects/Snowflake.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lumi/Programming/cpp/Discord++/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Discordpp.dir/src/discordpp/Objects/Snowflake.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lumi/Programming/cpp/Discord++/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Discordpp.dir/src/discordpp/Objects/Snowflake.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Discordpp.dir/src/discordpp/Objects/Snowflake.cpp.o -c /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Snowflake.cpp
 
 CMakeFiles/Discordpp.dir/src/discordpp/Objects/Snowflake.cpp.i: cmake_force
@@ -85,7 +72,7 @@ CMakeFiles/Discordpp.dir/src/discordpp/Objects/Snowflake.cpp.s: cmake_force
 
 CMakeFiles/Discordpp.dir/src/discordpp/Objects/User.cpp.o: CMakeFiles/Discordpp.dir/flags.make
 CMakeFiles/Discordpp.dir/src/discordpp/Objects/User.cpp.o: src/discordpp/Objects/User.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lumi/Programming/cpp/Discord++/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Discordpp.dir/src/discordpp/Objects/User.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lumi/Programming/cpp/Discord++/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Discordpp.dir/src/discordpp/Objects/User.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Discordpp.dir/src/discordpp/Objects/User.cpp.o -c /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/User.cpp
 
 CMakeFiles/Discordpp.dir/src/discordpp/Objects/User.cpp.i: cmake_force
@@ -98,7 +85,7 @@ CMakeFiles/Discordpp.dir/src/discordpp/Objects/User.cpp.s: cmake_force
 
 CMakeFiles/Discordpp.dir/src/discordpp/Objects/Emoji.cpp.o: CMakeFiles/Discordpp.dir/flags.make
 CMakeFiles/Discordpp.dir/src/discordpp/Objects/Emoji.cpp.o: src/discordpp/Objects/Emoji.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lumi/Programming/cpp/Discord++/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Discordpp.dir/src/discordpp/Objects/Emoji.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lumi/Programming/cpp/Discord++/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Discordpp.dir/src/discordpp/Objects/Emoji.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Discordpp.dir/src/discordpp/Objects/Emoji.cpp.o -c /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Emoji.cpp
 
 CMakeFiles/Discordpp.dir/src/discordpp/Objects/Emoji.cpp.i: cmake_force
@@ -111,7 +98,7 @@ CMakeFiles/Discordpp.dir/src/discordpp/Objects/Emoji.cpp.s: cmake_force
 
 CMakeFiles/Discordpp.dir/src/discordpp/Objects/Role.cpp.o: CMakeFiles/Discordpp.dir/flags.make
 CMakeFiles/Discordpp.dir/src/discordpp/Objects/Role.cpp.o: src/discordpp/Objects/Role.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lumi/Programming/cpp/Discord++/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Discordpp.dir/src/discordpp/Objects/Role.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lumi/Programming/cpp/Discord++/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Discordpp.dir/src/discordpp/Objects/Role.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Discordpp.dir/src/discordpp/Objects/Role.cpp.o -c /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Role.cpp
 
 CMakeFiles/Discordpp.dir/src/discordpp/Objects/Role.cpp.i: cmake_force
@@ -124,7 +111,7 @@ CMakeFiles/Discordpp.dir/src/discordpp/Objects/Role.cpp.s: cmake_force
 
 CMakeFiles/Discordpp.dir/src/discordpp/Objects/Channel.cpp.o: CMakeFiles/Discordpp.dir/flags.make
 CMakeFiles/Discordpp.dir/src/discordpp/Objects/Channel.cpp.o: src/discordpp/Objects/Channel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lumi/Programming/cpp/Discord++/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Discordpp.dir/src/discordpp/Objects/Channel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lumi/Programming/cpp/Discord++/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Discordpp.dir/src/discordpp/Objects/Channel.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Discordpp.dir/src/discordpp/Objects/Channel.cpp.o -c /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Channel.cpp
 
 CMakeFiles/Discordpp.dir/src/discordpp/Objects/Channel.cpp.i: cmake_force
@@ -137,7 +124,7 @@ CMakeFiles/Discordpp.dir/src/discordpp/Objects/Channel.cpp.s: cmake_force
 
 CMakeFiles/Discordpp.dir/src/discordpp/Objects/Guild.cpp.o: CMakeFiles/Discordpp.dir/flags.make
 CMakeFiles/Discordpp.dir/src/discordpp/Objects/Guild.cpp.o: src/discordpp/Objects/Guild.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lumi/Programming/cpp/Discord++/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Discordpp.dir/src/discordpp/Objects/Guild.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lumi/Programming/cpp/Discord++/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Discordpp.dir/src/discordpp/Objects/Guild.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Discordpp.dir/src/discordpp/Objects/Guild.cpp.o -c /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Guild.cpp
 
 CMakeFiles/Discordpp.dir/src/discordpp/Objects/Guild.cpp.i: cmake_force
@@ -150,7 +137,7 @@ CMakeFiles/Discordpp.dir/src/discordpp/Objects/Guild.cpp.s: cmake_force
 
 CMakeFiles/Discordpp.dir/src/discordpp/Gateway.cpp.o: CMakeFiles/Discordpp.dir/flags.make
 CMakeFiles/Discordpp.dir/src/discordpp/Gateway.cpp.o: src/discordpp/Gateway.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lumi/Programming/cpp/Discord++/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Discordpp.dir/src/discordpp/Gateway.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lumi/Programming/cpp/Discord++/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Discordpp.dir/src/discordpp/Gateway.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Discordpp.dir/src/discordpp/Gateway.cpp.o -c /home/lumi/Programming/cpp/Discord++/src/discordpp/Gateway.cpp
 
 CMakeFiles/Discordpp.dir/src/discordpp/Gateway.cpp.i: cmake_force
@@ -163,7 +150,7 @@ CMakeFiles/Discordpp.dir/src/discordpp/Gateway.cpp.s: cmake_force
 
 CMakeFiles/Discordpp.dir/src/discordpp/Bot.cpp.o: CMakeFiles/Discordpp.dir/flags.make
 CMakeFiles/Discordpp.dir/src/discordpp/Bot.cpp.o: src/discordpp/Bot.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lumi/Programming/cpp/Discord++/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Discordpp.dir/src/discordpp/Bot.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lumi/Programming/cpp/Discord++/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Discordpp.dir/src/discordpp/Bot.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Discordpp.dir/src/discordpp/Bot.cpp.o -c /home/lumi/Programming/cpp/Discord++/src/discordpp/Bot.cpp
 
 CMakeFiles/Discordpp.dir/src/discordpp/Bot.cpp.i: cmake_force
@@ -176,7 +163,7 @@ CMakeFiles/Discordpp.dir/src/discordpp/Bot.cpp.s: cmake_force
 
 CMakeFiles/Discordpp.dir/src/example/main.cpp.o: CMakeFiles/Discordpp.dir/flags.make
 CMakeFiles/Discordpp.dir/src/example/main.cpp.o: src/example/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lumi/Programming/cpp/Discord++/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Discordpp.dir/src/example/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lumi/Programming/cpp/Discord++/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Discordpp.dir/src/example/main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Discordpp.dir/src/example/main.cpp.o -c /home/lumi/Programming/cpp/Discord++/src/example/main.cpp
 
 CMakeFiles/Discordpp.dir/src/example/main.cpp.i: cmake_force
@@ -189,7 +176,6 @@ CMakeFiles/Discordpp.dir/src/example/main.cpp.s: cmake_force
 
 # Object files for target Discordpp
 Discordpp_OBJECTS = \
-"CMakeFiles/Discordpp.dir/src/discordpp/jsoncpp.cpp.o" \
 "CMakeFiles/Discordpp.dir/src/discordpp/Objects/Snowflake.cpp.o" \
 "CMakeFiles/Discordpp.dir/src/discordpp/Objects/User.cpp.o" \
 "CMakeFiles/Discordpp.dir/src/discordpp/Objects/Emoji.cpp.o" \
@@ -203,7 +189,6 @@ Discordpp_OBJECTS = \
 # External object files for target Discordpp
 Discordpp_EXTERNAL_OBJECTS =
 
-Discordpp: CMakeFiles/Discordpp.dir/src/discordpp/jsoncpp.cpp.o
 Discordpp: CMakeFiles/Discordpp.dir/src/discordpp/Objects/Snowflake.cpp.o
 Discordpp: CMakeFiles/Discordpp.dir/src/discordpp/Objects/User.cpp.o
 Discordpp: CMakeFiles/Discordpp.dir/src/discordpp/Objects/Emoji.cpp.o
@@ -219,7 +204,7 @@ Discordpp: /usr/lib/libboost_chrono.so
 Discordpp: /usr/lib/libboost_date_time.so
 Discordpp: /usr/lib/libboost_atomic.so
 Discordpp: CMakeFiles/Discordpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lumi/Programming/cpp/Discord++/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable Discordpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lumi/Programming/cpp/Discord++/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable Discordpp"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Discordpp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -23,9 +23,9 @@ namespace discordpp
     }
 
 
-    Snowflake::Snowflake(const Json::Value& snow)
+    Snowflake::Snowflake(const nlohmann::json& snow)
     {
-        m_snowflake = (snow == Json::Value::null) ? 0 : std::stoul(snow.asString());
+        m_snowflake = (snow == nullptr) ? 0 : std::stoul(snow.get<std::string>());
     }
 
     Snowflake::Snowflake(const std::string& snow)

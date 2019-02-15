@@ -32,7 +32,7 @@ class Message{
     public:
     Message();
     ~Message();
-    Message(const Json::Value& payload);
+    Message(const nlohmann::json& payload);
 };
 }
 

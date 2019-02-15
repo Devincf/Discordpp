@@ -14,14 +14,14 @@ namespace discordpp
 {
 Emoji::Emoji() {}
 Emoji::~Emoji() {}
-Emoji::Emoji(const Json::Value &emoji)
+Emoji::Emoji(const nlohmann::json &emoji)
 {
     id = emoji["id"];
-    name = emoji["name"].asString();
+    name = emoji["name"].get<std::string>();
     roles = std::vector<Snowflake>();              //todo: init emoji roles
-    username = emoji["user"]["username"].asString();
-    requireColons = emoji["require_colons"].asBool();
-    managed = emoji["managed"].asBool();
-    animated = emoji["animated"].asBool();
+    username = emoji["user"]["username"].get<std::string>();
+    requireColons = emoji["require_colons"].get<bool>();
+    managed = emoji["managed"].get<bool>();
+    animated = emoji["animated"].get<bool>();
 }
 } // namespace discordpp

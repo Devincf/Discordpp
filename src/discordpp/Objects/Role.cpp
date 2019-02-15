@@ -15,15 +15,15 @@ namespace discordpp
 
         Role::Role(){}
         Role::~Role(){}
-        Role::Role(const Json::Value& role)
+        Role::Role(const nlohmann::json& role)
         {
             id = role["id"];
-            color = role["color"].asInt();
-            hoist = role["hoist"].asBool();
-            managed = role["managed"].asBool();
-            mentionable = role["mentionable"].asBool();
-            name = role["name"].asString();
-            permissions = role["permissions"].asInt();
-            position = role["position"].asInt();
+            color = role["color"].get<int>();
+            hoist = role["hoist"].get<bool>();
+            managed = role["managed"].get<bool>();
+            mentionable = role["mentionable"].get<bool>();
+            name = role["name"].get<std::string>();
+            permissions = role["permissions"].get<int>();
+            position = role["position"].get<int>();
         }
 }

@@ -113,11 +113,8 @@ void Gateway::on_open(const websocketpp::connection_hdl &hdl)
 
 void Gateway::on_message(const websocketpp::connection_hdl &hdl, const message_ptr &msgptr)
 {
-    //DEBUG("Gateway::onMessage");
-    Json::Value root;
-    std::stringstream ss;
-    ss << msgptr->get_payload();
-    ss >> root;
+    DEBUG("Gateway::onMessage");
+    nlohmann::json root = nlohmann::json::parse(msgptr->get_payload());
 
     m_pBot->eventProc(root);
 }
@@ -128,8 +125,8 @@ void Gateway::on_close(const websocketpp::connection_hdl &hdl)
     m_endpoint.close(hdl, websocketpp::close::status::going_away, "");
 }
 
-void Gateway::sendPayload(const Json::Value & payload)
+void Gateway::sendPayload(const nlohmann::json & payload)
 {
-    m_endpoint.send(m_hdl,payload.toStyledString(),websocketpp::frame::opcode::text);
+    m_endpoint.send(m_hdl,payload.dump(),websocketpp::frame::opcode::text);
 }
 } // namespace discordpp

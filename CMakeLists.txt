@@ -11,6 +11,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS ON)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Werror")
 
+set(CMAKE_BUILD_TYPE Debug)
+
 find_package(Boost 1.55.0 REQUIRED COMPONENTS thread system filesystem)
 include_directories(... ${Boost_INCLUDE_DIRS})
 link_directories(... ${Boost_LIBRARY_DIRS})
@@ -31,8 +33,8 @@ configure_file (
 include_directories("${PROJECT_BINARY_DIR}")
  
 # add the executable
-add_executable(Discordpp    "src/discordpp/jsoncpp.cpp"
 
+add_executable(Discordpp    
                             "src/discordpp/Objects/Snowflake.cpp"
                             "src/discordpp/Objects/User.cpp"
                             "src/discordpp/Objects/Emoji.cpp"
