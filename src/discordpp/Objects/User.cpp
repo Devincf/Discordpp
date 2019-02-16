@@ -20,7 +20,6 @@ User::User() {}
 User::~User() {}
 User::User(const nlohmann::json &user, bool hello)
 {
-  DEBUG(user.dump(2));
   if (hello)
   {
     discriminator = user["discriminator"].get<std::string>();

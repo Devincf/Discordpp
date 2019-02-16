@@ -26,6 +26,22 @@ string
 ../libs/nlohmann/json.hpp
 /home/lumi/Programming/cpp/Discord++/src/discordpp/libs/nlohmann/json.hpp
 
+/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/User.cpp
+User.hpp
+/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/User.hpp
+../constants.hpp
+/home/lumi/Programming/cpp/Discord++/src/discordpp/constants.hpp
+../jsonutils.hpp
+/home/lumi/Programming/cpp/Discord++/src/discordpp/jsonutils.hpp
+
+/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/User.hpp
+string
+-
+cstdint
+-
+Snowflake.hpp
+/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Snowflake.hpp
+
 /home/lumi/Programming/cpp/Discord++/src/discordpp/constants.hpp
 string
 -

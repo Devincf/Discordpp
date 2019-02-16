@@ -23,13 +23,12 @@ Channel::~Channel()
 }
 Channel::Channel(const nlohmann::json &payload)
 {
-    DEBUG(payload.dump(2));
     id = payload["id"];
     type = static_cast<ChannelType>(payload["type"].get<int>());
-    
+
     guildId = util::tryGetSnowflake("guild_id", payload);
-    position = util::tryGetJson<int>("position",payload);
-    name = util::tryGetJson<std::string>("name",payload);
+    position = util::tryGetJson<int>("position", payload);
+    name = util::tryGetJson<std::string>("name", payload);
     topic = util::tryGetJson<std::string>("topic", payload);
     nsfw = util::tryGetJson<bool>("nsfw", payload);
     lastMessageId = util::tryGetSnowflake("last_message_id", payload);
@@ -40,7 +39,10 @@ Channel::Channel(const nlohmann::json &payload)
     ownerId = util::tryGetSnowflake("owner_id", payload);
     appId = util::tryGetSnowflake("application_id", payload);
     parentId = util::tryGetSnowflake("parent_id", payload);
-    DEBUG("loaded Channel");
+    if (type == DM || type == GROUP_DM)
+        DEBUG("loaded private dm channel " << id);
+    else
+        DEBUG("loaded Channel " << name);
 }
 
 } // namespace discordpp
