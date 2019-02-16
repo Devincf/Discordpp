@@ -5,7 +5,7 @@
 
 
 #include "../constants.hpp"
-#include "../libs/nlohmann/json.hpp"
+#include "nlohmann/json.hpp"
 
 namespace discordpp::event
 {

@@ -14,7 +14,7 @@
 #include <cstdint>
 #include <string>
 
-#include "../libs/nlohmann/json.hpp"
+#include "nlohmann/json.hpp"
 
 namespace discordpp
 {

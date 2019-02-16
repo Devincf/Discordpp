@@ -16,7 +16,7 @@
 #include <websocketpp/config/asio_client.hpp>
 #include <websocketpp/client.hpp>
 
-#include "libs/nlohmann/json.hpp"
+#include "nlohmann/json.hpp"
 
 typedef websocketpp::client<websocketpp::config::asio_tls_client> client;
 

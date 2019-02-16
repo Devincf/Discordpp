@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.9)
+cmake_minimum_required(VERSION 2.8.10)
 project (Discordpp)
 
 # The version number.
@@ -45,5 +45,7 @@ add_executable(Discordpp
                             "src/discordpp/Gateway.cpp"
                             "src/discordpp/Bot.cpp"
                             "src/example/main.cpp")
+
+target_include_directories(Discordpp PRIVATE "src/submodules/nlohmannjson/single_include/" "src/submodules/websocketpp/websocketpp/")
 
 target_link_libraries(Discordpp Threads::Threads crypto ssl Boost::thread)

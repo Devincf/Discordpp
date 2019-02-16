@@ -6,7 +6,8 @@ vscode/settings.json
 
 #cmake
 CMakeCache.txt
-CMakeFiles/
+CMakeFiles/*
+/CMakeFiles/*
 cmake_install.cmake
 
 #vscode

@@ -1,7 +1,7 @@
 #ifndef JSONUTILS_HPP
 #define JSONUTILS_HPP
 
-#include "libs/nlohmann/json.hpp"
+#include "nlohmann/json.hpp"
 #include <string>
 
 #include "Objects/Snowflake.hpp"

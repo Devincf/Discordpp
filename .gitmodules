@@ -1,0 +1,6 @@
+[submodule "src/submodules/nlohmannjson"]
+	path = src/submodules/nlohmannjson
+	url = https://github.com/nlohmann/json.git
+[submodule "src/submodules/websocketpp"]
+	path = src/submodules/websocketpp
+	url = https://github.com/zaphoyd/websocketpp.git
