@@ -1,61 +1,61 @@
 [
 {
   "directory": "/home/lumi/Programming/cpp/Discord++/build",
-  "command": "/bin/c++   -I../... -I. -I../src/submodules/nlohmannjson/single_include -I../src/submodules/websocketpp/websocketpp -I../src/discordpp   -Wall -Werror -g   -std=gnu++17 -o CMakeFiles/Discordpp.dir/src/discordpp/Objects/Snowflake.cpp.o -c /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Snowflake.cpp",
+  "command": "/bin/c++   -I../... -I. -I../src/submodules/nlohmannjson/single_include -I../src/submodules/websocketpp/websocketpp -I../src/discordpp   -Wall -Werror -g   -pthread -std=gnu++17 -o CMakeFiles/Discordpp.dir/src/discordpp/Objects/Snowflake.cpp.o -c /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Snowflake.cpp",
   "file": "/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Snowflake.cpp"
 },
 
 {
   "directory": "/home/lumi/Programming/cpp/Discord++/build",
-  "command": "/bin/c++   -I../... -I. -I../src/submodules/nlohmannjson/single_include -I../src/submodules/websocketpp/websocketpp -I../src/discordpp   -Wall -Werror -g   -std=gnu++17 -o CMakeFiles/Discordpp.dir/src/discordpp/Objects/Message.cpp.o -c /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Message.cpp",
+  "command": "/bin/c++   -I../... -I. -I../src/submodules/nlohmannjson/single_include -I../src/submodules/websocketpp/websocketpp -I../src/discordpp   -Wall -Werror -g   -pthread -std=gnu++17 -o CMakeFiles/Discordpp.dir/src/discordpp/Objects/Message.cpp.o -c /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Message.cpp",
   "file": "/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Message.cpp"
 },
 
 {
   "directory": "/home/lumi/Programming/cpp/Discord++/build",
-  "command": "/bin/c++   -I../... -I. -I../src/submodules/nlohmannjson/single_include -I../src/submodules/websocketpp/websocketpp -I../src/discordpp   -Wall -Werror -g   -std=gnu++17 -o CMakeFiles/Discordpp.dir/src/discordpp/Objects/User.cpp.o -c /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/User.cpp",
+  "command": "/bin/c++   -I../... -I. -I../src/submodules/nlohmannjson/single_include -I../src/submodules/websocketpp/websocketpp -I../src/discordpp   -Wall -Werror -g   -pthread -std=gnu++17 -o CMakeFiles/Discordpp.dir/src/discordpp/Objects/User.cpp.o -c /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/User.cpp",
   "file": "/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/User.cpp"
 },
 
 {
   "directory": "/home/lumi/Programming/cpp/Discord++/build",
-  "command": "/bin/c++   -I../... -I. -I../src/submodules/nlohmannjson/single_include -I../src/submodules/websocketpp/websocketpp -I../src/discordpp   -Wall -Werror -g   -std=gnu++17 -o CMakeFiles/Discordpp.dir/src/discordpp/Objects/Emoji.cpp.o -c /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Emoji.cpp",
+  "command": "/bin/c++   -I../... -I. -I../src/submodules/nlohmannjson/single_include -I../src/submodules/websocketpp/websocketpp -I../src/discordpp   -Wall -Werror -g   -pthread -std=gnu++17 -o CMakeFiles/Discordpp.dir/src/discordpp/Objects/Emoji.cpp.o -c /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Emoji.cpp",
   "file": "/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Emoji.cpp"
 },
 
 {
   "directory": "/home/lumi/Programming/cpp/Discord++/build",
-  "command": "/bin/c++   -I../... -I. -I../src/submodules/nlohmannjson/single_include -I../src/submodules/websocketpp/websocketpp -I../src/discordpp   -Wall -Werror -g   -std=gnu++17 -o CMakeFiles/Discordpp.dir/src/discordpp/Objects/Role.cpp.o -c /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Role.cpp",
+  "command": "/bin/c++   -I../... -I. -I../src/submodules/nlohmannjson/single_include -I../src/submodules/websocketpp/websocketpp -I../src/discordpp   -Wall -Werror -g   -pthread -std=gnu++17 -o CMakeFiles/Discordpp.dir/src/discordpp/Objects/Role.cpp.o -c /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Role.cpp",
   "file": "/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Role.cpp"
 },
 
 {
   "directory": "/home/lumi/Programming/cpp/Discord++/build",
-  "command": "/bin/c++   -I../... -I. -I../src/submodules/nlohmannjson/single_include -I../src/submodules/websocketpp/websocketpp -I../src/discordpp   -Wall -Werror -g   -std=gnu++17 -o CMakeFiles/Discordpp.dir/src/discordpp/Objects/Channel.cpp.o -c /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Channel.cpp",
+  "command": "/bin/c++   -I../... -I. -I../src/submodules/nlohmannjson/single_include -I../src/submodules/websocketpp/websocketpp -I../src/discordpp   -Wall -Werror -g   -pthread -std=gnu++17 -o CMakeFiles/Discordpp.dir/src/discordpp/Objects/Channel.cpp.o -c /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Channel.cpp",
   "file": "/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Channel.cpp"
 },
 
 {
   "directory": "/home/lumi/Programming/cpp/Discord++/build",
-  "command": "/bin/c++   -I../... -I. -I../src/submodules/nlohmannjson/single_include -I../src/submodules/websocketpp/websocketpp -I../src/discordpp   -Wall -Werror -g   -std=gnu++17 -o CMakeFiles/Discordpp.dir/src/discordpp/Objects/Guild.cpp.o -c /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Guild.cpp",
+  "command": "/bin/c++   -I../... -I. -I../src/submodules/nlohmannjson/single_include -I../src/submodules/websocketpp/websocketpp -I../src/discordpp   -Wall -Werror -g   -pthread -std=gnu++17 -o CMakeFiles/Discordpp.dir/src/discordpp/Objects/Guild.cpp.o -c /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Guild.cpp",
   "file": "/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Guild.cpp"
 },
 
 {
   "directory": "/home/lumi/Programming/cpp/Discord++/build",
-  "command": "/bin/c++   -I../... -I. -I../src/submodules/nlohmannjson/single_include -I../src/submodules/websocketpp/websocketpp -I../src/discordpp   -Wall -Werror -g   -std=gnu++17 -o CMakeFiles/Discordpp.dir/src/discordpp/Gateway.cpp.o -c /home/lumi/Programming/cpp/Discord++/src/discordpp/Gateway.cpp",
+  "command": "/bin/c++   -I../... -I. -I../src/submodules/nlohmannjson/single_include -I../src/submodules/websocketpp/websocketpp -I../src/discordpp   -Wall -Werror -g   -pthread -std=gnu++17 -o CMakeFiles/Discordpp.dir/src/discordpp/Gateway.cpp.o -c /home/lumi/Programming/cpp/Discord++/src/discordpp/Gateway.cpp",
   "file": "/home/lumi/Programming/cpp/Discord++/src/discordpp/Gateway.cpp"
 },
 
 {
   "directory": "/home/lumi/Programming/cpp/Discord++/build",
-  "command": "/bin/c++   -I../... -I. -I../src/submodules/nlohmannjson/single_include -I../src/submodules/websocketpp/websocketpp -I../src/discordpp   -Wall -Werror -g   -std=gnu++17 -o CMakeFiles/Discordpp.dir/src/discordpp/Bot.cpp.o -c /home/lumi/Programming/cpp/Discord++/src/discordpp/Bot.cpp",
+  "command": "/bin/c++   -I../... -I. -I../src/submodules/nlohmannjson/single_include -I../src/submodules/websocketpp/websocketpp -I../src/discordpp   -Wall -Werror -g   -pthread -std=gnu++17 -o CMakeFiles/Discordpp.dir/src/discordpp/Bot.cpp.o -c /home/lumi/Programming/cpp/Discord++/src/discordpp/Bot.cpp",
   "file": "/home/lumi/Programming/cpp/Discord++/src/discordpp/Bot.cpp"
 },
 
 {
   "directory": "/home/lumi/Programming/cpp/Discord++/build",
-  "command": "/bin/c++   -I../... -I. -I../src/submodules/nlohmannjson/single_include -I../src/submodules/websocketpp/websocketpp -I../src/discordpp   -Wall -Werror -g   -std=gnu++17 -o CMakeFiles/Discordpp.dir/src/example/main.cpp.o -c /home/lumi/Programming/cpp/Discord++/src/example/main.cpp",
+  "command": "/bin/c++   -I../... -I. -I../src/submodules/nlohmannjson/single_include -I../src/submodules/websocketpp/websocketpp -I../src/discordpp   -Wall -Werror -g   -pthread -std=gnu++17 -o CMakeFiles/Discordpp.dir/src/example/main.cpp.o -c /home/lumi/Programming/cpp/Discord++/src/example/main.cpp",
   "file": "/home/lumi/Programming/cpp/Discord++/src/example/main.cpp"
 }
 ]

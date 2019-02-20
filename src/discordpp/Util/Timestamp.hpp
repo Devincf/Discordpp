@@ -6,6 +6,7 @@
 
 namespace discordpp::util{
 
+
 class Timestamp
 {
   public:
@@ -25,17 +26,20 @@ class Timestamp
   private:
     time_t _timestamp;
 };
-
-Timestamp fromUnixTimestamp(const std::string &time)
+static Timestamp fromUnixTimestamp(const std::string &time)
 {
     return Timestamp(static_cast<time_t>(strtol(time.c_str(), NULL, 10)));
 }
 
-Timestamp fromISO8601Timestamp(const std::string &time)
+static Timestamp fromISO8601Timestamp(const std::string &time)
 {
-    boost::posix_time::ptime pt = boost::posix_time::from_iso_extended_string("2019-02-20T00:29:56.162000+00:00");
+    boost::posix_time::ptime pt = boost::posix_time::from_iso_extended_string(time);
     return Timestamp(time_t((pt - boost::posix_time::ptime(boost::gregorian::date(1970,1,1))).total_seconds()));
 }
+
+static Timestamp t1 = fromUnixTimestamp("1550622594");
+static Timestamp t2 = fromISO8601Timestamp("2019-02-20T00:29:56.162000+00:00");
+
 }
 
 #endif

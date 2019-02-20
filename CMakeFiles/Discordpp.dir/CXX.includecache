@@ -11,8 +11,6 @@ Bot.hpp
 /home/lumi/Programming/cpp/Discord++/src/discordpp/Bot.hpp
 Util/jsonutils.hpp
 /home/lumi/Programming/cpp/Discord++/src/discordpp/Util/jsonutils.hpp
-Objects/Message.hpp
-/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Message.hpp
 
 /home/lumi/Programming/cpp/Discord++/src/discordpp/Bot.hpp
 boost/asio/io_service.hpp
@@ -52,25 +50,9 @@ websocketpp/client.hpp
 nlohmann/json.hpp
 /home/lumi/Programming/cpp/Discord++/src/discordpp/nlohmann/json.hpp
 
-/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Channel.cpp
-Channel.hpp
-/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Channel.hpp
-Util/constants.hpp
-/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Util/constants.hpp
-Util/jsonutils.hpp
-/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Util/jsonutils.hpp
-
 /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Channel.hpp
 Snowflake.hpp
 /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Snowflake.hpp
-
-/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Emoji.cpp
-Emoji.hpp
-/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Emoji.hpp
-Util/constants.hpp
-/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Util/constants.hpp
-Util/jsonutils.hpp
-/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Util/jsonutils.hpp
 
 /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Emoji.hpp
 Snowflake.hpp
@@ -97,28 +79,24 @@ User.hpp
 /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/User.hpp
 Channel.hpp
 /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Channel.hpp
+Message.hpp
+/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Message.hpp
 
 /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Message.cpp
 Message.hpp
 /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Message.hpp
+Util/constants.hpp
+/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Util/constants.hpp
 
 /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Message.hpp
 Snowflake.hpp
 /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Snowflake.hpp
 Util/Timestamp.hpp
 /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Util/Timestamp.hpp
-nlohmann/json.hpp
-/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/nlohmann/json.hpp
 
 /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Role.hpp
 Snowflake.hpp
 /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Snowflake.hpp
-
-/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Snowflake.cpp
-Snowflake.hpp
-/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Snowflake.hpp
-Util/constants.hpp
-/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Util/constants.hpp
 
 /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Snowflake.hpp
 cstdint
@@ -127,14 +105,6 @@ string
 -
 nlohmann/json.hpp
 /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/nlohmann/json.hpp
-
-/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/User.cpp
-User.hpp
-/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/User.hpp
-Util/constants.hpp
-/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Util/constants.hpp
-Util/jsonutils.hpp
-/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Util/jsonutils.hpp
 
 /home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/User.hpp
 string
@@ -211,6 +181,14 @@ User.hpp
 src/discordpp/Objects/User.hpp
 Channel.hpp
 src/discordpp/Objects/Channel.hpp
+Message.hpp
+src/discordpp/Objects/Message.hpp
+
+src/discordpp/Objects/Message.hpp
+Snowflake.hpp
+src/discordpp/Objects/Snowflake.hpp
+Util/Timestamp.hpp
+src/discordpp/Objects/Util/Timestamp.hpp
 
 src/discordpp/Objects/Role.hpp
 Snowflake.hpp

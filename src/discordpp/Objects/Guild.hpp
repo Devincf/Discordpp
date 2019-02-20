@@ -19,6 +19,7 @@
 #include "Role.hpp"
 #include "User.hpp"
 #include "Channel.hpp"
+#include "Message.hpp"
 
 namespace discordpp
 {

@@ -13,7 +13,6 @@
 
 #include "Util/jsonutils.hpp"
 
-#include "Objects/Message.hpp"
 
 namespace discordpp
 {
@@ -165,8 +164,6 @@ void Bot::processDispatchEvent(const nlohmann::json &msg)
         }
         else//to implement : PRESENCE_UPDATE, GUILD_EMOJIS_UPDATE, GUILD_ROLE_UPDATE
         {
-            Message m(payload);
-
             if(dmMessage)
                 DEBUG(payload["timestamp"] << " [" <<  channel_id << "] : " << it->second->userName << " started typing in dm");
             else
@@ -199,10 +196,12 @@ void Bot::processDispatchEvent(const nlohmann::json &msg)
         }
         else
         {
+            Message m(payload);
+
             if (dmMessage)
-                DEBUG(payload["timestamp"] << "  " << "[" << channel_id << "] " << it->second->userName << " : " << payload["content"].get<std::string>());
+                DEBUG(m.getTime().getISOTime() << "  " << "[" << channel_id << "] " << it->second->userName << " : " << payload["content"].get<std::string>());
             else
-                DEBUG(payload["timestamp"] << "  " << guild_it->second.name << "[" << channel_id << "] " << it->second->userName << " : " << payload["content"].get<std::string>());
+                DEBUG(m.getTime().getISOTime() << "  " << guild_it->second.name << "[" << channel_id << "] " << it->second->userName << " : " << payload["content"].get<std::string>());
         }
     }
     else if (dispatchEvent == "CHANNEL_CREATE")

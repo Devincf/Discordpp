@@ -14,7 +14,6 @@
 
 #include "Snowflake.hpp"
 #include "Util/Timestamp.hpp"
-#include "nlohmann/json.hpp"
 
 namespace discordpp
 {
@@ -37,6 +36,7 @@ class Message{
     std::string _content;
     Snowflake _channelId;
     public:
+    util::Timestamp getTime();
     Message();
     ~Message();
     Message(const nlohmann::json& payload);
