@@ -13,14 +13,13 @@
 
 #include "Util/jsonutils.hpp"
 
-
 namespace discordpp
 {
 Bot::Bot(const std::string &token) : m_lastS(0), m_token(token), m_heartbeat_timer(m_ioservice, m_heartbeatInterval), m_currentState(constants::Starting), m_gateway(this)
 {
-    m_guilds = std::map<Snowflake,Guild>();
-    m_dmChannels = std::map<Snowflake,Channel>();
-    m_globalUsers = std::map<Snowflake,std::shared_ptr<User>>();
+    m_guilds = std::map<Snowflake, Guild>();
+    m_dmChannels = std::map<Snowflake, Channel>();
+    m_globalUsers = std::map<Snowflake, std::shared_ptr<User>>();
 
     try
     {
@@ -68,7 +67,7 @@ void Bot::eventProc(const nlohmann::json &payload)
 void Bot::heartbeat()
 {
     if (!m_lastHeartbeatACK && m_currentState != constants::Starting)
-    {   //Todo: Add ACK Check
+    { //Todo: Add ACK Check
         //terminate and reconnect/resume
         DEBUG("[ERROR] NO HEARTBEAT ACK RECIEVED ERROR");
     }
@@ -162,10 +161,10 @@ void Bot::processDispatchEvent(const nlohmann::json &msg)
             DEBUG("Unknown user started typing!");
             DEBUG(payload.dump(4));
         }
-        else//to implement : PRESENCE_UPDATE, GUILD_EMOJIS_UPDATE, GUILD_ROLE_UPDATE
+        else //to implement : PRESENCE_UPDATE, GUILD_EMOJIS_UPDATE, GUILD_ROLE_UPDATE
         {
-            if(dmMessage)
-                DEBUG(payload["timestamp"] << " [" <<  channel_id << "] : " << it->second->userName << " started typing in dm");
+            if (dmMessage)
+                DEBUG(payload["timestamp"] << " [" << channel_id << "] : " << it->second->userName << " started typing in dm");
             else
                 DEBUG(payload["timestamp"] << "  " << guild_it->second.name << "[" << channel_id << "] : " << it->second->userName << " started typing");
         }
@@ -199,9 +198,10 @@ void Bot::processDispatchEvent(const nlohmann::json &msg)
             Message m(payload);
 
             if (dmMessage)
-                DEBUG(m.getTime().getISOTime() << "  " << "[" << channel_id << "] " << it->second->userName << " : " << payload["content"].get<std::string>());
+                DEBUG(m.getTime().getISOTime() << "  "
+                                               << "[" << m.getChannelId() << "] " << it->second->userName << " : " << m.getContent());
             else
-                DEBUG(m.getTime().getISOTime() << "  " << guild_it->second.name << "[" << channel_id << "] " << it->second->userName << " : " << payload["content"].get<std::string>());
+                DEBUG(m.getTime().getISOTime() << "  " << guild_it->second.name << "[" << m.getChannelId() << "] " << it->second->userName << " : " << m.getContent());
         }
     }
     else if (dispatchEvent == "CHANNEL_CREATE")
@@ -238,7 +238,7 @@ void Bot::verifyBot()
     payload["d"]["properties"]["$device"] = "disco";
     payload["d"]["compress"] = false;
     payload["d"]["large_threshold"] = 250;
-    payload["d"]["shard"] = {0,1};
+    payload["d"]["shard"] = {0, 1};
     payload["d"]["presence"]["game"] = nullptr;
     payload["d"]["presence"]["status"] = "online";
     payload["d"]["presence"]["since"] = nullptr;

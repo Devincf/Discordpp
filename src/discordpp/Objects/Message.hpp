@@ -31,12 +31,18 @@ enum MessageType
 
 class Message{
     private:
+    bool _tts;
     Snowflake _id;
     util::Timestamp _timestamp;
     std::string _content;
     Snowflake _channelId;
     public:
+
     util::Timestamp getTime();
+    std::string getContent();
+    Snowflake getChannelId();
+    Snowflake getId();
+    bool hasTTSEnabled();
     Message();
     ~Message();
     Message(const nlohmann::json& payload);
