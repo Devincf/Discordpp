@@ -20,7 +20,6 @@ default_target: all
 # Remove some rules from gmake that .SUFFIXES does not remove.
 SUFFIXES =
 
-
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 

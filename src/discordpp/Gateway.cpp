@@ -13,7 +13,7 @@
 #include <sstream>
 
 #include "Bot.hpp"
-#include "constants.hpp"
+#include "Util/constants.hpp"
 
 namespace discordpp
 {

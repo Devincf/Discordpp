@@ -20,7 +20,7 @@
 
 #include "Gateway.hpp"
 #include "Objects/Guild.hpp"
-#include "constants.hpp"
+#include "Util/constants.hpp"
 
 using boost::asio::io_service;
 using boost::asio::steady_timer;
@@ -103,7 +103,7 @@ private:
    */
   steady_timer m_heartbeat_timer;
   /**
-   * @brief The current status of the bot. See constants.hpp for more
+   * @brief The current status of the bot. See Util/constants.hpp for more
    */
   constants::BotState m_currentState;
   /**

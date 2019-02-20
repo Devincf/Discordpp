@@ -9,9 +9,9 @@
  * 
  */
 #include "Guild.hpp"
-#include "../constants.hpp"
+#include "Util/constants.hpp"
 
-#include "../jsonutils.hpp"
+#include "Util/jsonutils.hpp"
 
 namespace discordpp
 {

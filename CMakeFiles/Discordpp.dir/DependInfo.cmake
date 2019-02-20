@@ -22,6 +22,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "."
   "src/submodules/nlohmannjson/single_include"
   "src/submodules/websocketpp/websocketpp"
+  "src/discordpp"
   )
 
 # Targets to which this target links.

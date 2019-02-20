@@ -11,7 +11,7 @@
 
 #include "Bot.hpp"
 
-#include "jsonutils.hpp"
+#include "Util/jsonutils.hpp"
 
 namespace discordpp
 {
@@ -67,7 +67,8 @@ void Bot::eventProc(const nlohmann::json &payload)
 void Bot::heartbeat()
 {
     if (!m_lastHeartbeatACK && m_currentState != constants::Starting)
-    { //Todo: Add ACK Check
+    {   //Todo: Add ACK Check
+        //terminate and reconnect/resume
         DEBUG("[ERROR] NO HEARTBEAT ACK RECIEVED ERROR");
     }
     //DEBUG("Heartbeat");
@@ -160,7 +161,7 @@ void Bot::processDispatchEvent(const nlohmann::json &msg)
             DEBUG("Unknown user started typing!");
             DEBUG(payload.dump(4));
         }
-        else
+        else//to implement : PRESENCE_UPDATE, GUILD_EMOJIS_UPDATE, GUILD_ROLE_UPDATE
         {
             if(dmMessage)
                 DEBUG(payload["timestamp"] << " [" <<  channel_id << "] : " << it->second->userName << " started typing in dm");

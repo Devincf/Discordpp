@@ -6,5 +6,5 @@ CXX_FLAGS =  -Wall -Werror -g   -pthread -std=gnu++17
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/lumi/Programming/cpp/Discord++/... -I/home/lumi/Programming/cpp/Discord++ -I/home/lumi/Programming/cpp/Discord++/src/submodules/nlohmannjson/single_include -I/home/lumi/Programming/cpp/Discord++/src/submodules/websocketpp/websocketpp 
+CXX_INCLUDES = -I/home/lumi/Programming/cpp/Discord++/... -I/home/lumi/Programming/cpp/Discord++ -I/home/lumi/Programming/cpp/Discord++/src/submodules/nlohmannjson/single_include -I/home/lumi/Programming/cpp/Discord++/src/submodules/websocketpp/websocketpp -I/home/lumi/Programming/cpp/Discord++/src/discordpp 
 

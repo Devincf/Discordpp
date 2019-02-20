@@ -10,8 +10,8 @@
  */
 
 #include "Channel.hpp"
-#include "../constants.hpp"
-#include "../jsonutils.hpp"
+#include "Util/constants.hpp"
+#include "Util/jsonutils.hpp"
 
 namespace discordpp
 {

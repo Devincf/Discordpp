@@ -9,6 +9,8 @@
  * 
  */
 #include "Emoji.hpp"
+#include "Util/constants.hpp"
+#include "Util/jsonutils.hpp"
 
 namespace discordpp
 {
@@ -16,12 +18,20 @@ Emoji::Emoji() {}
 Emoji::~Emoji() {}
 Emoji::Emoji(const nlohmann::json &emoji)
 {
+    DEBUG(emoji.dump(2));
     id = emoji["id"];
     name = emoji["name"].get<std::string>();
-    roles = std::vector<Snowflake>();              //todo: init emoji roles
-    username = emoji["user"]["username"].get<std::string>();
-    requireColons = emoji["require_colons"].get<bool>();
-    managed = emoji["managed"].get<bool>();
-    animated = emoji["animated"].get<bool>();
+    roles = std::vector<Snowflake>();
+    if(emoji["roles"].size() > 0){
+        for(auto role : emoji["roles"]){
+            roles.push_back(emoji.get<std::string>());//Todo: test once I can create role specific emojis
+        }
+    }
+    if(emoji.find("user") != emoji.end()){
+        username = emoji["user"]["username"].get<std::string>();
+    }
+    requireColons = util::tryGetJson<bool>("require_colons",emoji);
+    managed = util::tryGetJson<bool>("managed",emoji);
+    animated = util::tryGetJson<bool>("animated",emoji);
 }
 } // namespace discordpp

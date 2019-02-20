@@ -46,6 +46,6 @@ add_executable(Discordpp
                             "src/discordpp/Bot.cpp"
                             "src/example/main.cpp")
 
-target_include_directories(Discordpp PRIVATE "src/submodules/nlohmannjson/single_include/" "src/submodules/websocketpp/websocketpp/")
+target_include_directories(Discordpp PRIVATE "src/submodules/nlohmannjson/single_include/" "src/submodules/websocketpp/websocketpp/" "src/discordpp")
 
 target_link_libraries(Discordpp Threads::Threads crypto ssl Boost::thread)

@@ -10,7 +10,7 @@
  */
 #include "Snowflake.hpp"
 
-#include "../constants.hpp"
+#include "Util/constants.hpp"
 
 namespace discordpp
 {
