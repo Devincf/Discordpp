@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Channel.cpp" "/home/lumi/Programming/cpp/Discord++/CMakeFiles/Discordpp.dir/src/discordpp/Objects/Channel.cpp.o"
   "/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Emoji.cpp" "/home/lumi/Programming/cpp/Discord++/CMakeFiles/Discordpp.dir/src/discordpp/Objects/Emoji.cpp.o"
   "/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Guild.cpp" "/home/lumi/Programming/cpp/Discord++/CMakeFiles/Discordpp.dir/src/discordpp/Objects/Guild.cpp.o"
+  "/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Message.cpp" "/home/lumi/Programming/cpp/Discord++/CMakeFiles/Discordpp.dir/src/discordpp/Objects/Message.cpp.o"
   "/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Role.cpp" "/home/lumi/Programming/cpp/Discord++/CMakeFiles/Discordpp.dir/src/discordpp/Objects/Role.cpp.o"
   "/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/Snowflake.cpp" "/home/lumi/Programming/cpp/Discord++/CMakeFiles/Discordpp.dir/src/discordpp/Objects/Snowflake.cpp.o"
   "/home/lumi/Programming/cpp/Discord++/src/discordpp/Objects/User.cpp" "/home/lumi/Programming/cpp/Discord++/CMakeFiles/Discordpp.dir/src/discordpp/Objects/User.cpp.o"

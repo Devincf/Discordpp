@@ -13,6 +13,8 @@
 
 #include "Util/jsonutils.hpp"
 
+#include "Objects/Message.hpp"
+
 namespace discordpp
 {
 Bot::Bot(const std::string &token) : m_lastS(0), m_token(token), m_heartbeat_timer(m_ioservice, m_heartbeatInterval), m_currentState(constants::Starting), m_gateway(this)
@@ -163,6 +165,8 @@ void Bot::processDispatchEvent(const nlohmann::json &msg)
         }
         else//to implement : PRESENCE_UPDATE, GUILD_EMOJIS_UPDATE, GUILD_ROLE_UPDATE
         {
+            Message m(payload);
+
             if(dmMessage)
                 DEBUG(payload["timestamp"] << " [" <<  channel_id << "] : " << it->second->userName << " started typing in dm");
             else

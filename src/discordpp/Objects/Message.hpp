@@ -13,6 +13,8 @@
 #define MESSAGE_HPP
 
 #include "Snowflake.hpp"
+#include "Util/Timestamp.hpp"
+#include "nlohmann/json.hpp"
 
 namespace discordpp
 {
@@ -29,6 +31,11 @@ enum MessageType
 };
 
 class Message{
+    private:
+    Snowflake _id;
+    util::Timestamp _timestamp;
+    std::string _content;
+    Snowflake _channelId;
     public:
     Message();
     ~Message();

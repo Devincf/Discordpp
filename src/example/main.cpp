@@ -10,9 +10,6 @@
  */
 #include "Bot.hpp"
 
-#include "Util/Timestamp.hpp"
-
-
 int main()
 {
 

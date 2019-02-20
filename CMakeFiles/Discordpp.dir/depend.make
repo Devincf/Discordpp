@@ -7,12 +7,14 @@ CMakeFiles/Discordpp.dir/src/discordpp/Bot.cpp.o: src/discordpp/Gateway.hpp
 CMakeFiles/Discordpp.dir/src/discordpp/Bot.cpp.o: src/discordpp/Objects/Channel.hpp
 CMakeFiles/Discordpp.dir/src/discordpp/Bot.cpp.o: src/discordpp/Objects/Emoji.hpp
 CMakeFiles/Discordpp.dir/src/discordpp/Bot.cpp.o: src/discordpp/Objects/Guild.hpp
+CMakeFiles/Discordpp.dir/src/discordpp/Bot.cpp.o: src/discordpp/Objects/Message.hpp
 CMakeFiles/Discordpp.dir/src/discordpp/Bot.cpp.o: src/discordpp/Objects/Role.hpp
 CMakeFiles/Discordpp.dir/src/discordpp/Bot.cpp.o: src/discordpp/Objects/Snowflake.hpp
 CMakeFiles/Discordpp.dir/src/discordpp/Bot.cpp.o: src/discordpp/Objects/User.hpp
 CMakeFiles/Discordpp.dir/src/discordpp/Bot.cpp.o: src/discordpp/Util/constants.hpp
 CMakeFiles/Discordpp.dir/src/discordpp/Bot.cpp.o: src/discordpp/Util/jsonutils.hpp
 CMakeFiles/Discordpp.dir/src/discordpp/Bot.cpp.o: src/discordpp/Objects/Snowflake.hpp
+CMakeFiles/Discordpp.dir/src/discordpp/Bot.cpp.o: src/discordpp/Util/Timestamp.hpp
 CMakeFiles/Discordpp.dir/src/discordpp/Bot.cpp.o: src/submodules/nlohmannjson/single_include/nlohmann/json.hpp
 
 CMakeFiles/Discordpp.dir/src/discordpp/Gateway.cpp.o: src/discordpp/Bot.hpp
@@ -55,6 +57,12 @@ CMakeFiles/Discordpp.dir/src/discordpp/Objects/Guild.cpp.o: src/discordpp/Util/c
 CMakeFiles/Discordpp.dir/src/discordpp/Objects/Guild.cpp.o: src/discordpp/Util/jsonutils.hpp
 CMakeFiles/Discordpp.dir/src/discordpp/Objects/Guild.cpp.o: src/submodules/nlohmannjson/single_include/nlohmann/json.hpp
 
+CMakeFiles/Discordpp.dir/src/discordpp/Objects/Message.cpp.o: src/discordpp/Objects/Message.cpp
+CMakeFiles/Discordpp.dir/src/discordpp/Objects/Message.cpp.o: src/discordpp/Objects/Message.hpp
+CMakeFiles/Discordpp.dir/src/discordpp/Objects/Message.cpp.o: src/discordpp/Objects/Snowflake.hpp
+CMakeFiles/Discordpp.dir/src/discordpp/Objects/Message.cpp.o: src/discordpp/Util/Timestamp.hpp
+CMakeFiles/Discordpp.dir/src/discordpp/Objects/Message.cpp.o: src/submodules/nlohmannjson/single_include/nlohmann/json.hpp
+
 CMakeFiles/Discordpp.dir/src/discordpp/Objects/Role.cpp.o: src/discordpp/Objects/Role.cpp
 CMakeFiles/Discordpp.dir/src/discordpp/Objects/Role.cpp.o: src/discordpp/Objects/Role.hpp
 CMakeFiles/Discordpp.dir/src/discordpp/Objects/Role.cpp.o: src/discordpp/Objects/Snowflake.hpp
@@ -82,7 +90,6 @@ CMakeFiles/Discordpp.dir/src/example/main.cpp.o: src/discordpp/Objects/Guild.hpp
 CMakeFiles/Discordpp.dir/src/example/main.cpp.o: src/discordpp/Objects/Role.hpp
 CMakeFiles/Discordpp.dir/src/example/main.cpp.o: src/discordpp/Objects/Snowflake.hpp
 CMakeFiles/Discordpp.dir/src/example/main.cpp.o: src/discordpp/Objects/User.hpp
-CMakeFiles/Discordpp.dir/src/example/main.cpp.o: src/discordpp/Util/Timestamp.hpp
 CMakeFiles/Discordpp.dir/src/example/main.cpp.o: src/discordpp/Util/constants.hpp
 CMakeFiles/Discordpp.dir/src/example/main.cpp.o: src/submodules/nlohmannjson/single_include/nlohmann/json.hpp
 

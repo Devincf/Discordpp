@@ -258,6 +258,33 @@ src/discordpp/Objects/Guild.cpp.s:
 	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Objects/Guild.cpp.s
 .PHONY : src/discordpp/Objects/Guild.cpp.s
 
+src/discordpp/Objects/Message.o: src/discordpp/Objects/Message.cpp.o
+
+.PHONY : src/discordpp/Objects/Message.o
+
+# target to build an object file
+src/discordpp/Objects/Message.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Objects/Message.cpp.o
+.PHONY : src/discordpp/Objects/Message.cpp.o
+
+src/discordpp/Objects/Message.i: src/discordpp/Objects/Message.cpp.i
+
+.PHONY : src/discordpp/Objects/Message.i
+
+# target to preprocess a source file
+src/discordpp/Objects/Message.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Objects/Message.cpp.i
+.PHONY : src/discordpp/Objects/Message.cpp.i
+
+src/discordpp/Objects/Message.s: src/discordpp/Objects/Message.cpp.s
+
+.PHONY : src/discordpp/Objects/Message.s
+
+# target to generate assembly for a file
+src/discordpp/Objects/Message.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Objects/Message.cpp.s
+.PHONY : src/discordpp/Objects/Message.cpp.s
+
 src/discordpp/Objects/Role.o: src/discordpp/Objects/Role.cpp.o
 
 .PHONY : src/discordpp/Objects/Role.o
@@ -390,6 +417,9 @@ help:
 	@echo "... src/discordpp/Objects/Guild.o"
 	@echo "... src/discordpp/Objects/Guild.i"
 	@echo "... src/discordpp/Objects/Guild.s"
+	@echo "... src/discordpp/Objects/Message.o"
+	@echo "... src/discordpp/Objects/Message.i"
+	@echo "... src/discordpp/Objects/Message.s"
 	@echo "... src/discordpp/Objects/Role.o"
 	@echo "... src/discordpp/Objects/Role.i"
 	@echo "... src/discordpp/Objects/Role.s"

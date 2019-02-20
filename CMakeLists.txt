@@ -1,6 +1,16 @@
 cmake_minimum_required(VERSION 2.8.10)
 project (Discordpp)
 
+if ("${CMAKE_CXX_COMPILER_ID}" MATCHES "Clang")
+  MESSAGE("Clang")
+elseif ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU")
+  MESSAGE("GNU")
+elseif ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Intel")
+  MESSAGE("Intel")
+elseif ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "MSVC")
+  MESSAGE("MSVC")
+endif()
+
 # The version number.
 set (Discordpp_VERSION_MAJOR 0)
 set (Discordpp_VERSION_MINOR 1)
@@ -36,6 +46,7 @@ include_directories("${PROJECT_BINARY_DIR}")
 
 add_executable(Discordpp    
                             "src/discordpp/Objects/Snowflake.cpp"
+                            "src/discordpp/Objects/Message.cpp"
                             "src/discordpp/Objects/User.cpp"
                             "src/discordpp/Objects/Emoji.cpp"
                             "src/discordpp/Objects/Role.cpp"

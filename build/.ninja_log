@@ -1,0 +1,11 @@
+# ninja log v5
+6	3132	1550673428339119655	CMakeFiles/Discordpp.dir/src/discordpp/Objects/Role.cpp.o	da935f8e042902d
+0	3167	1550673428372452372	CMakeFiles/Discordpp.dir/src/discordpp/Objects/Snowflake.cpp.o	2500175ae1bcb683
+2	3319	1550673428525782869	CMakeFiles/Discordpp.dir/src/discordpp/Objects/User.cpp.o	b19725d40a664f1e
+6	3566	1550673428772444973	CMakeFiles/Discordpp.dir/src/discordpp/Objects/Channel.cpp.o	5c92ae4661972ce6
+2	3890	1550673429085772511	CMakeFiles/Discordpp.dir/src/discordpp/Objects/Emoji.cpp.o	4a4ed6228f20e02
+2	4838	1550673430032421674	CMakeFiles/Discordpp.dir/src/discordpp/Objects/Message.cpp.o	23a4e27f3c287e04
+3132	6174	1550673431375730180	CMakeFiles/Discordpp.dir/src/discordpp/Objects/Guild.cpp.o	9bc24990dcf7ae40
+3566	9621	1550673434825666470	CMakeFiles/Discordpp.dir/src/example/main.cpp.o	49372056b06d0a2
+3319	11817	1550673437015626068	CMakeFiles/Discordpp.dir/src/discordpp/Bot.cpp.o	2e7ef513090d6101
+3167	16717	1550673441905535967	CMakeFiles/Discordpp.dir/src/discordpp/Gateway.cpp.o	1ea0ed2b538a58de

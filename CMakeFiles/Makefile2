@@ -71,7 +71,7 @@ CMAKE_BINARY_DIR = /home/lumi/Programming/cpp/Discord++
 CMakeFiles/Discordpp.dir/all:
 	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/depend
 	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lumi/Programming/cpp/Discord++/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target Discordpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lumi/Programming/cpp/Discord++/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target Discordpp"
 .PHONY : CMakeFiles/Discordpp.dir/all
 
 # Include target in all.
@@ -81,7 +81,7 @@ all: CMakeFiles/Discordpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Discordpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lumi/Programming/cpp/Discord++/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lumi/Programming/cpp/Discord++/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Discordpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lumi/Programming/cpp/Discord++/CMakeFiles 0
 .PHONY : CMakeFiles/Discordpp.dir/rule

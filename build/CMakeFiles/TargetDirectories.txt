@@ -1,0 +1,3 @@
+/home/lumi/Programming/cpp/Discord++/build/CMakeFiles/rebuild_cache.dir
+/home/lumi/Programming/cpp/Discord++/build/CMakeFiles/Discordpp.dir
+/home/lumi/Programming/cpp/Discord++/build/CMakeFiles/edit_cache.dir
