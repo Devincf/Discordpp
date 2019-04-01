@@ -49,7 +49,7 @@ Message::Message(const nlohmann::json &payload)
     "tts":false,
     "type":0}
     */
-    std::string timestampstr = payload["timestamp"].get<std::string>();
+    const std::string timestampstr = payload["timestamp"].get<std::string>();
     if (std::all_of(timestampstr.begin(), timestampstr.end(), ::isdigit))
     {
         _timestamp = util::fromUnixTimestamp(timestampstr);
@@ -63,6 +63,11 @@ Message::Message(const nlohmann::json &payload)
     _content = payload["content"].get<std::string>();
     _id = payload["id"];
     _channelId = payload["channel_id"];
+}
+
+void Message::printMessage()
+{
+
 }
 
 util::Timestamp Message::getTime() { return _timestamp; }

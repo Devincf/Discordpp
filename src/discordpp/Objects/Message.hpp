@@ -38,6 +38,11 @@ class Message{
     Snowflake _channelId;
     public:
 
+    /**
+     * @brief converts the message object into a string and prints it into the console
+     */
+    void printMessage();
+
     util::Timestamp getTime();
     std::string getContent();
     Snowflake getChannelId();

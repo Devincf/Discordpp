@@ -15,11 +15,12 @@
 
 namespace discordpp
 {
-Bot::Bot(const std::string &token) : m_lastS(0), m_token(token), m_heartbeat_timer(m_ioservice, m_heartbeatInterval), m_currentState(constants::Starting), m_gateway(this)
+Bot::Bot(const std::string &token) : m_lastS(0), m_token(token), m_heartbeat_timer(m_ioservice, m_heartbeatInterval), m_currentState(constants::Starting), m_gateway()
 {
+    Singleton<UserManager>::create();
     m_guilds = std::map<Snowflake, Guild>();
     m_dmChannels = std::map<Snowflake, Channel>();
-    m_globalUsers = std::map<Snowflake, std::shared_ptr<User>>();
+    //m_globalUsers = std::map<Snowflake, std::shared_ptr<User>>();
 
     try
     {
@@ -41,6 +42,7 @@ Bot::Bot(const std::string &token) : m_lastS(0), m_token(token), m_heartbeat_tim
 
 Bot::~Bot()
 {
+    Singleton<UserManager>::destroy();
     //disconnect Gateway and cleanup
 }
 
@@ -71,7 +73,6 @@ void Bot::heartbeat()
         //terminate and reconnect/resume
         DEBUG("[ERROR] NO HEARTBEAT ACK RECIEVED ERROR");
     }
-    //DEBUG("Heartbeat");
     nlohmann::json payload;
     payload["op"] = constants::Heartbeat;
     payload["d"] = m_lastS;
@@ -124,17 +125,13 @@ void Bot::processDispatchEvent(const nlohmann::json &msg)
         {
             nlohmann::json currentMember = payload["members"][i];
             Snowflake snowflake = util::tryGetSnowflake("id", currentMember["user"]);
-            std::map<Snowflake, std::shared_ptr<User>>::iterator it = m_globalUsers.find(snowflake);
-            if (it != m_globalUsers.end())
-            {
-                g.addUser(it->second);
+            //std::map<Snowflake, std::shared_ptr<User>>::iterator it = m_globalUsers.find(snowflake);
+            auto user = Singleton<UserManager>::get()->findUser(snowflake);
+            if(user == nullptr){
+                user = std::make_shared<User>(currentMember);
+                Singleton<UserManager>::get()->addUser({snowflake,user});
             }
-            else
-            {
-                std::shared_ptr<User> u = std::make_shared<User>(currentMember);
-                m_globalUsers.insert(std::make_pair(snowflake, u));
-                g.addUser(u);
-            }
+            g.addUser(user);
         }
         m_guilds.insert(std::make_pair(Snowflake(payload["id"]), g));
         DEBUG(g.name << " loaded with " << g.memberCount << " Members " << g.roles.size() << " roles and " << g.emojis.size() << " emojis");
@@ -155,18 +152,16 @@ void Bot::processDispatchEvent(const nlohmann::json &msg)
             }
             dmMessage = true;
         }
-        std::map<Snowflake, std::shared_ptr<User>>::iterator it = m_globalUsers.find(payload["user_id"]);
-        if (it == m_globalUsers.end())
-        {
+        auto user = Singleton<UserManager>::get()->findUser(payload["user_id"]);
+        if(user == nullptr){
+
             DEBUG("Unknown user started typing!");
             DEBUG(payload.dump(4));
-        }
-        else //to implement : PRESENCE_UPDATE, GUILD_EMOJIS_UPDATE, GUILD_ROLE_UPDATE
-        {
+        }else{
             if (dmMessage)
-                DEBUG(payload["timestamp"] << " [" << channel_id << "] : " << it->second->userName << " started typing in dm");
+                DEBUG(payload["timestamp"] << " [" << channel_id << "] : " << user->userName << " started typing in dm");
             else
-                DEBUG(payload["timestamp"] << "  " << guild_it->second.name << "[" << channel_id << "] : " << it->second->userName << " started typing");
+                DEBUG(payload["timestamp"] << "  " << guild_it->second.name << "[" << channel_id << "] : " << user->userName << " started typing");
         }
     }
     else if (dispatchEvent == "MESSAGE_CREATE")
@@ -186,8 +181,8 @@ void Bot::processDispatchEvent(const nlohmann::json &msg)
             }
             dmMessage = true;
         }
-        std::map<Snowflake, std::shared_ptr<User>>::iterator it = m_globalUsers.find(payload["author"]["id"]);
-        if (it == m_globalUsers.end())
+        auto user = Singleton<UserManager>::get()->findUser(payload["author"]["id"]);
+        if (user == nullptr)
         {
             DEBUG("Unknown user in MESSAGE_CREATE event");
             DEBUG(payload.dump(4));
@@ -199,9 +194,9 @@ void Bot::processDispatchEvent(const nlohmann::json &msg)
 
             if (dmMessage)
                 DEBUG(m.getTime().getISOTime() << "  "
-                                               << "[" << m.getChannelId() << "] " << it->second->userName << " : " << m.getContent());
+                                               << "[" << m.getChannelId() << "] " << user->userName << " : " << m.getContent());
             else
-                DEBUG(m.getTime().getISOTime() << "  " << guild_it->second.name << "[" << m.getChannelId() << "] " << it->second->userName << " : " << m.getContent());
+                DEBUG(m.getTime().getISOTime() << "  " << guild_it->second.name << "[" << m.getChannelId() << "] " << user->userName << " : " << m.getContent());
         }
     }
     else if (dispatchEvent == "CHANNEL_CREATE")

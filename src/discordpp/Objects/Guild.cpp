@@ -13,6 +13,9 @@
 
 #include "Util/jsonutils.hpp"
 
+#include "Util/Singleton.hpp"
+#include "Managers/UserManager.hpp"
+
 namespace discordpp
 {
     Guild::Guild(){}
@@ -22,7 +25,6 @@ namespace discordpp
         /// muss nicht im payload sein
         //  immer im payload kann aber null sein
         ///- muss nicht im payload sein, nur in GUILD_CREATE
-
         id = guild["id"];
         name = guild["name"].get<std::string>();
         DEBUG("Loading Guild " << name << "( " << id << " )");
@@ -32,11 +34,28 @@ namespace discordpp
         defaultMessageNotifications = guild["default_message_notifications"].get<int>();
         embedChannelId = util::tryGetSnowflake("embed_channel_id",guild);///done
         embedEnabled = util::tryGetJson<bool>("embed_enabled",guild);;///done
+
+        //load users
+        for (unsigned int i = 0; i < guild["members"].size(); i++)
+        {
+            nlohmann::json currentMember = guild["members"][i];
+            Snowflake snowflake = util::tryGetSnowflake("id", currentMember["user"]);
+            auto user = Singleton<UserManager>::get()->findUser(snowflake);
+            if(user == nullptr){
+                user = std::unique_ptr<User>(new User(currentMember));
+                Singleton<UserManager>::get()->addUser(snowflake,user);
+            }
+            addUser(user);
+        }
+
+        //load emojis
         for(unsigned int i = 0; i< guild["emojis"].size();i++)
         {
             emojis.push_back(Emoji(guild["emojis"][i]));
         }
         explicitContentFilter = guild["explicit_content_filter"].get<int>();
+
+        //load features
         for(unsigned int i = 0;i<guild["features"].size();i++)
         {
             features.push_back(guild["features"][i].get<std::string>());
@@ -50,6 +69,8 @@ namespace discordpp
         ownerId = guild["owner_id"];
         permissions = util::tryGetJson<int>("permissions",guild);
         region = guild["region"].get<std::string>();
+
+        //load roles
         for(unsigned int i=0;i<guild["roles"].size();i++)
         {
             roles.push_back(Role(guild["roles"][i]));
@@ -60,6 +81,8 @@ namespace discordpp
         verificationLevel = guild["verification_level"].get<int>();
         widgetChannelId = util::tryGetSnowflake("widget_channel_id",guild);
         widgetEnabled = util::tryGetJson<bool>("widget_enabled",guild);
+
+        //load channels
         for(unsigned int i = 0;i<guild["channels"].size();i++){
             channels.push_back(guild["channels"][i]);
         }

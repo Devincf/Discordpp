@@ -52,9 +52,22 @@ add_executable(Discordpp
                             "src/discordpp/Objects/Role.cpp"
                             "src/discordpp/Objects/Channel.cpp"
                             "src/discordpp/Objects/Guild.cpp"
+
+                            "src/discordpp/Events/Event.cpp"
+                            "src/discordpp/Events/HelloEvent.cpp"
+                            "src/discordpp/Events/HeartbeatACKEvent.cpp"
+                            "src/discordpp/Events/DispatchEvent.cpp"
+                            "src/discordpp/Events/ReadyEvent.cpp"
+                            "src/discordpp/Events/GuildCreateEvent.cpp"
+                            "src/discordpp/Events/ChannelCreateEvent.cpp"
+                            "src/discordpp/Events/TypingStartEvent.cpp"
+                            "src/discordpp/Events/MessageCreateEvent.cpp"
                             
-                            "src/discordpp/Gateway.cpp"
-                            "src/discordpp/Bot.cpp"
+                            "src/discordpp/Managers/UserManager.cpp"
+                            "src/discordpp/Managers/GuildManager.cpp"
+                            
+                            "src/discordpp/Core/WebSocket/Gateway.cpp"
+                            "src/discordpp/Core/Discordpp.cpp"
                             "src/example/main.cpp")
 
 target_include_directories(Discordpp PRIVATE "src/submodules/nlohmannjson/single_include/" "src/submodules/websocketpp/websocketpp/" "src/discordpp")

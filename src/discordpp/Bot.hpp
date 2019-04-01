@@ -22,6 +22,9 @@
 #include "Objects/Guild.hpp"
 #include "Util/constants.hpp"
 
+#include "Util/Singleton.hpp"
+#include "Managers/UserManager.hpp"
+
 using boost::asio::io_service;
 using boost::asio::steady_timer;
 
@@ -64,10 +67,12 @@ private:
    * @brief Triggered when the Bot recieves a Heartbeat ACK event
    */
   void onHeartbeatACK();
+
+  void processMessage();//todo: add docs
   /**
    * @brief Used to process different dispatch events
    * @param payload containing all the event data
-   */
+   */    
   void processDispatchEvent(const nlohmann::json &payload);
   /**
    * @brief Function that sends the VERIFY payload to the gateway to verify the connection
@@ -115,7 +120,7 @@ private:
    * @brief Map containing all players on all guilds the bot is connected to.
    *        So the Bot doesnt have to save the same user in different guilds twice
    */
-  std::map<Snowflake, std::shared_ptr<User>> m_globalUsers;
+  //std::map<Snowflake, std::shared_ptr<User>> m_globalUsers;
   /**
    * @brief Map of all the guilds the bot is in
    */
@@ -127,6 +132,9 @@ private:
    * @brief Map of all the private Channels the bot is in
    */
   std::map<Snowflake,Channel> m_dmChannels;
+
+
+  //Singleton<UserManager> m_userManager;
 
   Gateway m_gateway;
 };
