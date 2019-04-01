@@ -4,3 +4,6 @@
 [submodule "src/submodules/websocketpp"]
 	path = src/submodules/websocketpp
 	url = https://github.com/zaphoyd/websocketpp.git
+[submodule "src/submodules/curlpp"]
+	path = src/submodules/curlpp
+	url = https://github.com/jpbarrette/curlpp.git
