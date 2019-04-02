@@ -48,6 +48,7 @@ CMakeFiles/Discordpp.dir/src/discordpp/Core/Discordpp.cpp.o: src/submodules/nloh
 CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/DiscordAPI.cpp.o: src/discordpp/Core/Rest/DiscordAPI.cpp
 CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/DiscordAPI.cpp.o: src/discordpp/Core/Rest/DiscordAPI.hpp
 CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/DiscordAPI.cpp.o: src/discordpp/Core/Rest/RestAPI.hpp
+CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/DiscordAPI.cpp.o: src/discordpp/Util/constants.hpp
 CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/DiscordAPI.cpp.o: src/submodules/curlpp/include/curlpp/Easy.hpp
 CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/DiscordAPI.cpp.o: src/submodules/curlpp/include/curlpp/Easy.inl
 CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/DiscordAPI.cpp.o: src/submodules/curlpp/include/curlpp/Exception.hpp
@@ -68,6 +69,7 @@ CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/DiscordAPI.cpp.o: src/submodule
 CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/DiscordAPI.cpp.o: src/submodules/curlpp/include/curlpp/internal/OptionSetter.inl
 CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/DiscordAPI.cpp.o: src/submodules/curlpp/include/curlpp/internal/SList.hpp
 CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/DiscordAPI.cpp.o: src/submodules/curlpp/include/utilspp/clone_ptr.hpp
+CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/DiscordAPI.cpp.o: src/submodules/nlohmannjson/single_include/nlohmann/json.hpp
 
 CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/RestAPI.cpp.o: src/discordpp/Core/Rest/RestAPI.cpp
 CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/RestAPI.cpp.o: src/discordpp/Core/Rest/RestAPI.hpp
@@ -94,7 +96,30 @@ CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/RestAPI.cpp.o: src/submodules/c
 
 CMakeFiles/Discordpp.dir/src/discordpp/Core/WebSocket/Gateway.cpp.o: src/discordpp/Core/WebSocket/Gateway.cpp
 CMakeFiles/Discordpp.dir/src/discordpp/Core/WebSocket/Gateway.cpp.o: src/discordpp/Core/WebSocket/Gateway.hpp
+CMakeFiles/Discordpp.dir/src/discordpp/Core/WebSocket/Gateway.cpp.o: src/discordpp/Core/Rest/DiscordAPI.hpp
+CMakeFiles/Discordpp.dir/src/discordpp/Core/WebSocket/Gateway.cpp.o: src/discordpp/Core/Rest/RestAPI.hpp
+CMakeFiles/Discordpp.dir/src/discordpp/Core/WebSocket/Gateway.cpp.o: src/discordpp/Util/Singleton.hpp
 CMakeFiles/Discordpp.dir/src/discordpp/Core/WebSocket/Gateway.cpp.o: src/discordpp/Util/constants.hpp
+CMakeFiles/Discordpp.dir/src/discordpp/Core/WebSocket/Gateway.cpp.o: src/submodules/curlpp/include/curlpp/Easy.hpp
+CMakeFiles/Discordpp.dir/src/discordpp/Core/WebSocket/Gateway.cpp.o: src/submodules/curlpp/include/curlpp/Easy.inl
+CMakeFiles/Discordpp.dir/src/discordpp/Core/WebSocket/Gateway.cpp.o: src/submodules/curlpp/include/curlpp/Exception.hpp
+CMakeFiles/Discordpp.dir/src/discordpp/Core/WebSocket/Gateway.cpp.o: src/submodules/curlpp/include/curlpp/Form.hpp
+CMakeFiles/Discordpp.dir/src/discordpp/Core/WebSocket/Gateway.cpp.o: src/submodules/curlpp/include/curlpp/Option.hpp
+CMakeFiles/Discordpp.dir/src/discordpp/Core/WebSocket/Gateway.cpp.o: src/submodules/curlpp/include/curlpp/Option.inl
+CMakeFiles/Discordpp.dir/src/discordpp/Core/WebSocket/Gateway.cpp.o: src/submodules/curlpp/include/curlpp/OptionBase.hpp
+CMakeFiles/Discordpp.dir/src/discordpp/Core/WebSocket/Gateway.cpp.o: src/submodules/curlpp/include/curlpp/Options.hpp
+CMakeFiles/Discordpp.dir/src/discordpp/Core/WebSocket/Gateway.cpp.o: src/submodules/curlpp/include/curlpp/Types.hpp
+CMakeFiles/Discordpp.dir/src/discordpp/Core/WebSocket/Gateway.cpp.o: src/submodules/curlpp/include/curlpp/cURLpp.hpp
+CMakeFiles/Discordpp.dir/src/discordpp/Core/WebSocket/Gateway.cpp.o: src/submodules/curlpp/include/curlpp/internal/CurlHandle.hpp
+CMakeFiles/Discordpp.dir/src/discordpp/Core/WebSocket/Gateway.cpp.o: src/submodules/curlpp/include/curlpp/internal/CurlHandle.inl
+CMakeFiles/Discordpp.dir/src/discordpp/Core/WebSocket/Gateway.cpp.o: src/submodules/curlpp/include/curlpp/internal/OptionContainer.hpp
+CMakeFiles/Discordpp.dir/src/discordpp/Core/WebSocket/Gateway.cpp.o: src/submodules/curlpp/include/curlpp/internal/OptionContainer.inl
+CMakeFiles/Discordpp.dir/src/discordpp/Core/WebSocket/Gateway.cpp.o: src/submodules/curlpp/include/curlpp/internal/OptionContainerType.hpp
+CMakeFiles/Discordpp.dir/src/discordpp/Core/WebSocket/Gateway.cpp.o: src/submodules/curlpp/include/curlpp/internal/OptionList.hpp
+CMakeFiles/Discordpp.dir/src/discordpp/Core/WebSocket/Gateway.cpp.o: src/submodules/curlpp/include/curlpp/internal/OptionSetter.hpp
+CMakeFiles/Discordpp.dir/src/discordpp/Core/WebSocket/Gateway.cpp.o: src/submodules/curlpp/include/curlpp/internal/OptionSetter.inl
+CMakeFiles/Discordpp.dir/src/discordpp/Core/WebSocket/Gateway.cpp.o: src/submodules/curlpp/include/curlpp/internal/SList.hpp
+CMakeFiles/Discordpp.dir/src/discordpp/Core/WebSocket/Gateway.cpp.o: src/submodules/curlpp/include/utilspp/clone_ptr.hpp
 CMakeFiles/Discordpp.dir/src/discordpp/Core/WebSocket/Gateway.cpp.o: src/submodules/nlohmannjson/single_include/nlohmann/json.hpp
 
 CMakeFiles/Discordpp.dir/src/discordpp/Events/ChannelCreateEvent.cpp.o: src/discordpp/Events/ChannelCreateEvent.cpp

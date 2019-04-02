@@ -13,6 +13,9 @@
 #include <sstream>
 #include "Util/constants.hpp"
 
+#include "Util/Singleton.hpp"
+#include "Core/Rest/DiscordAPI.hpp"
+
 namespace discordpp
 {
 Gateway::Gateway()
@@ -46,7 +49,7 @@ Gateway::~Gateway()
 void Gateway::connect()
 {
     websocketpp::lib::error_code ec;
-    client::connection_ptr con = m_endpoint.get_connection(constants::websocketuri, ec);
+    client::connection_ptr con = m_endpoint.get_connection(Singleton<DiscordAPI>::get()->getGatewayURI(), ec);
 
     DEBUG("Gateway Connection getted");
     if (ec)

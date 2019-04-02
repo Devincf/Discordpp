@@ -58,7 +58,7 @@ enum OpCodes
 /**
  * @brief websocket uri             Todo: Pull it from the RESTAPI
  */
-static const std::string websocketuri = "wss://gateway.discord.gg/?v=6&encoding=json";
+//static const std::string websocketuri = "wss://gateway.discord.gg/?v=6&encoding=json";
 }
 
 #endif

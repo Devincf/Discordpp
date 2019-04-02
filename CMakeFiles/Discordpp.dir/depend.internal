@@ -49,6 +49,7 @@ CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/DiscordAPI.cpp.o
  /home/lumi/code/cpp/Discord++/src/discordpp/Core/Rest/DiscordAPI.cpp
  /home/lumi/code/cpp/Discord++/src/discordpp/Core/Rest/DiscordAPI.hpp
  /home/lumi/code/cpp/Discord++/src/discordpp/Core/Rest/RestAPI.hpp
+ src/discordpp/Util/constants.hpp
  src/submodules/curlpp/include/curlpp/Easy.hpp
  src/submodules/curlpp/include/curlpp/Easy.inl
  src/submodules/curlpp/include/curlpp/Exception.hpp
@@ -69,6 +70,7 @@ CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/DiscordAPI.cpp.o
  src/submodules/curlpp/include/curlpp/internal/OptionSetter.inl
  src/submodules/curlpp/include/curlpp/internal/SList.hpp
  src/submodules/curlpp/include/utilspp/clone_ptr.hpp
+ src/submodules/nlohmannjson/single_include/nlohmann/json.hpp
 CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/RestAPI.cpp.o
  /home/lumi/code/cpp/Discord++/src/discordpp/Core/Rest/RestAPI.cpp
  /home/lumi/code/cpp/Discord++/src/discordpp/Core/Rest/RestAPI.hpp
@@ -95,7 +97,30 @@ CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/RestAPI.cpp.o
 CMakeFiles/Discordpp.dir/src/discordpp/Core/WebSocket/Gateway.cpp.o
  /home/lumi/code/cpp/Discord++/src/discordpp/Core/WebSocket/Gateway.cpp
  /home/lumi/code/cpp/Discord++/src/discordpp/Core/WebSocket/Gateway.hpp
+ src/discordpp/Core/Rest/DiscordAPI.hpp
+ src/discordpp/Core/Rest/RestAPI.hpp
+ src/discordpp/Util/Singleton.hpp
  src/discordpp/Util/constants.hpp
+ src/submodules/curlpp/include/curlpp/Easy.hpp
+ src/submodules/curlpp/include/curlpp/Easy.inl
+ src/submodules/curlpp/include/curlpp/Exception.hpp
+ src/submodules/curlpp/include/curlpp/Form.hpp
+ src/submodules/curlpp/include/curlpp/Option.hpp
+ src/submodules/curlpp/include/curlpp/Option.inl
+ src/submodules/curlpp/include/curlpp/OptionBase.hpp
+ src/submodules/curlpp/include/curlpp/Options.hpp
+ src/submodules/curlpp/include/curlpp/Types.hpp
+ src/submodules/curlpp/include/curlpp/cURLpp.hpp
+ src/submodules/curlpp/include/curlpp/internal/CurlHandle.hpp
+ src/submodules/curlpp/include/curlpp/internal/CurlHandle.inl
+ src/submodules/curlpp/include/curlpp/internal/OptionContainer.hpp
+ src/submodules/curlpp/include/curlpp/internal/OptionContainer.inl
+ src/submodules/curlpp/include/curlpp/internal/OptionContainerType.hpp
+ src/submodules/curlpp/include/curlpp/internal/OptionList.hpp
+ src/submodules/curlpp/include/curlpp/internal/OptionSetter.hpp
+ src/submodules/curlpp/include/curlpp/internal/OptionSetter.inl
+ src/submodules/curlpp/include/curlpp/internal/SList.hpp
+ src/submodules/curlpp/include/utilspp/clone_ptr.hpp
  src/submodules/nlohmannjson/single_include/nlohmann/json.hpp
 CMakeFiles/Discordpp.dir/src/discordpp/Events/ChannelCreateEvent.cpp.o
  /home/lumi/code/cpp/Discord++/src/discordpp/Events/ChannelCreateEvent.cpp

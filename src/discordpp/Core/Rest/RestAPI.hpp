@@ -19,6 +19,8 @@
 #include <curlpp/Options.hpp>
 #include <curlpp/Exception.hpp>
 
+#include <future>
+
 namespace discordpp{
 class RestAPI
 {
@@ -26,7 +28,8 @@ public:
 RestAPI();
 virtual ~RestAPI();
 protected:
-void sendPOST(const std::string&, const std::list<std::string>& headers, const curlpp::Forms& formdata);
+std::future<std::string> sendPOST(const std::string&, const std::list<std::string>& , const curlpp::Forms&);
+std::future<std::string> sendGET(const std::string&, const std::list<std::string>& , const curlpp::Forms&);
 
 };
 }
