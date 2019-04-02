@@ -150,6 +150,60 @@ src/discordpp/Core/Discordpp.cpp.s:
 	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Discordpp.cpp.s
 .PHONY : src/discordpp/Core/Discordpp.cpp.s
 
+src/discordpp/Core/Rest/DiscordAPI.o: src/discordpp/Core/Rest/DiscordAPI.cpp.o
+
+.PHONY : src/discordpp/Core/Rest/DiscordAPI.o
+
+# target to build an object file
+src/discordpp/Core/Rest/DiscordAPI.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/DiscordAPI.cpp.o
+.PHONY : src/discordpp/Core/Rest/DiscordAPI.cpp.o
+
+src/discordpp/Core/Rest/DiscordAPI.i: src/discordpp/Core/Rest/DiscordAPI.cpp.i
+
+.PHONY : src/discordpp/Core/Rest/DiscordAPI.i
+
+# target to preprocess a source file
+src/discordpp/Core/Rest/DiscordAPI.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/DiscordAPI.cpp.i
+.PHONY : src/discordpp/Core/Rest/DiscordAPI.cpp.i
+
+src/discordpp/Core/Rest/DiscordAPI.s: src/discordpp/Core/Rest/DiscordAPI.cpp.s
+
+.PHONY : src/discordpp/Core/Rest/DiscordAPI.s
+
+# target to generate assembly for a file
+src/discordpp/Core/Rest/DiscordAPI.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/DiscordAPI.cpp.s
+.PHONY : src/discordpp/Core/Rest/DiscordAPI.cpp.s
+
+src/discordpp/Core/Rest/RestAPI.o: src/discordpp/Core/Rest/RestAPI.cpp.o
+
+.PHONY : src/discordpp/Core/Rest/RestAPI.o
+
+# target to build an object file
+src/discordpp/Core/Rest/RestAPI.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/RestAPI.cpp.o
+.PHONY : src/discordpp/Core/Rest/RestAPI.cpp.o
+
+src/discordpp/Core/Rest/RestAPI.i: src/discordpp/Core/Rest/RestAPI.cpp.i
+
+.PHONY : src/discordpp/Core/Rest/RestAPI.i
+
+# target to preprocess a source file
+src/discordpp/Core/Rest/RestAPI.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/RestAPI.cpp.i
+.PHONY : src/discordpp/Core/Rest/RestAPI.cpp.i
+
+src/discordpp/Core/Rest/RestAPI.s: src/discordpp/Core/Rest/RestAPI.cpp.s
+
+.PHONY : src/discordpp/Core/Rest/RestAPI.s
+
+# target to generate assembly for a file
+src/discordpp/Core/Rest/RestAPI.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/RestAPI.cpp.s
+.PHONY : src/discordpp/Core/Rest/RestAPI.cpp.s
+
 src/discordpp/Core/WebSocket/Gateway.o: src/discordpp/Core/WebSocket/Gateway.cpp.o
 
 .PHONY : src/discordpp/Core/WebSocket/Gateway.o
@@ -702,6 +756,12 @@ help:
 	@echo "... src/discordpp/Core/Discordpp.o"
 	@echo "... src/discordpp/Core/Discordpp.i"
 	@echo "... src/discordpp/Core/Discordpp.s"
+	@echo "... src/discordpp/Core/Rest/DiscordAPI.o"
+	@echo "... src/discordpp/Core/Rest/DiscordAPI.i"
+	@echo "... src/discordpp/Core/Rest/DiscordAPI.s"
+	@echo "... src/discordpp/Core/Rest/RestAPI.o"
+	@echo "... src/discordpp/Core/Rest/RestAPI.i"
+	@echo "... src/discordpp/Core/Rest/RestAPI.s"
 	@echo "... src/discordpp/Core/WebSocket/Gateway.o"
 	@echo "... src/discordpp/Core/WebSocket/Gateway.i"
 	@echo "... src/discordpp/Core/WebSocket/Gateway.s"

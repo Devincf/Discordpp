@@ -14,13 +14,20 @@
 
 #include <string>
 
+#include <curlpp/cURLpp.hpp>
+#include <curlpp/Easy.hpp>
+#include <curlpp/Options.hpp>
+#include <curlpp/Exception.hpp>
+
 namespace discordpp{
-class RestApi
+class RestAPI
 {
 public:
-void sendMessage(const std::string&);
-private:
-void sendPOST();
+RestAPI();
+virtual ~RestAPI();
+protected:
+void sendPOST(const std::string&, const std::list<std::string>& headers, const curlpp::Forms& formdata);
+
 };
 }
 

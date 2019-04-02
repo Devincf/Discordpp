@@ -14,8 +14,12 @@
 #include "Util/constants.hpp"
 #include "Events/EventIncludes.hpp"
 #include "Util/Singleton.hpp"
+
+#include "Core/Rest/DiscordAPI.hpp"
+
 #include "Managers/UserManager.hpp"
 #include "Managers/GuildManager.hpp"
+
 
 namespace discordpp
 {
@@ -24,6 +28,8 @@ Discordpp::Discordpp(const std::string &token) : m_botToken(token), m_running(fa
     registerEvents();
     Singleton<UserManager>::create();
     Singleton<GuildManager>::create();
+
+    Singleton<DiscordAPI>::create();
 
     try
     {
@@ -52,6 +58,7 @@ Discordpp::~Discordpp()
 {
     Singleton<UserManager>::destroy();
     Singleton<GuildManager>::destroy();
+    Singleton<DiscordAPI>::destroy();
 }
 
 void Discordpp::registerEvents()

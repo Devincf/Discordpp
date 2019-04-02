@@ -5,6 +5,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/lumi/code/cpp/Discord++/src/discordpp/Core/Discordpp.cpp" "/home/lumi/code/cpp/Discord++/CMakeFiles/Discordpp.dir/src/discordpp/Core/Discordpp.cpp.o"
+  "/home/lumi/code/cpp/Discord++/src/discordpp/Core/Rest/DiscordAPI.cpp" "/home/lumi/code/cpp/Discord++/CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/DiscordAPI.cpp.o"
+  "/home/lumi/code/cpp/Discord++/src/discordpp/Core/Rest/RestAPI.cpp" "/home/lumi/code/cpp/Discord++/CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/RestAPI.cpp.o"
   "/home/lumi/code/cpp/Discord++/src/discordpp/Core/WebSocket/Gateway.cpp" "/home/lumi/code/cpp/Discord++/CMakeFiles/Discordpp.dir/src/discordpp/Core/WebSocket/Gateway.cpp.o"
   "/home/lumi/code/cpp/Discord++/src/discordpp/Events/ChannelCreateEvent.cpp" "/home/lumi/code/cpp/Discord++/CMakeFiles/Discordpp.dir/src/discordpp/Events/ChannelCreateEvent.cpp.o"
   "/home/lumi/code/cpp/Discord++/src/discordpp/Events/DispatchEvent.cpp" "/home/lumi/code/cpp/Discord++/CMakeFiles/Discordpp.dir/src/discordpp/Events/DispatchEvent.cpp.o"
@@ -34,6 +36,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "."
   "src/submodules/nlohmannjson/single_include"
   "src/submodules/websocketpp/websocketpp"
+  "src/submodules/curlpp/include"
   "src/discordpp"
   )
 

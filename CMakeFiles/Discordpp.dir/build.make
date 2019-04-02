@@ -304,9 +304,35 @@ CMakeFiles/Discordpp.dir/src/discordpp/Core/WebSocket/Gateway.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Discordpp.dir/src/discordpp/Core/WebSocket/Gateway.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lumi/code/cpp/Discord++/src/discordpp/Core/WebSocket/Gateway.cpp -o CMakeFiles/Discordpp.dir/src/discordpp/Core/WebSocket/Gateway.cpp.s
 
+CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/RestAPI.cpp.o: CMakeFiles/Discordpp.dir/flags.make
+CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/RestAPI.cpp.o: src/discordpp/Core/Rest/RestAPI.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lumi/code/cpp/Discord++/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/RestAPI.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/RestAPI.cpp.o -c /home/lumi/code/cpp/Discord++/src/discordpp/Core/Rest/RestAPI.cpp
+
+CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/RestAPI.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/RestAPI.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lumi/code/cpp/Discord++/src/discordpp/Core/Rest/RestAPI.cpp > CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/RestAPI.cpp.i
+
+CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/RestAPI.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/RestAPI.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lumi/code/cpp/Discord++/src/discordpp/Core/Rest/RestAPI.cpp -o CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/RestAPI.cpp.s
+
+CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/DiscordAPI.cpp.o: CMakeFiles/Discordpp.dir/flags.make
+CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/DiscordAPI.cpp.o: src/discordpp/Core/Rest/DiscordAPI.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lumi/code/cpp/Discord++/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/DiscordAPI.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/DiscordAPI.cpp.o -c /home/lumi/code/cpp/Discord++/src/discordpp/Core/Rest/DiscordAPI.cpp
+
+CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/DiscordAPI.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/DiscordAPI.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lumi/code/cpp/Discord++/src/discordpp/Core/Rest/DiscordAPI.cpp > CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/DiscordAPI.cpp.i
+
+CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/DiscordAPI.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/DiscordAPI.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lumi/code/cpp/Discord++/src/discordpp/Core/Rest/DiscordAPI.cpp -o CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/DiscordAPI.cpp.s
+
 CMakeFiles/Discordpp.dir/src/discordpp/Core/Discordpp.cpp.o: CMakeFiles/Discordpp.dir/flags.make
 CMakeFiles/Discordpp.dir/src/discordpp/Core/Discordpp.cpp.o: src/discordpp/Core/Discordpp.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lumi/code/cpp/Discord++/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Discordpp.dir/src/discordpp/Core/Discordpp.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lumi/code/cpp/Discord++/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/Discordpp.dir/src/discordpp/Core/Discordpp.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Discordpp.dir/src/discordpp/Core/Discordpp.cpp.o -c /home/lumi/code/cpp/Discord++/src/discordpp/Core/Discordpp.cpp
 
 CMakeFiles/Discordpp.dir/src/discordpp/Core/Discordpp.cpp.i: cmake_force
@@ -319,7 +345,7 @@ CMakeFiles/Discordpp.dir/src/discordpp/Core/Discordpp.cpp.s: cmake_force
 
 CMakeFiles/Discordpp.dir/src/example/main.cpp.o: CMakeFiles/Discordpp.dir/flags.make
 CMakeFiles/Discordpp.dir/src/example/main.cpp.o: src/example/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lumi/code/cpp/Discord++/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Discordpp.dir/src/example/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lumi/code/cpp/Discord++/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/Discordpp.dir/src/example/main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Discordpp.dir/src/example/main.cpp.o -c /home/lumi/code/cpp/Discord++/src/example/main.cpp
 
 CMakeFiles/Discordpp.dir/src/example/main.cpp.i: cmake_force
@@ -351,6 +377,8 @@ Discordpp_OBJECTS = \
 "CMakeFiles/Discordpp.dir/src/discordpp/Managers/UserManager.cpp.o" \
 "CMakeFiles/Discordpp.dir/src/discordpp/Managers/GuildManager.cpp.o" \
 "CMakeFiles/Discordpp.dir/src/discordpp/Core/WebSocket/Gateway.cpp.o" \
+"CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/RestAPI.cpp.o" \
+"CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/DiscordAPI.cpp.o" \
 "CMakeFiles/Discordpp.dir/src/discordpp/Core/Discordpp.cpp.o" \
 "CMakeFiles/Discordpp.dir/src/example/main.cpp.o"
 
@@ -376,6 +404,8 @@ Discordpp: CMakeFiles/Discordpp.dir/src/discordpp/Events/MessageCreateEvent.cpp.
 Discordpp: CMakeFiles/Discordpp.dir/src/discordpp/Managers/UserManager.cpp.o
 Discordpp: CMakeFiles/Discordpp.dir/src/discordpp/Managers/GuildManager.cpp.o
 Discordpp: CMakeFiles/Discordpp.dir/src/discordpp/Core/WebSocket/Gateway.cpp.o
+Discordpp: CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/RestAPI.cpp.o
+Discordpp: CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/DiscordAPI.cpp.o
 Discordpp: CMakeFiles/Discordpp.dir/src/discordpp/Core/Discordpp.cpp.o
 Discordpp: CMakeFiles/Discordpp.dir/src/example/main.cpp.o
 Discordpp: CMakeFiles/Discordpp.dir/build.make
@@ -384,7 +414,7 @@ Discordpp: /usr/lib/libboost_chrono.so
 Discordpp: /usr/lib/libboost_date_time.so
 Discordpp: /usr/lib/libboost_atomic.so
 Discordpp: CMakeFiles/Discordpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lumi/code/cpp/Discord++/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX executable Discordpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lumi/code/cpp/Discord++/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX executable Discordpp"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Discordpp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

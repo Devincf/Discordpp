@@ -18,6 +18,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Discordpp.dir/src/discordpp/Managers/UserManager.cpp.o"
   "CMakeFiles/Discordpp.dir/src/discordpp/Managers/GuildManager.cpp.o"
   "CMakeFiles/Discordpp.dir/src/discordpp/Core/WebSocket/Gateway.cpp.o"
+  "CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/RestAPI.cpp.o"
+  "CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/DiscordAPI.cpp.o"
   "CMakeFiles/Discordpp.dir/src/discordpp/Core/Discordpp.cpp.o"
   "CMakeFiles/Discordpp.dir/src/example/main.cpp.o"
   "Discordpp.pdb"

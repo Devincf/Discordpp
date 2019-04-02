@@ -11,11 +11,19 @@
 
 #include "MessageCreateEvent.hpp"
 
+#include "Util/Singleton.hpp"
+#include "Core/Rest/DiscordAPI.hpp"
+
 namespace discordpp
 {
     bool MessageCreateEvent::proc(const nlohmann::json& packet)
     {
         DEBUG("MessageCreateProc");
+        if(packet["d"]["content"] == "!ping" &&packet["d"]["author"]["id"] != "444648378199048214")
+        {
+            DEBUG("Message received");
+            Singleton<DiscordAPI>::get()->sendMessage(packet["d"]["channel_id"].get<std::string>(),"pong!");
+        }
         return true;
     }
 }

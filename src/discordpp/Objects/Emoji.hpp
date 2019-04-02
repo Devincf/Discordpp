@@ -13,6 +13,7 @@
 #define EMOJI_HPP
 
 #include "Snowflake.hpp"
+#include "User.hpp"
 
 namespace discordpp
 {
@@ -51,7 +52,7 @@ class Emoji
     /**
     * @brief User that created this Emoji
     */
-    std::string username; //Todo: Add real Userptr
+    std::weak_ptr<User> creator; //Todo: Add real Userptr
     /**
     * @brief Whether this emoji must be wrapped in colons
     */

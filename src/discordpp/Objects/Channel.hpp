@@ -25,6 +25,9 @@ enum ChannelType
     GUILD_CATEGORY = 4
 };
 
+class Guild;
+class User;
+
 class Channel
 {
   public:
@@ -53,7 +56,7 @@ class Channel
     /**
      * @brief guild id of the parent guild
      */
-    Snowflake guildId; //Todo: change to guild ptr?
+    std::weak_ptr<Guild> guild;
     /**
      * @brief sorting position of the channel
      */
@@ -93,7 +96,7 @@ class Channel
     /**
      * @brief id of the dm owner
      */
-    Snowflake ownerId; //Todo: change to user ptr?
+    std::weak_ptr<User> owner;
     /**
      * @brief appid of the dm owner if botcreated
      */
@@ -103,7 +106,7 @@ class Channel
      */
     Snowflake parentId; //Todo: change to channel ptr?
 
-    //Todo: add permiussion_overwrites, recipients
+    //Todo: add permission_overwrites, recipients
 
     //Todo: add timestamp
   private:

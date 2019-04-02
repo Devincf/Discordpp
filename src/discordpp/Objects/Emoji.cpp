@@ -12,6 +12,9 @@
 #include "Util/constants.hpp"
 #include "Util/jsonutils.hpp"
 
+#include "Util/Singleton.hpp"
+#include "Managers/UserManager.hpp"
+
 namespace discordpp
 {
 Emoji::Emoji() {}
@@ -28,7 +31,7 @@ Emoji::Emoji(const nlohmann::json &emoji)
         }
     }
     if(emoji.find("user") != emoji.end()){
-        username = emoji["user"]["username"].get<std::string>();
+        creator = Singleton<UserManager>::get()->findUser(util::tryGetSnowflake("username", emoji["user"]));
     }
     requireColons = util::tryGetJson<bool>("require_colons",emoji);
     managed = util::tryGetJson<bool>("managed",emoji);

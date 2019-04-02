@@ -67,9 +67,11 @@ add_executable(Discordpp
                             "src/discordpp/Managers/GuildManager.cpp"
                             
                             "src/discordpp/Core/WebSocket/Gateway.cpp"
+                            "src/discordpp/Core/Rest/RestAPI.cpp"
+                            "src/discordpp/Core/Rest/DiscordAPI.cpp"
                             "src/discordpp/Core/Discordpp.cpp"
                             "src/example/main.cpp")
 
-target_include_directories(Discordpp PRIVATE "src/submodules/nlohmannjson/single_include/" "src/submodules/websocketpp/websocketpp/" "src/discordpp")
+target_include_directories(Discordpp PRIVATE "src/submodules/nlohmannjson/single_include/" "src/submodules/websocketpp/websocketpp/" "src/submodules/curlpp/include/" "src/discordpp")
 
-target_link_libraries(Discordpp Threads::Threads crypto ssl Boost::thread)
+target_link_libraries(Discordpp Threads::Threads crypto ssl curl curlpp Boost::thread)
