@@ -123,6 +123,60 @@ Discordpp/fast:
 	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/build
 .PHONY : Discordpp/fast
 
+src/discordpp/Commands/Command.o: src/discordpp/Commands/Command.cpp.o
+
+.PHONY : src/discordpp/Commands/Command.o
+
+# target to build an object file
+src/discordpp/Commands/Command.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Commands/Command.cpp.o
+.PHONY : src/discordpp/Commands/Command.cpp.o
+
+src/discordpp/Commands/Command.i: src/discordpp/Commands/Command.cpp.i
+
+.PHONY : src/discordpp/Commands/Command.i
+
+# target to preprocess a source file
+src/discordpp/Commands/Command.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Commands/Command.cpp.i
+.PHONY : src/discordpp/Commands/Command.cpp.i
+
+src/discordpp/Commands/Command.s: src/discordpp/Commands/Command.cpp.s
+
+.PHONY : src/discordpp/Commands/Command.s
+
+# target to generate assembly for a file
+src/discordpp/Commands/Command.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Commands/Command.cpp.s
+.PHONY : src/discordpp/Commands/Command.cpp.s
+
+src/discordpp/Commands/PingCommand.o: src/discordpp/Commands/PingCommand.cpp.o
+
+.PHONY : src/discordpp/Commands/PingCommand.o
+
+# target to build an object file
+src/discordpp/Commands/PingCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Commands/PingCommand.cpp.o
+.PHONY : src/discordpp/Commands/PingCommand.cpp.o
+
+src/discordpp/Commands/PingCommand.i: src/discordpp/Commands/PingCommand.cpp.i
+
+.PHONY : src/discordpp/Commands/PingCommand.i
+
+# target to preprocess a source file
+src/discordpp/Commands/PingCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Commands/PingCommand.cpp.i
+.PHONY : src/discordpp/Commands/PingCommand.cpp.i
+
+src/discordpp/Commands/PingCommand.s: src/discordpp/Commands/PingCommand.cpp.s
+
+.PHONY : src/discordpp/Commands/PingCommand.s
+
+# target to generate assembly for a file
+src/discordpp/Commands/PingCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Commands/PingCommand.cpp.s
+.PHONY : src/discordpp/Commands/PingCommand.cpp.s
+
 src/discordpp/Core/Discordpp.o: src/discordpp/Core/Discordpp.cpp.o
 
 .PHONY : src/discordpp/Core/Discordpp.o
@@ -474,6 +528,33 @@ src/discordpp/Events/TypingStartEvent.cpp.s:
 	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Events/TypingStartEvent.cpp.s
 .PHONY : src/discordpp/Events/TypingStartEvent.cpp.s
 
+src/discordpp/Managers/CommandManager.o: src/discordpp/Managers/CommandManager.cpp.o
+
+.PHONY : src/discordpp/Managers/CommandManager.o
+
+# target to build an object file
+src/discordpp/Managers/CommandManager.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Managers/CommandManager.cpp.o
+.PHONY : src/discordpp/Managers/CommandManager.cpp.o
+
+src/discordpp/Managers/CommandManager.i: src/discordpp/Managers/CommandManager.cpp.i
+
+.PHONY : src/discordpp/Managers/CommandManager.i
+
+# target to preprocess a source file
+src/discordpp/Managers/CommandManager.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Managers/CommandManager.cpp.i
+.PHONY : src/discordpp/Managers/CommandManager.cpp.i
+
+src/discordpp/Managers/CommandManager.s: src/discordpp/Managers/CommandManager.cpp.s
+
+.PHONY : src/discordpp/Managers/CommandManager.s
+
+# target to generate assembly for a file
+src/discordpp/Managers/CommandManager.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Managers/CommandManager.cpp.s
+.PHONY : src/discordpp/Managers/CommandManager.cpp.s
+
 src/discordpp/Managers/GuildManager.o: src/discordpp/Managers/GuildManager.cpp.o
 
 .PHONY : src/discordpp/Managers/GuildManager.o
@@ -753,6 +834,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Discordpp"
 	@echo "... edit_cache"
+	@echo "... src/discordpp/Commands/Command.o"
+	@echo "... src/discordpp/Commands/Command.i"
+	@echo "... src/discordpp/Commands/Command.s"
+	@echo "... src/discordpp/Commands/PingCommand.o"
+	@echo "... src/discordpp/Commands/PingCommand.i"
+	@echo "... src/discordpp/Commands/PingCommand.s"
 	@echo "... src/discordpp/Core/Discordpp.o"
 	@echo "... src/discordpp/Core/Discordpp.i"
 	@echo "... src/discordpp/Core/Discordpp.s"
@@ -792,6 +879,9 @@ help:
 	@echo "... src/discordpp/Events/TypingStartEvent.o"
 	@echo "... src/discordpp/Events/TypingStartEvent.i"
 	@echo "... src/discordpp/Events/TypingStartEvent.s"
+	@echo "... src/discordpp/Managers/CommandManager.o"
+	@echo "... src/discordpp/Managers/CommandManager.i"
+	@echo "... src/discordpp/Managers/CommandManager.s"
 	@echo "... src/discordpp/Managers/GuildManager.o"
 	@echo "... src/discordpp/Managers/GuildManager.i"
 	@echo "... src/discordpp/Managers/GuildManager.s"

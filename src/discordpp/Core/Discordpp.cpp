@@ -13,24 +13,31 @@
 
 #include "Util/constants.hpp"
 #include "Events/EventIncludes.hpp"
+#include "Commands/CommandIncludes.hpp"
 #include "Util/Singleton.hpp"
 
 #include "Core/Rest/DiscordAPI.hpp"
 
 #include "Managers/UserManager.hpp"
 #include "Managers/GuildManager.hpp"
+#include "Managers/CommandManager.hpp"
 
 
 namespace discordpp
 {
 Discordpp::Discordpp(const std::string &token) : m_botToken(token), m_running(false), m_currentState(constants::Starting), m_heartbeat_timer(m_ioservice, m_heartbeatInterval), m_gateway()
 {
-    registerEvents();
     Singleton<UserManager>::create();
     Singleton<GuildManager>::create();
+    Singleton<CommandManager>::create();
 
     Singleton<DiscordAPI>::create();
     Singleton<DiscordAPI>::get()->setToken(token);
+
+    
+
+    registerEvents();
+    registerGlobalCommands();
 
     try
     {
@@ -57,9 +64,10 @@ Discordpp::Discordpp() : m_heartbeat_timer(m_ioservice, m_heartbeatInterval)
 }
 Discordpp::~Discordpp()
 {
-    Singleton<UserManager>::destroy();
-    Singleton<GuildManager>::destroy();
     Singleton<DiscordAPI>::destroy();
+    Singleton<CommandManager>::destroy();
+    Singleton<GuildManager>::destroy();
+    Singleton<UserManager>::destroy();
 }
 
 void Discordpp::registerEvents()
@@ -68,6 +76,10 @@ void Discordpp::registerEvents()
     m_gatewayEvents[0] = std::unique_ptr<Event>(new DispatchEvent(this));
     m_gatewayEvents[10] = std::unique_ptr<Event>(new HelloEvent(this));
     m_gatewayEvents[11] = std::unique_ptr<Event>(new HeartbeatACKEvent(this));
+}
+void Discordpp::registerGlobalCommands()
+{
+    Singleton<CommandManager>::get()->addCommand("!ping", new PingCommand(this));
 }
 
 void Discordpp::heartbeat()

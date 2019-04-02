@@ -12,18 +12,26 @@
 #include "MessageCreateEvent.hpp"
 
 #include "Util/Singleton.hpp"
-#include "Core/Rest/DiscordAPI.hpp"
+#include "Util/jsonutils.hpp"
+#include "Managers/CommandManager.hpp"
 
 namespace discordpp
 {
     bool MessageCreateEvent::proc(const nlohmann::json& packet)
     {
         DEBUG("MessageCreateProc");
-        if(packet["d"]["content"] == "!ping" &&packet["d"]["author"]["id"] != "444648378199048214")
-        {
-            DEBUG("Message received");
-            Singleton<DiscordAPI>::get()->sendMessage(packet["d"]["channel_id"].get<std::string>(),"pong!");
+        if(packet["d"]["author"]["id"] == "444648378199048214")
+        { 
+            //bot message
+            return true;
         }
+
+        auto cmdit = Singleton<CommandManager>::get()->findCommand(util::tryGetSnowflake("guild_id", packet["d"]),packet["d"]["content"].get<std::string>());
+        if(cmdit != nullptr)
+        {
+            return cmdit->proc(packet);
+        }
+
         return true;
     }
 }

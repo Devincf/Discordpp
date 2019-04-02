@@ -81,6 +81,7 @@ class Discordpp
     std::map<int, std::unique_ptr<Event>> m_gatewayEvents;
 
     void registerEvents();
+    void registerGlobalCommands();
     void heartbeat();
 };
 } // namespace discordpp

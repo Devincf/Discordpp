@@ -62,9 +62,13 @@ add_executable(Discordpp
                             "src/discordpp/Events/ChannelCreateEvent.cpp"
                             "src/discordpp/Events/TypingStartEvent.cpp"
                             "src/discordpp/Events/MessageCreateEvent.cpp"
+
+                            "src/discordpp/Commands/Command.cpp"
+                            "src/discordpp/Commands/PingCommand.cpp"
                             
                             "src/discordpp/Managers/UserManager.cpp"
                             "src/discordpp/Managers/GuildManager.cpp"
+                            "src/discordpp/Managers/CommandManager.cpp"
                             
                             "src/discordpp/Core/WebSocket/Gateway.cpp"
                             "src/discordpp/Core/Rest/RestAPI.cpp"
