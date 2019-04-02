@@ -54,11 +54,6 @@ enum OpCodes
     Hello = 10,
     HeartbeatACK = 11
 };
-
-/**
- * @brief websocket uri             Todo: Pull it from the RESTAPI
- */
-//static const std::string websocketuri = "wss://gateway.discord.gg/?v=6&encoding=json";
 }
 
 #endif

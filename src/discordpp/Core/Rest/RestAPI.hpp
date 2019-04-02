@@ -28,8 +28,9 @@ public:
 RestAPI();
 virtual ~RestAPI();
 protected:
-std::future<std::string> sendPOST(const std::string&, const std::list<std::string>& , const curlpp::Forms&);
-std::future<std::string> sendGET(const std::string&, const std::list<std::string>& , const curlpp::Forms&);
+const std::string sendPOST(const std::string&, const std::list<std::string>& , const curlpp::Forms&);
+const std::string sendGET(const std::string&);
+const std::string sendGET(const std::string&, const std::list<std::string>&);
 
 };
 }

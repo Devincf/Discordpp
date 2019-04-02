@@ -35,9 +35,8 @@ void DiscordAPI::sendMessage(const std::string &channel, const std::string &mess
 
 const std::string DiscordAPI::getGatewayURI()
 {
-    auto get_future = this->sendGET("https://discordapp.com/api/v6/gateway", {}, {});
-    get_future.wait();
-    nlohmann::json json = nlohmann::json::parse(get_future.get());
+    auto get_result = this->sendGET("https://discordapp.com/api/v6/gateway");
+    nlohmann::json json = nlohmann::json::parse(get_result);
     return json["url"].get<std::string>();
 }
 

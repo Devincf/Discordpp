@@ -31,6 +31,7 @@ Discordpp::Discordpp(const std::string &token) : m_botToken(token), m_running(fa
 
     Singleton<DiscordAPI>::create();
     Singleton<DiscordAPI>::get()->setToken(token);
+
     try
     {
         m_gatewayThread = boost::thread(boost::bind(&Gateway::connect, &m_gateway));
