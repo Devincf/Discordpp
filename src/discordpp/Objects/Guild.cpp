@@ -84,7 +84,12 @@ namespace discordpp
 
         //load channels
         for(unsigned int i = 0;i<guild["channels"].size();i++){
-            channels.push_back(guild["channels"][i]);
+            //DEBUG(guild["channels"][i].dump(2));
+            auto ret = channels.insert({util::tryGetSnowflake("id",guild["channels"][i]), Channel(guild["channels"][i])});
+            if(!ret.second)
+            {
+                DEBUG("Channel already existed!");
+            }
         }
     }
 
@@ -93,5 +98,18 @@ namespace discordpp
     {
         DEBUG("Added User with snowflake " << user->userId);
         members.push_back(user);
+    }
+
+    Channel Guild::getChannel(const Snowflake& id)
+    {
+        auto channelit = channels.find(id);
+        if(channelit != channels.end())
+        {
+            return channelit->second;
+        }else
+        {
+            return Channel();
+        }
+        
     }
 }

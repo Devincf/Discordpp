@@ -177,33 +177,6 @@ src/discordpp/Commands/PingCommand.cpp.s:
 	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Commands/PingCommand.cpp.s
 .PHONY : src/discordpp/Commands/PingCommand.cpp.s
 
-src/discordpp/Core/Discordpp.o: src/discordpp/Core/Discordpp.cpp.o
-
-.PHONY : src/discordpp/Core/Discordpp.o
-
-# target to build an object file
-src/discordpp/Core/Discordpp.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Discordpp.cpp.o
-.PHONY : src/discordpp/Core/Discordpp.cpp.o
-
-src/discordpp/Core/Discordpp.i: src/discordpp/Core/Discordpp.cpp.i
-
-.PHONY : src/discordpp/Core/Discordpp.i
-
-# target to preprocess a source file
-src/discordpp/Core/Discordpp.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Discordpp.cpp.i
-.PHONY : src/discordpp/Core/Discordpp.cpp.i
-
-src/discordpp/Core/Discordpp.s: src/discordpp/Core/Discordpp.cpp.s
-
-.PHONY : src/discordpp/Core/Discordpp.s
-
-# target to generate assembly for a file
-src/discordpp/Core/Discordpp.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Discordpp.cpp.s
-.PHONY : src/discordpp/Core/Discordpp.cpp.s
-
 src/discordpp/Core/Rest/DiscordAPI.o: src/discordpp/Core/Rest/DiscordAPI.cpp.o
 
 .PHONY : src/discordpp/Core/Rest/DiscordAPI.o
@@ -230,6 +203,33 @@ src/discordpp/Core/Rest/DiscordAPI.s: src/discordpp/Core/Rest/DiscordAPI.cpp.s
 src/discordpp/Core/Rest/DiscordAPI.cpp.s:
 	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/DiscordAPI.cpp.s
 .PHONY : src/discordpp/Core/Rest/DiscordAPI.cpp.s
+
+src/discordpp/Core/Rest/PicartoAPI.o: src/discordpp/Core/Rest/PicartoAPI.cpp.o
+
+.PHONY : src/discordpp/Core/Rest/PicartoAPI.o
+
+# target to build an object file
+src/discordpp/Core/Rest/PicartoAPI.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/PicartoAPI.cpp.o
+.PHONY : src/discordpp/Core/Rest/PicartoAPI.cpp.o
+
+src/discordpp/Core/Rest/PicartoAPI.i: src/discordpp/Core/Rest/PicartoAPI.cpp.i
+
+.PHONY : src/discordpp/Core/Rest/PicartoAPI.i
+
+# target to preprocess a source file
+src/discordpp/Core/Rest/PicartoAPI.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/PicartoAPI.cpp.i
+.PHONY : src/discordpp/Core/Rest/PicartoAPI.cpp.i
+
+src/discordpp/Core/Rest/PicartoAPI.s: src/discordpp/Core/Rest/PicartoAPI.cpp.s
+
+.PHONY : src/discordpp/Core/Rest/PicartoAPI.s
+
+# target to generate assembly for a file
+src/discordpp/Core/Rest/PicartoAPI.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/PicartoAPI.cpp.s
+.PHONY : src/discordpp/Core/Rest/PicartoAPI.cpp.s
 
 src/discordpp/Core/Rest/RestAPI.o: src/discordpp/Core/Rest/RestAPI.cpp.o
 
@@ -284,6 +284,33 @@ src/discordpp/Core/WebSocket/Gateway.s: src/discordpp/Core/WebSocket/Gateway.cpp
 src/discordpp/Core/WebSocket/Gateway.cpp.s:
 	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/WebSocket/Gateway.cpp.s
 .PHONY : src/discordpp/Core/WebSocket/Gateway.cpp.s
+
+src/discordpp/Discordpp.o: src/discordpp/Discordpp.cpp.o
+
+.PHONY : src/discordpp/Discordpp.o
+
+# target to build an object file
+src/discordpp/Discordpp.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Discordpp.cpp.o
+.PHONY : src/discordpp/Discordpp.cpp.o
+
+src/discordpp/Discordpp.i: src/discordpp/Discordpp.cpp.i
+
+.PHONY : src/discordpp/Discordpp.i
+
+# target to preprocess a source file
+src/discordpp/Discordpp.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Discordpp.cpp.i
+.PHONY : src/discordpp/Discordpp.cpp.i
+
+src/discordpp/Discordpp.s: src/discordpp/Discordpp.cpp.s
+
+.PHONY : src/discordpp/Discordpp.s
+
+# target to generate assembly for a file
+src/discordpp/Discordpp.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Discordpp.cpp.s
+.PHONY : src/discordpp/Discordpp.cpp.s
 
 src/discordpp/Events/ChannelCreateEvent.o: src/discordpp/Events/ChannelCreateEvent.cpp.o
 
@@ -473,6 +500,33 @@ src/discordpp/Events/MessageCreateEvent.s: src/discordpp/Events/MessageCreateEve
 src/discordpp/Events/MessageCreateEvent.cpp.s:
 	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Events/MessageCreateEvent.cpp.s
 .PHONY : src/discordpp/Events/MessageCreateEvent.cpp.s
+
+src/discordpp/Events/PresenceUpdateEvent.o: src/discordpp/Events/PresenceUpdateEvent.cpp.o
+
+.PHONY : src/discordpp/Events/PresenceUpdateEvent.o
+
+# target to build an object file
+src/discordpp/Events/PresenceUpdateEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Events/PresenceUpdateEvent.cpp.o
+.PHONY : src/discordpp/Events/PresenceUpdateEvent.cpp.o
+
+src/discordpp/Events/PresenceUpdateEvent.i: src/discordpp/Events/PresenceUpdateEvent.cpp.i
+
+.PHONY : src/discordpp/Events/PresenceUpdateEvent.i
+
+# target to preprocess a source file
+src/discordpp/Events/PresenceUpdateEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Events/PresenceUpdateEvent.cpp.i
+.PHONY : src/discordpp/Events/PresenceUpdateEvent.cpp.i
+
+src/discordpp/Events/PresenceUpdateEvent.s: src/discordpp/Events/PresenceUpdateEvent.cpp.s
+
+.PHONY : src/discordpp/Events/PresenceUpdateEvent.s
+
+# target to generate assembly for a file
+src/discordpp/Events/PresenceUpdateEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Events/PresenceUpdateEvent.cpp.s
+.PHONY : src/discordpp/Events/PresenceUpdateEvent.cpp.s
 
 src/discordpp/Events/ReadyEvent.o: src/discordpp/Events/ReadyEvent.cpp.o
 
@@ -840,18 +894,21 @@ help:
 	@echo "... src/discordpp/Commands/PingCommand.o"
 	@echo "... src/discordpp/Commands/PingCommand.i"
 	@echo "... src/discordpp/Commands/PingCommand.s"
-	@echo "... src/discordpp/Core/Discordpp.o"
-	@echo "... src/discordpp/Core/Discordpp.i"
-	@echo "... src/discordpp/Core/Discordpp.s"
 	@echo "... src/discordpp/Core/Rest/DiscordAPI.o"
 	@echo "... src/discordpp/Core/Rest/DiscordAPI.i"
 	@echo "... src/discordpp/Core/Rest/DiscordAPI.s"
+	@echo "... src/discordpp/Core/Rest/PicartoAPI.o"
+	@echo "... src/discordpp/Core/Rest/PicartoAPI.i"
+	@echo "... src/discordpp/Core/Rest/PicartoAPI.s"
 	@echo "... src/discordpp/Core/Rest/RestAPI.o"
 	@echo "... src/discordpp/Core/Rest/RestAPI.i"
 	@echo "... src/discordpp/Core/Rest/RestAPI.s"
 	@echo "... src/discordpp/Core/WebSocket/Gateway.o"
 	@echo "... src/discordpp/Core/WebSocket/Gateway.i"
 	@echo "... src/discordpp/Core/WebSocket/Gateway.s"
+	@echo "... src/discordpp/Discordpp.o"
+	@echo "... src/discordpp/Discordpp.i"
+	@echo "... src/discordpp/Discordpp.s"
 	@echo "... src/discordpp/Events/ChannelCreateEvent.o"
 	@echo "... src/discordpp/Events/ChannelCreateEvent.i"
 	@echo "... src/discordpp/Events/ChannelCreateEvent.s"
@@ -873,6 +930,9 @@ help:
 	@echo "... src/discordpp/Events/MessageCreateEvent.o"
 	@echo "... src/discordpp/Events/MessageCreateEvent.i"
 	@echo "... src/discordpp/Events/MessageCreateEvent.s"
+	@echo "... src/discordpp/Events/PresenceUpdateEvent.o"
+	@echo "... src/discordpp/Events/PresenceUpdateEvent.i"
+	@echo "... src/discordpp/Events/PresenceUpdateEvent.s"
 	@echo "... src/discordpp/Events/ReadyEvent.o"
 	@echo "... src/discordpp/Events/ReadyEvent.i"
 	@echo "... src/discordpp/Events/ReadyEvent.s"

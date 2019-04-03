@@ -14,7 +14,7 @@ namespace discordpp
 {
     bool ChannelCreateEvent::proc(const nlohmann::json& packet)
     {
-        DEBUG("ChannelCreateProc");
+        //DEBUG("ChannelCreateProc");
         return true;
     }
 }

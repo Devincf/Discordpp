@@ -15,7 +15,7 @@ namespace discordpp
 {
 bool ReadyEvent::proc(const nlohmann::json &packet)
 {
-    DEBUG("Ready Event proc!");
+    //DEBUG("Ready Event proc!");
     return true;
 }
 } // namespace discordpp

@@ -52,6 +52,8 @@ public:
    */
   void addUser(std::shared_ptr<User> user);
 
+  Channel getChannel(const Snowflake& id);
+
   /**
    * @brief The Guild id
    */
@@ -169,7 +171,7 @@ public:
   /**
      * @brief vector of all the channels within the guild
      */
-  std::vector<Channel> channels;
+  std::map<Snowflake,Channel> channels;
 
   //Todo: add voice states,channels,presences
   //Todo: Create own timestamp format

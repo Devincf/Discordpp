@@ -10,7 +10,7 @@
  */
 #include "HelloEvent.hpp"
 
-#include "Core/Discordpp.hpp"
+#include "Discordpp.hpp"
 
 namespace discordpp{
 

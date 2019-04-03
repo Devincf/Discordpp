@@ -17,7 +17,7 @@
 namespace discordpp{
     bool GuildCreateEvent::proc(const nlohmann::json& packet)
     {
-        DEBUG("Guild Create Event proc");
+        //DEBUG("Guild Create Event proc");
         Snowflake id = packet["d"]["id"];
         if(Singleton<GuildManager>::get()->findGuild(id) != nullptr)
         {

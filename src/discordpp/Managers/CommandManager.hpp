@@ -30,8 +30,7 @@ namespace discordpp{
         std::shared_ptr<Command> findCommand(const Snowflake&, const std::string&);
 
         private:
-        typedef std::map<std::string,std::shared_ptr<Command>> CommandMap;
-        std::map<Snowflake,CommandMap> m_commandMap;// global commands saved in snowflake 0, if problems occur try using a secondary map for global commands
+        std::map<Snowflake,std::map<std::string,std::shared_ptr<Command>>> m_commandMap;// global commands saved in snowflake 0, if problems occur try using a secondary map for global commands
     };
 }
 #endif

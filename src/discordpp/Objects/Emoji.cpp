@@ -21,7 +21,7 @@ Emoji::Emoji() {}
 Emoji::~Emoji() {}
 Emoji::Emoji(const nlohmann::json &emoji)
 {
-    DEBUG(emoji.dump(2));
+    //DEBUG(emoji.dump(2));
     id = emoji["id"];
     name = emoji["name"].get<std::string>();
     roles = std::vector<Snowflake>();

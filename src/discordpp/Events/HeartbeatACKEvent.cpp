@@ -10,7 +10,7 @@
  */
 
 #include "HeartbeatACKEvent.hpp"
-#include "Core/Discordpp.hpp"
+#include "Discordpp.hpp"
 
 namespace discordpp
 {

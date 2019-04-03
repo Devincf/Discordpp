@@ -15,7 +15,7 @@ namespace discordpp
 {
     bool TypingStartEvent::proc(const nlohmann::json& packet)
     {
-        DEBUG("TypingStartProc");
+        //DEBUG("TypingStartProc");
         return true;
     }
 }

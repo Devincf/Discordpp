@@ -11,7 +11,7 @@
 
 #include "Event.hpp"
 
-#include "Core/Discordpp.hpp"
+#include "Discordpp.hpp"
 
 namespace discordpp{
     Event::~Event(){}

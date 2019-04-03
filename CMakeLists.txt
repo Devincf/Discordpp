@@ -62,6 +62,7 @@ add_executable(Discordpp
                             "src/discordpp/Events/ChannelCreateEvent.cpp"
                             "src/discordpp/Events/TypingStartEvent.cpp"
                             "src/discordpp/Events/MessageCreateEvent.cpp"
+                            "src/discordpp/Events/PresenceUpdateEvent.cpp"
 
                             "src/discordpp/Commands/Command.cpp"
                             "src/discordpp/Commands/PingCommand.cpp"
@@ -71,9 +72,12 @@ add_executable(Discordpp
                             "src/discordpp/Managers/CommandManager.cpp"
                             
                             "src/discordpp/Core/WebSocket/Gateway.cpp"
+
                             "src/discordpp/Core/Rest/RestAPI.cpp"
                             "src/discordpp/Core/Rest/DiscordAPI.cpp"
-                            "src/discordpp/Core/Discordpp.cpp"
+                            "src/discordpp/Core/Rest/PicartoAPI.cpp"
+
+                            "src/discordpp/Discordpp.cpp"
                             "src/example/main.cpp")
 
 target_include_directories(Discordpp PRIVATE "src/submodules/nlohmannjson/single_include/" "src/submodules/websocketpp/websocketpp/" "src/submodules/curlpp/include/" "src/discordpp")

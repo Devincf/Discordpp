@@ -10,12 +10,13 @@
  */
 
 #include "DispatchEvent.hpp"
-#include "Core/Discordpp.hpp"
+#include "Discordpp.hpp"
 #include "ReadyEvent.hpp"
 #include "GuildCreateEvent.hpp"
 #include "ChannelCreateEvent.hpp"
 #include "TypingStartEvent.hpp"
 #include "MessageCreateEvent.hpp"
+#include "PresenceUpdateEvent.hpp"
 
 
 namespace discordpp
@@ -27,6 +28,7 @@ DispatchEvent::DispatchEvent(Discordpp *dscpp) : Event(dscpp)
     m_dispatchEvents["CHANNEL_CREATE"] = std::unique_ptr<Event>(new ChannelCreateEvent(dscpp));
     m_dispatchEvents["TYPING_START"] = std::unique_ptr<Event>(new TypingStartEvent(dscpp));
     m_dispatchEvents["MESSAGE_CREATE"] = std::unique_ptr<Event>(new MessageCreateEvent(dscpp));
+    m_dispatchEvents["PRESENCE_UPDATE"] = std::unique_ptr<Event>(new PresenceUpdateEvent(dscpp));
 }
 
 bool DispatchEvent::proc(const nlohmann::json &packet)
