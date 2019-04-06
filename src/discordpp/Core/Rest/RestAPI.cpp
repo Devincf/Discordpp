@@ -35,21 +35,23 @@ const std::string RestAPI::sendPOST(const std::string &url, const std::list<std:
     {
         // That's all that is needed to do cleanup of used resources (RAII style).
         curlpp::Cleanup myCleanup;
+        std::stringstream string;
 
         // Our request to be sent.
         curlpp::Easy myRequest;
-
         myRequest.setOpt<Url>(url);
         myRequest.setOpt<HttpHeader>(headers);
         myRequest.setOpt<HttpPost>(formdata);
-        myRequest.setOpt<WriteFunction>(std::bind([promise](curlpp::Easy *h, char *ptr, size_t size, size_t nmemb) {
-            promise->set_value({ptr});
+        myRequest.setOpt<WriteStream>(&string);
+        /*myRequest.setOpt<WriteFunction>(std::bind([promise](curlpp::Easy *h, char *ptr, size_t size, size_t nmemb) {
+            //promise->set_value({ptr});
             return size * nmemb;
         },
-                                                  &myRequest, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3));
+                                                  &myRequest, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3));*/
         // Send request and get a result.
         // By default the result goes to standard output.
         myRequest.perform();
+        return string.str();
     }
 
     catch (curlpp::RuntimeError &e)
@@ -61,9 +63,10 @@ const std::string RestAPI::sendPOST(const std::string &url, const std::list<std:
     {
         std::cout << e.what() << std::endl;
     }
-    auto future = promise->get_future();
+    /*auto future = promise->get_future();
     future.wait();
-    return future.get();
+    return future.get();*/
+    return "";
 }
 
 const std::string RestAPI::sendGET(const std::string &url)
@@ -79,7 +82,6 @@ const std::string RestAPI::sendGET(const std::string &url, const std::list<std::
         std::stringstream string;
 
         curlpp::Easy myRequest;
-
         myRequest.setOpt<Url>(url);
         myRequest.setOpt<HttpHeader>(headers);
         myRequest.setOpt<WriteStream>(&string);
@@ -93,7 +95,7 @@ const std::string RestAPI::sendGET(const std::string &url, const std::list<std::
             return size * nmemb;
         },
                                                   &myRequest, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3));*/
-
+        
         myRequest.perform();
         return string.str();
     }

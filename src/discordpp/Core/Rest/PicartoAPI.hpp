@@ -21,6 +21,9 @@ class PicartoAPI : public RestAPI
 {
     using RestAPI::RestAPI;
     public:
+    
+    bool isUserOnline(const std::string& channelname);
+    bool isUserOnline(uint64_t channelname);
     nlohmann::json getChannelInfo(const std::string& channelname);
     nlohmann::json getChannelInfo(uint64_t channelid);
     void setToken(const std::string& token);

@@ -19,6 +19,8 @@
 #include "Core/Rest/DiscordAPI.hpp"
 #include "Core/Rest/PicartoAPI.hpp"
 
+#include "Core/Database/SQLiteDatabase.hpp"
+
 #include "Managers/UserManager.hpp"
 #include "Managers/GuildManager.hpp"
 #include "Managers/CommandManager.hpp"
@@ -38,6 +40,7 @@ Discordpp::Discordpp(const std::string &token) : m_botToken(token), m_running(fa
     Singleton<PicartoAPI>::create();
     Singleton<PicartoAPI>::get()->setToken("CGoghj4k1RXZlWaaJrQdKIMe");
 
+    Singleton<SQLiteDatabase>::create();
     //DEBUG(Singleton<PicartoAPI>::get()->getChannelInfo("Kiraki").dump(2));
     
 
@@ -69,6 +72,7 @@ Discordpp::Discordpp() : m_heartbeat_timer(m_ioservice, m_heartbeatInterval)
 }
 Discordpp::~Discordpp()
 {
+    Singleton<SQLiteDatabase>::destroy();
     Singleton<PicartoAPI>::destroy();
     Singleton<DiscordAPI>::destroy();
     Singleton<CommandManager>::destroy();
@@ -86,6 +90,12 @@ void Discordpp::registerEvents()
 void Discordpp::registerGlobalCommands()
 {
     Singleton<CommandManager>::get()->addCommand("!ping", new PingCommand(this));
+}
+
+
+void Discordpp::addCommand(const std::string& cmdStr, Command* cmd)
+{
+    Singleton<CommandManager>::get()->addCommand(cmdStr,cmd);
 }
 
 void Discordpp::heartbeat()
@@ -109,7 +119,7 @@ bool Discordpp::startHeartbeat(const int interval)
     m_heartbeatInterval = std::chrono::milliseconds{interval};
     m_heartbeat_timer.async_wait(boost::bind(&Discordpp::heartbeat, this));
     DEBUG("Starting Heartbeat Timer with an interval of " << interval << " seconds");
-    boost::thread t(boost::bind(&boost::asio::io_service::run, &m_ioservice));
+    m_heartbeatThread = boost::thread(boost::bind(&boost::asio::io_service::run, &m_ioservice));
     DEBUG("Executing heartbeat timer in new thread");
     //t.detach();
     //DEBUG("Detaching Heartbeat Thread");
@@ -150,6 +160,7 @@ constants::BotState Discordpp::getCurrentBotState() { return m_currentState; }
 const std::string Discordpp::getToken() { return m_botToken; }
 Gateway *Discordpp::getGateway() { return &m_gateway; }
 bool Discordpp::getLastHeartbeatACK() { return m_lastHeartbeatACK; }
+bool Discordpp::isInitialized(){return m_initialized;}
 void Discordpp::setCurrentBotState(constants::BotState newState) { m_currentState = newState; }
 void Discordpp::setLastHeartbeatACK(bool val) { m_lastHeartbeatACK = val; }
 

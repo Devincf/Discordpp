@@ -26,15 +26,13 @@
 
 namespace discordpp
 {
+class Command;
 class Discordpp
 {
   public:
     Discordpp(const std::string &token);
     Discordpp();
-    ~Discordpp();
-
-    void run();
-    bool startHeartbeat(const int);
+    virtual ~Discordpp();
 
     constants::BotState getCurrentBotState();
     const std::string getToken();
@@ -42,10 +40,18 @@ class Discordpp
     bool getLastHeartbeatACK();
     void setCurrentBotState(constants::BotState);
     void setLastHeartbeatACK(bool);
+    bool startHeartbeat(const int);
+    bool isInitialized();
+    virtual void setup() = 0;
+  protected:
+    void run();
+
+    void addCommand(const std::string& cmdStr, Command* cmd);
   private:
     std::string m_botToken;
     bool m_running;
     bool m_canStart;
+    bool m_initialized;
 
     /**
     * @brief Whether the Bot recieved a heartbeat ACK event for the last heartbeat sent

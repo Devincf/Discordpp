@@ -23,6 +23,7 @@
 #define DEBUG(x)
 #endif
 
+
 namespace discordpp::constants
 {
 /**
@@ -54,6 +55,11 @@ enum OpCodes
     Hello = 10,
     HeartbeatACK = 11
 };
+
+/**
+ * @brief Default database name to be used
+ */
+static const std::string default_db_name = "test.db";
 }
 
 #endif

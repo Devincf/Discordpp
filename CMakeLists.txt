@@ -1,8 +1,9 @@
-cmake_minimum_required(VERSION 2.8.10)
+cmake_minimum_required(VERSION 3.10)
 project (Discordpp)
 
 if ("${CMAKE_CXX_COMPILER_ID}" MATCHES "Clang")
   MESSAGE("Clang")
+  MESSAGE("${CMAKE_CXX_COMPILER_VERSION}")
 elseif ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU")
   MESSAGE("GNU")
 elseif ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Intel")
@@ -77,9 +78,15 @@ add_executable(Discordpp
                             "src/discordpp/Core/Rest/DiscordAPI.cpp"
                             "src/discordpp/Core/Rest/PicartoAPI.cpp"
 
+                            "src/discordpp/Core/Database/SQLiteDatabase.cpp"
+
                             "src/discordpp/Discordpp.cpp"
+
+
+
+                            "src/example/PicartoCommand.cpp"
                             "src/example/main.cpp")
 
 target_include_directories(Discordpp PRIVATE "src/submodules/nlohmannjson/single_include/" "src/submodules/websocketpp/websocketpp/" "src/submodules/curlpp/include/" "src/discordpp")
 
-target_link_libraries(Discordpp Threads::Threads crypto ssl curl curlpp Boost::thread)
+target_link_libraries(Discordpp Threads::Threads crypto ssl curl curlpp sqlite3  Boost::thread)

@@ -177,6 +177,33 @@ src/discordpp/Commands/PingCommand.cpp.s:
 	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Commands/PingCommand.cpp.s
 .PHONY : src/discordpp/Commands/PingCommand.cpp.s
 
+src/discordpp/Core/Database/SQLiteDatabase.o: src/discordpp/Core/Database/SQLiteDatabase.cpp.o
+
+.PHONY : src/discordpp/Core/Database/SQLiteDatabase.o
+
+# target to build an object file
+src/discordpp/Core/Database/SQLiteDatabase.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Database/SQLiteDatabase.cpp.o
+.PHONY : src/discordpp/Core/Database/SQLiteDatabase.cpp.o
+
+src/discordpp/Core/Database/SQLiteDatabase.i: src/discordpp/Core/Database/SQLiteDatabase.cpp.i
+
+.PHONY : src/discordpp/Core/Database/SQLiteDatabase.i
+
+# target to preprocess a source file
+src/discordpp/Core/Database/SQLiteDatabase.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Database/SQLiteDatabase.cpp.i
+.PHONY : src/discordpp/Core/Database/SQLiteDatabase.cpp.i
+
+src/discordpp/Core/Database/SQLiteDatabase.s: src/discordpp/Core/Database/SQLiteDatabase.cpp.s
+
+.PHONY : src/discordpp/Core/Database/SQLiteDatabase.s
+
+# target to generate assembly for a file
+src/discordpp/Core/Database/SQLiteDatabase.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Database/SQLiteDatabase.cpp.s
+.PHONY : src/discordpp/Core/Database/SQLiteDatabase.cpp.s
+
 src/discordpp/Core/Rest/DiscordAPI.o: src/discordpp/Core/Rest/DiscordAPI.cpp.o
 
 .PHONY : src/discordpp/Core/Rest/DiscordAPI.o
@@ -852,6 +879,33 @@ src/discordpp/Objects/User.cpp.s:
 	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Objects/User.cpp.s
 .PHONY : src/discordpp/Objects/User.cpp.s
 
+src/example/PicartoCommand.o: src/example/PicartoCommand.cpp.o
+
+.PHONY : src/example/PicartoCommand.o
+
+# target to build an object file
+src/example/PicartoCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/example/PicartoCommand.cpp.o
+.PHONY : src/example/PicartoCommand.cpp.o
+
+src/example/PicartoCommand.i: src/example/PicartoCommand.cpp.i
+
+.PHONY : src/example/PicartoCommand.i
+
+# target to preprocess a source file
+src/example/PicartoCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/example/PicartoCommand.cpp.i
+.PHONY : src/example/PicartoCommand.cpp.i
+
+src/example/PicartoCommand.s: src/example/PicartoCommand.cpp.s
+
+.PHONY : src/example/PicartoCommand.s
+
+# target to generate assembly for a file
+src/example/PicartoCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/example/PicartoCommand.cpp.s
+.PHONY : src/example/PicartoCommand.cpp.s
+
 src/example/main.o: src/example/main.cpp.o
 
 .PHONY : src/example/main.o
@@ -894,6 +948,9 @@ help:
 	@echo "... src/discordpp/Commands/PingCommand.o"
 	@echo "... src/discordpp/Commands/PingCommand.i"
 	@echo "... src/discordpp/Commands/PingCommand.s"
+	@echo "... src/discordpp/Core/Database/SQLiteDatabase.o"
+	@echo "... src/discordpp/Core/Database/SQLiteDatabase.i"
+	@echo "... src/discordpp/Core/Database/SQLiteDatabase.s"
 	@echo "... src/discordpp/Core/Rest/DiscordAPI.o"
 	@echo "... src/discordpp/Core/Rest/DiscordAPI.i"
 	@echo "... src/discordpp/Core/Rest/DiscordAPI.s"
@@ -969,6 +1026,9 @@ help:
 	@echo "... src/discordpp/Objects/User.o"
 	@echo "... src/discordpp/Objects/User.i"
 	@echo "... src/discordpp/Objects/User.s"
+	@echo "... src/example/PicartoCommand.o"
+	@echo "... src/example/PicartoCommand.i"
+	@echo "... src/example/PicartoCommand.s"
 	@echo "... src/example/main.o"
 	@echo "... src/example/main.i"
 	@echo "... src/example/main.s"

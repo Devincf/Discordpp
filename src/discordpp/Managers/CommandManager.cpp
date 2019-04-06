@@ -11,6 +11,7 @@
 #include "CommandManager.hpp"
 
 #include "Util/constants.hpp"
+#include "boost/algorithm/string.hpp"
 
 namespace discordpp
 {
@@ -43,7 +44,10 @@ bool CommandManager::addCommand(Snowflake guildId, const std::string &cmdStr, Co
 
 std::shared_ptr<Command> CommandManager::findCommand(const Snowflake & guild_id, const std::string & cmdStr)
 {
-    auto cmdit = m_commandMap[0].find(cmdStr);
+    std::vector<std::string> split_cmdStr;
+    boost::split(split_cmdStr, cmdStr, boost::is_any_of(" "));
+
+    auto cmdit = m_commandMap[0].find(split_cmdStr[0]);
     if(cmdit != m_commandMap[0].end())
     {
         //return global command
@@ -56,7 +60,7 @@ std::shared_ptr<Command> CommandManager::findCommand(const Snowflake & guild_id,
             //command not in global list and guild doesnt exist
             return nullptr;
         }else{
-            cmdit = guildit->second.find(cmdStr);
+            cmdit = guildit->second.find(split_cmdStr[0]);
             if(cmdit != guildit->second.end())
             {
                 //return guild local command
