@@ -19,7 +19,7 @@
 #include "Core/Rest/DiscordAPI.hpp"
 #include "Core/Rest/PicartoAPI.hpp"
 
-#include "Core/Database/SQLiteDatabase.hpp"
+#include "Core/Databases/SQLiteDatabase.hpp"
 
 #include "Managers/UserManager.hpp"
 #include "Managers/GuildManager.hpp"
@@ -112,6 +112,7 @@ void Discordpp::heartbeat()
     m_heartbeat_timer.expires_at(m_heartbeat_timer.expires_at() + m_heartbeatInterval);
     m_heartbeat_timer.async_wait(boost::bind(&Discordpp::heartbeat, this));
     m_lastHeartbeatACK = false;
+    DEBUG("HEARTBEAT");
 }
 
 bool Discordpp::startHeartbeat(const int interval)

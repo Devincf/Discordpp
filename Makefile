@@ -177,32 +177,32 @@ src/discordpp/Commands/PingCommand.cpp.s:
 	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Commands/PingCommand.cpp.s
 .PHONY : src/discordpp/Commands/PingCommand.cpp.s
 
-src/discordpp/Core/Database/SQLiteDatabase.o: src/discordpp/Core/Database/SQLiteDatabase.cpp.o
+src/discordpp/Core/Databases/SQLiteDatabase.o: src/discordpp/Core/Databases/SQLiteDatabase.cpp.o
 
-.PHONY : src/discordpp/Core/Database/SQLiteDatabase.o
+.PHONY : src/discordpp/Core/Databases/SQLiteDatabase.o
 
 # target to build an object file
-src/discordpp/Core/Database/SQLiteDatabase.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Database/SQLiteDatabase.cpp.o
-.PHONY : src/discordpp/Core/Database/SQLiteDatabase.cpp.o
+src/discordpp/Core/Databases/SQLiteDatabase.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Databases/SQLiteDatabase.cpp.o
+.PHONY : src/discordpp/Core/Databases/SQLiteDatabase.cpp.o
 
-src/discordpp/Core/Database/SQLiteDatabase.i: src/discordpp/Core/Database/SQLiteDatabase.cpp.i
+src/discordpp/Core/Databases/SQLiteDatabase.i: src/discordpp/Core/Databases/SQLiteDatabase.cpp.i
 
-.PHONY : src/discordpp/Core/Database/SQLiteDatabase.i
+.PHONY : src/discordpp/Core/Databases/SQLiteDatabase.i
 
 # target to preprocess a source file
-src/discordpp/Core/Database/SQLiteDatabase.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Database/SQLiteDatabase.cpp.i
-.PHONY : src/discordpp/Core/Database/SQLiteDatabase.cpp.i
+src/discordpp/Core/Databases/SQLiteDatabase.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Databases/SQLiteDatabase.cpp.i
+.PHONY : src/discordpp/Core/Databases/SQLiteDatabase.cpp.i
 
-src/discordpp/Core/Database/SQLiteDatabase.s: src/discordpp/Core/Database/SQLiteDatabase.cpp.s
+src/discordpp/Core/Databases/SQLiteDatabase.s: src/discordpp/Core/Databases/SQLiteDatabase.cpp.s
 
-.PHONY : src/discordpp/Core/Database/SQLiteDatabase.s
+.PHONY : src/discordpp/Core/Databases/SQLiteDatabase.s
 
 # target to generate assembly for a file
-src/discordpp/Core/Database/SQLiteDatabase.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Database/SQLiteDatabase.cpp.s
-.PHONY : src/discordpp/Core/Database/SQLiteDatabase.cpp.s
+src/discordpp/Core/Databases/SQLiteDatabase.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Databases/SQLiteDatabase.cpp.s
+.PHONY : src/discordpp/Core/Databases/SQLiteDatabase.cpp.s
 
 src/discordpp/Core/Rest/DiscordAPI.o: src/discordpp/Core/Rest/DiscordAPI.cpp.o
 
@@ -948,9 +948,9 @@ help:
 	@echo "... src/discordpp/Commands/PingCommand.o"
 	@echo "... src/discordpp/Commands/PingCommand.i"
 	@echo "... src/discordpp/Commands/PingCommand.s"
-	@echo "... src/discordpp/Core/Database/SQLiteDatabase.o"
-	@echo "... src/discordpp/Core/Database/SQLiteDatabase.i"
-	@echo "... src/discordpp/Core/Database/SQLiteDatabase.s"
+	@echo "... src/discordpp/Core/Databases/SQLiteDatabase.o"
+	@echo "... src/discordpp/Core/Databases/SQLiteDatabase.i"
+	@echo "... src/discordpp/Core/Databases/SQLiteDatabase.s"
 	@echo "... src/discordpp/Core/Rest/DiscordAPI.o"
 	@echo "... src/discordpp/Core/Rest/DiscordAPI.i"
 	@echo "... src/discordpp/Core/Rest/DiscordAPI.s"

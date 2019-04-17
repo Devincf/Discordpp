@@ -13,7 +13,7 @@
 #include "Util/Singleton.hpp"
 #include "Core/Rest/PicartoAPI.hpp"
 #include "Core/Rest/DiscordAPI.hpp"
-#include "Core/Database/SQLiteDatabase.hpp"
+#include "Core/Databases/SQLiteDatabase.hpp"
 
 class FunCommand : public discordpp::Command
 {

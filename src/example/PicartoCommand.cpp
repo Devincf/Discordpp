@@ -17,7 +17,7 @@
 #include "Util/Singleton.hpp"
 #include "Core/Rest/DiscordAPI.hpp"
 #include "Core/Rest/PicartoAPI.hpp"
-#include "Core/Database/SQLiteDatabase.hpp"
+#include "Core/Databases/SQLiteDatabase.hpp"
 
 #include "Discordpp.hpp"
 
@@ -55,7 +55,9 @@ bool PicartoCommand::proc(const nlohmann::json &packet)
     else if (splitcontent[1] == "add")
     {
         m_picartoChannel->push_back(Channel(username));
-        discordpp::Singleton<discordpp::SQLiteDatabase>::get()->query("INSERT INTO picarto_streams (channel_name,live) values(\""+username+"\",false)");
+        discordpp::Singleton<discordpp::SQLiteDatabase>::get()->query("INSERT INTO picarto_streams (channel_name,live) values(\""+username+"\",0)");
+        discordpp::Singleton<discordpp::DiscordAPI>::get()->sendMessage(packet["d"]["channel_id"].get<std::string>(),
+                                                                            "Added picarto channel " + username + " to the database");
     }
     return true;
 }

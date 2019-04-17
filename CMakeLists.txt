@@ -78,7 +78,7 @@ add_executable(Discordpp
                             "src/discordpp/Core/Rest/DiscordAPI.cpp"
                             "src/discordpp/Core/Rest/PicartoAPI.cpp"
 
-                            "src/discordpp/Core/Database/SQLiteDatabase.cpp"
+                            "src/discordpp/Core/Databases/SQLiteDatabase.cpp"
 
                             "src/discordpp/Discordpp.cpp"
 

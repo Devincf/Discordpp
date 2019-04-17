@@ -16,6 +16,7 @@ namespace discordpp
 {
 bool HeartbeatACKEvent::proc(const nlohmann::json &packet)
 {
+    DEBUG("ACK");
     if (m_dscpp->getCurrentBotState() == constants::Starting)
     {
         m_dscpp->setCurrentBotState(constants::FirstHeartbeat);
@@ -42,6 +43,7 @@ bool HeartbeatACKEvent::proc(const nlohmann::json &packet)
         json["op"] = 2;
         m_dscpp->getGateway()->sendPayload(payload);
         m_dscpp->setCurrentBotState(constants::VerificationSent);
+        m_dscpp->setLastHeartbeatACK(true);
         DEBUG("verify sent");
         return true;
     }
