@@ -67,6 +67,9 @@ add_executable(Discordpp
 
                             "src/discordpp/Commands/Command.cpp"
                             "src/discordpp/Commands/PingCommand.cpp"
+
+                            "src/discordpp/Tasks/Task.cpp"
+                            "src/discordpp/Tasks/HeartbeatTask.cpp"
                             
                             "src/discordpp/Managers/UserManager.cpp"
                             "src/discordpp/Managers/GuildManager.cpp"
@@ -84,6 +87,7 @@ add_executable(Discordpp
 
 
 
+                            "src/example/PicartoNotifier.cpp"
                             "src/example/PicartoCommand.cpp"
                             "src/example/main.cpp")
 

@@ -879,6 +879,60 @@ src/discordpp/Objects/User.cpp.s:
 	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Objects/User.cpp.s
 .PHONY : src/discordpp/Objects/User.cpp.s
 
+src/discordpp/Tasks/HeartbeatTask.o: src/discordpp/Tasks/HeartbeatTask.cpp.o
+
+.PHONY : src/discordpp/Tasks/HeartbeatTask.o
+
+# target to build an object file
+src/discordpp/Tasks/HeartbeatTask.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Tasks/HeartbeatTask.cpp.o
+.PHONY : src/discordpp/Tasks/HeartbeatTask.cpp.o
+
+src/discordpp/Tasks/HeartbeatTask.i: src/discordpp/Tasks/HeartbeatTask.cpp.i
+
+.PHONY : src/discordpp/Tasks/HeartbeatTask.i
+
+# target to preprocess a source file
+src/discordpp/Tasks/HeartbeatTask.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Tasks/HeartbeatTask.cpp.i
+.PHONY : src/discordpp/Tasks/HeartbeatTask.cpp.i
+
+src/discordpp/Tasks/HeartbeatTask.s: src/discordpp/Tasks/HeartbeatTask.cpp.s
+
+.PHONY : src/discordpp/Tasks/HeartbeatTask.s
+
+# target to generate assembly for a file
+src/discordpp/Tasks/HeartbeatTask.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Tasks/HeartbeatTask.cpp.s
+.PHONY : src/discordpp/Tasks/HeartbeatTask.cpp.s
+
+src/discordpp/Tasks/Task.o: src/discordpp/Tasks/Task.cpp.o
+
+.PHONY : src/discordpp/Tasks/Task.o
+
+# target to build an object file
+src/discordpp/Tasks/Task.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Tasks/Task.cpp.o
+.PHONY : src/discordpp/Tasks/Task.cpp.o
+
+src/discordpp/Tasks/Task.i: src/discordpp/Tasks/Task.cpp.i
+
+.PHONY : src/discordpp/Tasks/Task.i
+
+# target to preprocess a source file
+src/discordpp/Tasks/Task.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Tasks/Task.cpp.i
+.PHONY : src/discordpp/Tasks/Task.cpp.i
+
+src/discordpp/Tasks/Task.s: src/discordpp/Tasks/Task.cpp.s
+
+.PHONY : src/discordpp/Tasks/Task.s
+
+# target to generate assembly for a file
+src/discordpp/Tasks/Task.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Tasks/Task.cpp.s
+.PHONY : src/discordpp/Tasks/Task.cpp.s
+
 src/example/PicartoCommand.o: src/example/PicartoCommand.cpp.o
 
 .PHONY : src/example/PicartoCommand.o
@@ -905,6 +959,33 @@ src/example/PicartoCommand.s: src/example/PicartoCommand.cpp.s
 src/example/PicartoCommand.cpp.s:
 	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/example/PicartoCommand.cpp.s
 .PHONY : src/example/PicartoCommand.cpp.s
+
+src/example/PicartoNotifier.o: src/example/PicartoNotifier.cpp.o
+
+.PHONY : src/example/PicartoNotifier.o
+
+# target to build an object file
+src/example/PicartoNotifier.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/example/PicartoNotifier.cpp.o
+.PHONY : src/example/PicartoNotifier.cpp.o
+
+src/example/PicartoNotifier.i: src/example/PicartoNotifier.cpp.i
+
+.PHONY : src/example/PicartoNotifier.i
+
+# target to preprocess a source file
+src/example/PicartoNotifier.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/example/PicartoNotifier.cpp.i
+.PHONY : src/example/PicartoNotifier.cpp.i
+
+src/example/PicartoNotifier.s: src/example/PicartoNotifier.cpp.s
+
+.PHONY : src/example/PicartoNotifier.s
+
+# target to generate assembly for a file
+src/example/PicartoNotifier.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/example/PicartoNotifier.cpp.s
+.PHONY : src/example/PicartoNotifier.cpp.s
 
 src/example/main.o: src/example/main.cpp.o
 
@@ -1026,9 +1107,18 @@ help:
 	@echo "... src/discordpp/Objects/User.o"
 	@echo "... src/discordpp/Objects/User.i"
 	@echo "... src/discordpp/Objects/User.s"
+	@echo "... src/discordpp/Tasks/HeartbeatTask.o"
+	@echo "... src/discordpp/Tasks/HeartbeatTask.i"
+	@echo "... src/discordpp/Tasks/HeartbeatTask.s"
+	@echo "... src/discordpp/Tasks/Task.o"
+	@echo "... src/discordpp/Tasks/Task.i"
+	@echo "... src/discordpp/Tasks/Task.s"
 	@echo "... src/example/PicartoCommand.o"
 	@echo "... src/example/PicartoCommand.i"
 	@echo "... src/example/PicartoCommand.s"
+	@echo "... src/example/PicartoNotifier.o"
+	@echo "... src/example/PicartoNotifier.i"
+	@echo "... src/example/PicartoNotifier.s"
 	@echo "... src/example/main.o"
 	@echo "... src/example/main.i"
 	@echo "... src/example/main.s"

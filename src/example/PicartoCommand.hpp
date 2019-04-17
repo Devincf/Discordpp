@@ -10,38 +10,8 @@
  */
 
 #include "Commands/Command.hpp"
+#include "structs.hpp"
 
-enum ChannelType
-{
-    CHANNEL_PICARTO
-};
-
-struct Channel
-{
-  public:
-    std::string name;
-    bool online;
-    ChannelType type;
-    Channel(std::string n, ChannelType t = CHANNEL_PICARTO) : name(n), online(false), type(t)
-    {
-    }
-};
-static std::array<Channel, 15> channels = {
-    Channel("Rays"),
-    Channel("cynpai"),
-    Channel("katsukaze"),
-    Channel("winyumi"),
-    Channel("BlazinFlizard"),
-    Channel("Johnsonist"),
-    Channel("kiroh"),
-    Channel("LePetiteCafe"),
-    Channel("yuukiame"),
-    Channel("Lemyzest"),
-    Channel("Redblaze27"),
-    Channel("AsuraEterna"),
-    Channel("ColdMittens"),
-    Channel("scissorchan"),
-    Channel("Chocpocalypse")};
 
 class Discordpp;
 class PicartoCommand : public discordpp::Command

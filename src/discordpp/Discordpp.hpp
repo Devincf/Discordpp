@@ -23,6 +23,7 @@
 
 #include "Core/WebSocket/Gateway.hpp"
 #include "Events/Event.hpp"
+#include "Tasks/Task.hpp"
 
 namespace discordpp
 {
@@ -42,11 +43,13 @@ class Discordpp
     void setLastHeartbeatACK(bool);
     bool startHeartbeat(const int);
     bool isInitialized();
+    int getLastS();
     virtual void setup() = 0;
   protected:
     void run();
 
-    void addCommand(const std::string& cmdStr, Command* cmd);
+    void addCommand(const std::string& cmdStr, Command* pCmd);
+    void addTask(Task* pTask);
   private:
     std::string m_botToken;
     bool m_running;
@@ -85,6 +88,9 @@ class Discordpp
     boost::thread m_heartbeatThread;
 
     std::map<int, std::unique_ptr<Event>> m_gatewayEvents;
+
+    std::vector<std::unique_ptr<Task>> m_tasks;
+
 
     void registerEvents();
     void registerGlobalCommands();
