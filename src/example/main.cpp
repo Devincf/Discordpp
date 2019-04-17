@@ -21,7 +21,8 @@ class FunCommand : public discordpp::Command
   public:
     bool proc(const nlohmann::json &packet)
     {
-        discordpp::Singleton<discordpp::DiscordAPI>::get()->sendMessage(packet["d"]["channel_id"].get<std::string>(), "stop it u baka");
+        //discordpp::Singleton<discordpp::DiscordAPI>::get()->sendMessage(packet["d"]["channel_id"].get<std::string>(), "stop it u baka");
+        discordpp::Singleton<discordpp::DiscordAPI>::get()->sendMessage("430588660031946755", "!disboard bump");
         return true;
     }
 };
