@@ -9,8 +9,8 @@
  * 
  */
 #include "Discordpp.hpp"
-#include "PicartoCommand.hpp"
-#include "PicartoNotifier.hpp"
+#include "AddStreamCommand.hpp"
+#include "StreamNotifier.hpp"
 #include "Util/Singleton.hpp"
 #include "Core/Rest/DiscordAPI.hpp"
 
@@ -22,7 +22,7 @@ class FunCommand : public discordpp::Command
     bool proc(const nlohmann::json &packet)
     {
         //discordpp::Singleton<discordpp::DiscordAPI>::get()->sendMessage(packet["d"]["channel_id"].get<std::string>(), "stop it u baka");
-        discordpp::Singleton<discordpp::DiscordAPI>::get()->sendMessage("430588660031946755", "!disboard bump");
+        discordpp::Singleton<discordpp::DiscordAPI>::get()->sendMessage(packet["d"]["channel_id"].get<std::string>(), "no u baka");
         return true;
     }
 };
@@ -31,15 +31,15 @@ class Example : public discordpp::Discordpp
 {
     using Discordpp::Discordpp;
 
-    std::vector<Channel> m_picartoChannels;
+    std::map<std::string,std::vector<Channel>> m_channels;
     
   public:
     void setup()
     {
-        this->addCommand("!picarto", new PicartoCommand(this, &m_picartoChannels));
+        this->addCommand("!stream", new AddStreamCommand(this, &m_channels));
         this->addCommand("!baka", new FunCommand(this));
 
-        this->addTask(new PicartoNotifier(this, &m_picartoChannels));
+        this->addTask(new StreamNotifier(this, &m_channels));
         run();
     }
     ~Example()

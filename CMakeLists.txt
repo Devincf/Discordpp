@@ -88,8 +88,8 @@ add_executable(Discordpp
 
 
 
-                            "src/example/PicartoNotifier.cpp"
-                            "src/example/PicartoCommand.cpp"
+                            "src/example/StreamNotifier.cpp"
+                            "src/example/AddStreamCommand.cpp"
                             "src/example/main.cpp")
 
 target_include_directories(Discordpp PRIVATE "src/submodules/nlohmannjson/single_include/" "src/submodules/websocketpp/websocketpp/" "src/submodules/curlpp/include/" "src/discordpp")

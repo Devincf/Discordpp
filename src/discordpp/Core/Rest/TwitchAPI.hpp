@@ -16,7 +16,7 @@ namespace discordpp
 class TwitchAPI : public RestAPI
 {
   public:
-    bool isOnline(const std::string& channelName);
+    bool isUserOnline(const std::string& channelName);
     void setToken(const std::string &);
 
   private:

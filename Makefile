@@ -960,59 +960,59 @@ src/discordpp/Tasks/Task.cpp.s:
 	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Tasks/Task.cpp.s
 .PHONY : src/discordpp/Tasks/Task.cpp.s
 
-src/example/PicartoCommand.o: src/example/PicartoCommand.cpp.o
+src/example/AddStreamCommand.o: src/example/AddStreamCommand.cpp.o
 
-.PHONY : src/example/PicartoCommand.o
-
-# target to build an object file
-src/example/PicartoCommand.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/example/PicartoCommand.cpp.o
-.PHONY : src/example/PicartoCommand.cpp.o
-
-src/example/PicartoCommand.i: src/example/PicartoCommand.cpp.i
-
-.PHONY : src/example/PicartoCommand.i
-
-# target to preprocess a source file
-src/example/PicartoCommand.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/example/PicartoCommand.cpp.i
-.PHONY : src/example/PicartoCommand.cpp.i
-
-src/example/PicartoCommand.s: src/example/PicartoCommand.cpp.s
-
-.PHONY : src/example/PicartoCommand.s
-
-# target to generate assembly for a file
-src/example/PicartoCommand.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/example/PicartoCommand.cpp.s
-.PHONY : src/example/PicartoCommand.cpp.s
-
-src/example/PicartoNotifier.o: src/example/PicartoNotifier.cpp.o
-
-.PHONY : src/example/PicartoNotifier.o
+.PHONY : src/example/AddStreamCommand.o
 
 # target to build an object file
-src/example/PicartoNotifier.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/example/PicartoNotifier.cpp.o
-.PHONY : src/example/PicartoNotifier.cpp.o
+src/example/AddStreamCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/example/AddStreamCommand.cpp.o
+.PHONY : src/example/AddStreamCommand.cpp.o
 
-src/example/PicartoNotifier.i: src/example/PicartoNotifier.cpp.i
+src/example/AddStreamCommand.i: src/example/AddStreamCommand.cpp.i
 
-.PHONY : src/example/PicartoNotifier.i
+.PHONY : src/example/AddStreamCommand.i
 
 # target to preprocess a source file
-src/example/PicartoNotifier.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/example/PicartoNotifier.cpp.i
-.PHONY : src/example/PicartoNotifier.cpp.i
+src/example/AddStreamCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/example/AddStreamCommand.cpp.i
+.PHONY : src/example/AddStreamCommand.cpp.i
 
-src/example/PicartoNotifier.s: src/example/PicartoNotifier.cpp.s
+src/example/AddStreamCommand.s: src/example/AddStreamCommand.cpp.s
 
-.PHONY : src/example/PicartoNotifier.s
+.PHONY : src/example/AddStreamCommand.s
 
 # target to generate assembly for a file
-src/example/PicartoNotifier.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/example/PicartoNotifier.cpp.s
-.PHONY : src/example/PicartoNotifier.cpp.s
+src/example/AddStreamCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/example/AddStreamCommand.cpp.s
+.PHONY : src/example/AddStreamCommand.cpp.s
+
+src/example/StreamNotifier.o: src/example/StreamNotifier.cpp.o
+
+.PHONY : src/example/StreamNotifier.o
+
+# target to build an object file
+src/example/StreamNotifier.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/example/StreamNotifier.cpp.o
+.PHONY : src/example/StreamNotifier.cpp.o
+
+src/example/StreamNotifier.i: src/example/StreamNotifier.cpp.i
+
+.PHONY : src/example/StreamNotifier.i
+
+# target to preprocess a source file
+src/example/StreamNotifier.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/example/StreamNotifier.cpp.i
+.PHONY : src/example/StreamNotifier.cpp.i
+
+src/example/StreamNotifier.s: src/example/StreamNotifier.cpp.s
+
+.PHONY : src/example/StreamNotifier.s
+
+# target to generate assembly for a file
+src/example/StreamNotifier.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/example/StreamNotifier.cpp.s
+.PHONY : src/example/StreamNotifier.cpp.s
 
 src/example/main.o: src/example/main.cpp.o
 
@@ -1143,12 +1143,12 @@ help:
 	@echo "... src/discordpp/Tasks/Task.o"
 	@echo "... src/discordpp/Tasks/Task.i"
 	@echo "... src/discordpp/Tasks/Task.s"
-	@echo "... src/example/PicartoCommand.o"
-	@echo "... src/example/PicartoCommand.i"
-	@echo "... src/example/PicartoCommand.s"
-	@echo "... src/example/PicartoNotifier.o"
-	@echo "... src/example/PicartoNotifier.i"
-	@echo "... src/example/PicartoNotifier.s"
+	@echo "... src/example/AddStreamCommand.o"
+	@echo "... src/example/AddStreamCommand.i"
+	@echo "... src/example/AddStreamCommand.s"
+	@echo "... src/example/StreamNotifier.o"
+	@echo "... src/example/StreamNotifier.i"
+	@echo "... src/example/StreamNotifier.s"
 	@echo "... src/example/main.o"
 	@echo "... src/example/main.i"
 	@echo "... src/example/main.s"

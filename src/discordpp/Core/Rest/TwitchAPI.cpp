@@ -15,7 +15,7 @@
 namespace discordpp
 {
 
-bool TwitchAPI::isOnline(const std::string& channelName)
+bool TwitchAPI::isUserOnline(const std::string& channelName)
 {
     auto get_result = this->sendGET("https://api.twitch.tv/kraken/streams?client_id=" + m_token + "&channel=" + channelName);
     nlohmann::json json = nlohmann::json::parse(get_result);
