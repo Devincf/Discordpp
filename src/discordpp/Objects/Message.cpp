@@ -49,15 +49,7 @@ Message::Message(const nlohmann::json &payload)
     "tts":false,
     "type":0}
     */
-    const std::string timestampstr = payload["timestamp"].get<std::string>();
-    if (std::all_of(timestampstr.begin(), timestampstr.end(), ::isdigit))
-    {
-        _timestamp = util::fromUnixTimestamp(timestampstr);
-    }
-    else
-    {
-        _timestamp = util::fromISO8601Timestamp(timestampstr);
-    }
+    _timestamp = util::Timestamp(payload["timestamp"].get<std::string>());
 
     _tts = payload["tts"].get<bool>();
     _content = payload["content"].get<std::string>();

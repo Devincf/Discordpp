@@ -7,11 +7,24 @@
 namespace discordpp::util{
 
 
+const boost::posix_time::ptime UNIX_TIME = boost::posix_time::ptime(boost::gregorian::date(1970, 1, 1));
+
 class Timestamp
 {
   public:
     Timestamp() : _timestamp(time(0)) {}
     Timestamp(time_t date) : _timestamp(date) {}
+    Timestamp(const std::string &string)
+    {
+        if (std::all_of(string.begin(), string.end(), ::isdigit))
+        {
+            *this = Timestamp::fromUnixTimestamp(string);
+        }
+        else
+        {
+            *this = Timestamp::fromISO8601Timestamp(string);
+        }
+    }
     ~Timestamp() {}
 
     const time_t getTimestamp() const { return _timestamp; }
@@ -23,23 +36,38 @@ class Timestamp
     }
     const std::string getUnixTime() const { return std::to_string(_timestamp); }
 
+    static Timestamp fromUnixTimestamp(const std::string &time)
+    {
+        return Timestamp(static_cast<time_t>(strtol(time.c_str(), NULL, 10)));
+    }
+
+    static Timestamp fromISO8601Timestamp(std::string time)
+    {
+        try
+        {
+            boost::posix_time::ptime pt = boost::posix_time::from_iso_extended_string(time);
+            return Timestamp(time_t((pt - UNIX_TIME).total_seconds()));
+        }
+        catch (const std::exception &e)
+        {
+            try
+            {
+                time.insert(time.find("+"), ".000000");
+                boost::posix_time::ptime pt = boost::posix_time::from_iso_extended_string(time);
+                return Timestamp(time_t((pt - UNIX_TIME).total_seconds()));
+            }
+            catch (const std::exception &e2)
+            {
+                std::cerr << e2.what() << '\n';
+            }
+            std::cerr << e.what() << '\n';
+            return Timestamp();
+        }
+    }
+
   private:
     time_t _timestamp;
 };
-static Timestamp fromUnixTimestamp(const std::string &time)
-{
-    return Timestamp(static_cast<time_t>(strtol(time.c_str(), NULL, 10)));
-}
-
-static Timestamp fromISO8601Timestamp(const std::string &time)
-{
-    boost::posix_time::ptime pt = boost::posix_time::from_iso_extended_string(time);
-    return Timestamp(time_t((pt - boost::posix_time::ptime(boost::gregorian::date(1970,1,1))).total_seconds()));
-}
-//against defined but not used error
-static Timestamp t1 = fromUnixTimestamp("1550622594");
-static Timestamp t2 = fromISO8601Timestamp("2019-02-20T00:29:56.162000+00:00");
-
 }
 
 #endif
