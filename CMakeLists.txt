@@ -80,6 +80,7 @@ add_executable(Discordpp
                             "src/discordpp/Core/Rest/RestAPI.cpp"
                             "src/discordpp/Core/Rest/DiscordAPI.cpp"
                             "src/discordpp/Core/Rest/PicartoAPI.cpp"
+                            "src/discordpp/Core/Rest/TwitchAPI.cpp"
 
                             "src/discordpp/Core/Databases/SQLiteDatabase.cpp"
 

@@ -18,6 +18,7 @@
 
 #include "Core/Rest/DiscordAPI.hpp"
 #include "Core/Rest/PicartoAPI.hpp"
+#include "Core/Rest/TwitchAPI.hpp"
 
 #include "Core/Databases/SQLiteDatabase.hpp"
 
@@ -40,6 +41,9 @@ Discordpp::Discordpp(const std::string &token) : m_botToken(token), m_running(fa
 
     Singleton<PicartoAPI>::create();
     Singleton<PicartoAPI>::get()->setToken("CGoghj4k1RXZlWaaJrQdKIMe");
+
+    Singleton<TwitchAPI>::create();
+    Singleton<TwitchAPI>::get()->setToken("6mi2i543yic56qlee3fgdwor0l1bx7");
 
     Singleton<SQLiteDatabase>::create();
     //DEBUG(Singleton<PicartoAPI>::get()->getChannelInfo("Kiraki").dump(2));
@@ -72,6 +76,7 @@ Discordpp::Discordpp() : m_heartbeat_timer(m_ioservice, m_heartbeatInterval)
 Discordpp::~Discordpp()
 {
     Singleton<SQLiteDatabase>::destroy();
+    Singleton<TwitchAPI>::destroy();
     Singleton<PicartoAPI>::destroy();
     Singleton<DiscordAPI>::destroy();
     Singleton<CommandManager>::destroy();

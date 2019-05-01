@@ -285,6 +285,33 @@ src/discordpp/Core/Rest/RestAPI.cpp.s:
 	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/RestAPI.cpp.s
 .PHONY : src/discordpp/Core/Rest/RestAPI.cpp.s
 
+src/discordpp/Core/Rest/TwitchAPI.o: src/discordpp/Core/Rest/TwitchAPI.cpp.o
+
+.PHONY : src/discordpp/Core/Rest/TwitchAPI.o
+
+# target to build an object file
+src/discordpp/Core/Rest/TwitchAPI.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/TwitchAPI.cpp.o
+.PHONY : src/discordpp/Core/Rest/TwitchAPI.cpp.o
+
+src/discordpp/Core/Rest/TwitchAPI.i: src/discordpp/Core/Rest/TwitchAPI.cpp.i
+
+.PHONY : src/discordpp/Core/Rest/TwitchAPI.i
+
+# target to preprocess a source file
+src/discordpp/Core/Rest/TwitchAPI.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/TwitchAPI.cpp.i
+.PHONY : src/discordpp/Core/Rest/TwitchAPI.cpp.i
+
+src/discordpp/Core/Rest/TwitchAPI.s: src/discordpp/Core/Rest/TwitchAPI.cpp.s
+
+.PHONY : src/discordpp/Core/Rest/TwitchAPI.s
+
+# target to generate assembly for a file
+src/discordpp/Core/Rest/TwitchAPI.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/TwitchAPI.cpp.s
+.PHONY : src/discordpp/Core/Rest/TwitchAPI.cpp.s
+
 src/discordpp/Core/WebSocket/Gateway.o: src/discordpp/Core/WebSocket/Gateway.cpp.o
 
 .PHONY : src/discordpp/Core/WebSocket/Gateway.o
@@ -1041,6 +1068,9 @@ help:
 	@echo "... src/discordpp/Core/Rest/RestAPI.o"
 	@echo "... src/discordpp/Core/Rest/RestAPI.i"
 	@echo "... src/discordpp/Core/Rest/RestAPI.s"
+	@echo "... src/discordpp/Core/Rest/TwitchAPI.o"
+	@echo "... src/discordpp/Core/Rest/TwitchAPI.i"
+	@echo "... src/discordpp/Core/Rest/TwitchAPI.s"
 	@echo "... src/discordpp/Core/WebSocket/Gateway.o"
 	@echo "... src/discordpp/Core/WebSocket/Gateway.i"
 	@echo "... src/discordpp/Core/WebSocket/Gateway.s"
