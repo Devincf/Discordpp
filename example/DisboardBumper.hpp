@@ -12,7 +12,7 @@
 #ifndef DISBOARDBUMPER_HPP
 #define DISBOARDBUMPER_HPP
 
-#include "Tasks/Task.hpp"
+#include "tasks/Task.hpp"
 #include "structs.hpp"
 namespace discordpp{class Discordpp;}
 class DisboardBumper : public discordpp::Task

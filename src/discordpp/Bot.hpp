@@ -19,10 +19,10 @@
 #include <map>
 
 #include "Gateway.hpp"
-#include "Objects/Guild.hpp"
-#include "Util/constants.hpp"
+#include "objects/Guild.hpp"
+#include "util/constants.hpp"
 
-#include "Util/Singleton.hpp"
+#include "util/Singleton.hpp"
 #include "Managers/UserManager.hpp"
 
 using boost::asio::io_service;

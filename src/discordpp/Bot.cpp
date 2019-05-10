@@ -11,7 +11,7 @@
 
 #include "Bot.hpp"
 
-#include "Util/jsonutils.hpp"
+#include "util/jsonutils.hpp"
 
 namespace discordpp
 {

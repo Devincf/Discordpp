@@ -21,9 +21,9 @@
 #include <boost/asio.hpp>
 #include <boost/thread.hpp>
 
-#include "Core/WebSocket/Gateway.hpp"
-#include "Events/Event.hpp"
-#include "Tasks/Task.hpp"
+#include "websocket/Gateway.hpp"
+#include "events/Event.hpp"
+#include "tasks/Task.hpp"
 
 namespace discordpp
 {

@@ -11,23 +11,23 @@
 
 #include "Discordpp.hpp"
 
-#include "Util/constants.hpp"
-#include "Events/EventIncludes.hpp"
-#include "Commands/CommandIncludes.hpp"
-#include "Util/Singleton.hpp"
+#include "util/constants.hpp"
+#include "events/EventIncludes.hpp"
+#include "commands/CommandIncludes.hpp"
+#include "util/Singleton.hpp"
 
-#include "Core/Rest/DiscordAPI.hpp"
-#include "Core/Rest/PicartoAPI.hpp"
-#include "Core/Rest/TwitchAPI.hpp"
+#include "rest/DiscordAPI.hpp"
+#include "rest/PicartoAPI.hpp"
+#include "rest/TwitchAPI.hpp"
 
-#include "Core/Databases/SQLiteDatabase.hpp"
+#include "databases/SQLiteDatabase.hpp"
 
-#include "Users/UserManager.hpp"
-#include "Guilds/GuildManager.hpp"
-#include "Commands/CommandManager.hpp"
-#include "Money/MoneyManager.hpp"
+#include "users/UserManager.hpp"
+#include "guilds/GuildManager.hpp"
+#include "commands/CommandManager.hpp"
+#include "money/MoneyManager.hpp"
 
-#include "Tasks/HeartbeatTask.hpp"
+#include "tasks/HeartbeatTask.hpp"
 
 namespace discordpp
 {

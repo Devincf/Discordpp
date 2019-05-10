@@ -9,7 +9,7 @@
  * 
  */
 
-#include "Commands/Command.hpp"
+#include "commands/Command.hpp"
 #include "structs.hpp"
 
 

@@ -21,14 +21,14 @@
  */
 
 #include "AddStreamCommand.hpp"
-#include "Util/constants.hpp"
+#include "util/constants.hpp"
 
 #include "boost/algorithm/string.hpp"
 
-#include "Util/Singleton.hpp"
-#include "Core/Rest/DiscordAPI.hpp"
-#include "Core/Rest/PicartoAPI.hpp"
-#include "Core/Databases/SQLiteDatabase.hpp"
+#include "util/Singleton.hpp"
+#include "rest/DiscordAPI.hpp"
+#include "rest/PicartoAPI.hpp"
+#include "databases/SQLiteDatabase.hpp"
 
 #include "Discordpp.hpp"
 

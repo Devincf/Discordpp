@@ -11,8 +11,8 @@
 #include "Discordpp.hpp"
 #include "AddStreamCommand.hpp"
 #include "StreamNotifier.hpp"
-#include "Util/Singleton.hpp"
-#include "Core/Rest/DiscordAPI.hpp"
+#include "util/Singleton.hpp"
+#include "rest/DiscordAPI.hpp"
 
 class FunCommand : public discordpp::Command
 {

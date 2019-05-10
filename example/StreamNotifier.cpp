@@ -11,11 +11,11 @@
 #include "StreamNotifier.hpp"
 #include "Discordpp.hpp"
 
-#include "Util/Singleton.hpp"
-#include "Core/Databases/SQLiteDatabase.hpp"
-#include "Core/Rest/DiscordAPI.hpp"
-#include "Core/Rest/PicartoAPI.hpp"
-#include "Core/Rest/TwitchAPI.hpp"
+#include "util/Singleton.hpp"
+#include "databases/SQLiteDatabase.hpp"
+#include "rest/DiscordAPI.hpp"
+#include "rest/PicartoAPI.hpp"
+#include "rest/TwitchAPI.hpp"
 
 StreamNotifier::StreamNotifier(discordpp::Discordpp *pDsc, std::map<std::string, std::vector<Channel>> *pChannels) : Task(4000)
 {

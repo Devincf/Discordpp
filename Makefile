@@ -204,249 +204,6 @@ example/main.cpp.s:
 	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/example/main.cpp.s
 .PHONY : example/main.cpp.s
 
-src/discordpp/Commands/Command.o: src/discordpp/Commands/Command.cpp.o
-
-.PHONY : src/discordpp/Commands/Command.o
-
-# target to build an object file
-src/discordpp/Commands/Command.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Commands/Command.cpp.o
-.PHONY : src/discordpp/Commands/Command.cpp.o
-
-src/discordpp/Commands/Command.i: src/discordpp/Commands/Command.cpp.i
-
-.PHONY : src/discordpp/Commands/Command.i
-
-# target to preprocess a source file
-src/discordpp/Commands/Command.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Commands/Command.cpp.i
-.PHONY : src/discordpp/Commands/Command.cpp.i
-
-src/discordpp/Commands/Command.s: src/discordpp/Commands/Command.cpp.s
-
-.PHONY : src/discordpp/Commands/Command.s
-
-# target to generate assembly for a file
-src/discordpp/Commands/Command.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Commands/Command.cpp.s
-.PHONY : src/discordpp/Commands/Command.cpp.s
-
-src/discordpp/Commands/CommandManager.o: src/discordpp/Commands/CommandManager.cpp.o
-
-.PHONY : src/discordpp/Commands/CommandManager.o
-
-# target to build an object file
-src/discordpp/Commands/CommandManager.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Commands/CommandManager.cpp.o
-.PHONY : src/discordpp/Commands/CommandManager.cpp.o
-
-src/discordpp/Commands/CommandManager.i: src/discordpp/Commands/CommandManager.cpp.i
-
-.PHONY : src/discordpp/Commands/CommandManager.i
-
-# target to preprocess a source file
-src/discordpp/Commands/CommandManager.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Commands/CommandManager.cpp.i
-.PHONY : src/discordpp/Commands/CommandManager.cpp.i
-
-src/discordpp/Commands/CommandManager.s: src/discordpp/Commands/CommandManager.cpp.s
-
-.PHONY : src/discordpp/Commands/CommandManager.s
-
-# target to generate assembly for a file
-src/discordpp/Commands/CommandManager.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Commands/CommandManager.cpp.s
-.PHONY : src/discordpp/Commands/CommandManager.cpp.s
-
-src/discordpp/Commands/PingCommand.o: src/discordpp/Commands/PingCommand.cpp.o
-
-.PHONY : src/discordpp/Commands/PingCommand.o
-
-# target to build an object file
-src/discordpp/Commands/PingCommand.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Commands/PingCommand.cpp.o
-.PHONY : src/discordpp/Commands/PingCommand.cpp.o
-
-src/discordpp/Commands/PingCommand.i: src/discordpp/Commands/PingCommand.cpp.i
-
-.PHONY : src/discordpp/Commands/PingCommand.i
-
-# target to preprocess a source file
-src/discordpp/Commands/PingCommand.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Commands/PingCommand.cpp.i
-.PHONY : src/discordpp/Commands/PingCommand.cpp.i
-
-src/discordpp/Commands/PingCommand.s: src/discordpp/Commands/PingCommand.cpp.s
-
-.PHONY : src/discordpp/Commands/PingCommand.s
-
-# target to generate assembly for a file
-src/discordpp/Commands/PingCommand.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Commands/PingCommand.cpp.s
-.PHONY : src/discordpp/Commands/PingCommand.cpp.s
-
-src/discordpp/Core/Databases/SQLiteDatabase.o: src/discordpp/Core/Databases/SQLiteDatabase.cpp.o
-
-.PHONY : src/discordpp/Core/Databases/SQLiteDatabase.o
-
-# target to build an object file
-src/discordpp/Core/Databases/SQLiteDatabase.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Databases/SQLiteDatabase.cpp.o
-.PHONY : src/discordpp/Core/Databases/SQLiteDatabase.cpp.o
-
-src/discordpp/Core/Databases/SQLiteDatabase.i: src/discordpp/Core/Databases/SQLiteDatabase.cpp.i
-
-.PHONY : src/discordpp/Core/Databases/SQLiteDatabase.i
-
-# target to preprocess a source file
-src/discordpp/Core/Databases/SQLiteDatabase.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Databases/SQLiteDatabase.cpp.i
-.PHONY : src/discordpp/Core/Databases/SQLiteDatabase.cpp.i
-
-src/discordpp/Core/Databases/SQLiteDatabase.s: src/discordpp/Core/Databases/SQLiteDatabase.cpp.s
-
-.PHONY : src/discordpp/Core/Databases/SQLiteDatabase.s
-
-# target to generate assembly for a file
-src/discordpp/Core/Databases/SQLiteDatabase.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Databases/SQLiteDatabase.cpp.s
-.PHONY : src/discordpp/Core/Databases/SQLiteDatabase.cpp.s
-
-src/discordpp/Core/Rest/DiscordAPI.o: src/discordpp/Core/Rest/DiscordAPI.cpp.o
-
-.PHONY : src/discordpp/Core/Rest/DiscordAPI.o
-
-# target to build an object file
-src/discordpp/Core/Rest/DiscordAPI.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/DiscordAPI.cpp.o
-.PHONY : src/discordpp/Core/Rest/DiscordAPI.cpp.o
-
-src/discordpp/Core/Rest/DiscordAPI.i: src/discordpp/Core/Rest/DiscordAPI.cpp.i
-
-.PHONY : src/discordpp/Core/Rest/DiscordAPI.i
-
-# target to preprocess a source file
-src/discordpp/Core/Rest/DiscordAPI.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/DiscordAPI.cpp.i
-.PHONY : src/discordpp/Core/Rest/DiscordAPI.cpp.i
-
-src/discordpp/Core/Rest/DiscordAPI.s: src/discordpp/Core/Rest/DiscordAPI.cpp.s
-
-.PHONY : src/discordpp/Core/Rest/DiscordAPI.s
-
-# target to generate assembly for a file
-src/discordpp/Core/Rest/DiscordAPI.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/DiscordAPI.cpp.s
-.PHONY : src/discordpp/Core/Rest/DiscordAPI.cpp.s
-
-src/discordpp/Core/Rest/PicartoAPI.o: src/discordpp/Core/Rest/PicartoAPI.cpp.o
-
-.PHONY : src/discordpp/Core/Rest/PicartoAPI.o
-
-# target to build an object file
-src/discordpp/Core/Rest/PicartoAPI.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/PicartoAPI.cpp.o
-.PHONY : src/discordpp/Core/Rest/PicartoAPI.cpp.o
-
-src/discordpp/Core/Rest/PicartoAPI.i: src/discordpp/Core/Rest/PicartoAPI.cpp.i
-
-.PHONY : src/discordpp/Core/Rest/PicartoAPI.i
-
-# target to preprocess a source file
-src/discordpp/Core/Rest/PicartoAPI.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/PicartoAPI.cpp.i
-.PHONY : src/discordpp/Core/Rest/PicartoAPI.cpp.i
-
-src/discordpp/Core/Rest/PicartoAPI.s: src/discordpp/Core/Rest/PicartoAPI.cpp.s
-
-.PHONY : src/discordpp/Core/Rest/PicartoAPI.s
-
-# target to generate assembly for a file
-src/discordpp/Core/Rest/PicartoAPI.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/PicartoAPI.cpp.s
-.PHONY : src/discordpp/Core/Rest/PicartoAPI.cpp.s
-
-src/discordpp/Core/Rest/RestAPI.o: src/discordpp/Core/Rest/RestAPI.cpp.o
-
-.PHONY : src/discordpp/Core/Rest/RestAPI.o
-
-# target to build an object file
-src/discordpp/Core/Rest/RestAPI.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/RestAPI.cpp.o
-.PHONY : src/discordpp/Core/Rest/RestAPI.cpp.o
-
-src/discordpp/Core/Rest/RestAPI.i: src/discordpp/Core/Rest/RestAPI.cpp.i
-
-.PHONY : src/discordpp/Core/Rest/RestAPI.i
-
-# target to preprocess a source file
-src/discordpp/Core/Rest/RestAPI.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/RestAPI.cpp.i
-.PHONY : src/discordpp/Core/Rest/RestAPI.cpp.i
-
-src/discordpp/Core/Rest/RestAPI.s: src/discordpp/Core/Rest/RestAPI.cpp.s
-
-.PHONY : src/discordpp/Core/Rest/RestAPI.s
-
-# target to generate assembly for a file
-src/discordpp/Core/Rest/RestAPI.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/RestAPI.cpp.s
-.PHONY : src/discordpp/Core/Rest/RestAPI.cpp.s
-
-src/discordpp/Core/Rest/TwitchAPI.o: src/discordpp/Core/Rest/TwitchAPI.cpp.o
-
-.PHONY : src/discordpp/Core/Rest/TwitchAPI.o
-
-# target to build an object file
-src/discordpp/Core/Rest/TwitchAPI.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/TwitchAPI.cpp.o
-.PHONY : src/discordpp/Core/Rest/TwitchAPI.cpp.o
-
-src/discordpp/Core/Rest/TwitchAPI.i: src/discordpp/Core/Rest/TwitchAPI.cpp.i
-
-.PHONY : src/discordpp/Core/Rest/TwitchAPI.i
-
-# target to preprocess a source file
-src/discordpp/Core/Rest/TwitchAPI.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/TwitchAPI.cpp.i
-.PHONY : src/discordpp/Core/Rest/TwitchAPI.cpp.i
-
-src/discordpp/Core/Rest/TwitchAPI.s: src/discordpp/Core/Rest/TwitchAPI.cpp.s
-
-.PHONY : src/discordpp/Core/Rest/TwitchAPI.s
-
-# target to generate assembly for a file
-src/discordpp/Core/Rest/TwitchAPI.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/Rest/TwitchAPI.cpp.s
-.PHONY : src/discordpp/Core/Rest/TwitchAPI.cpp.s
-
-src/discordpp/Core/WebSocket/Gateway.o: src/discordpp/Core/WebSocket/Gateway.cpp.o
-
-.PHONY : src/discordpp/Core/WebSocket/Gateway.o
-
-# target to build an object file
-src/discordpp/Core/WebSocket/Gateway.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/WebSocket/Gateway.cpp.o
-.PHONY : src/discordpp/Core/WebSocket/Gateway.cpp.o
-
-src/discordpp/Core/WebSocket/Gateway.i: src/discordpp/Core/WebSocket/Gateway.cpp.i
-
-.PHONY : src/discordpp/Core/WebSocket/Gateway.i
-
-# target to preprocess a source file
-src/discordpp/Core/WebSocket/Gateway.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/WebSocket/Gateway.cpp.i
-.PHONY : src/discordpp/Core/WebSocket/Gateway.cpp.i
-
-src/discordpp/Core/WebSocket/Gateway.s: src/discordpp/Core/WebSocket/Gateway.cpp.s
-
-.PHONY : src/discordpp/Core/WebSocket/Gateway.s
-
-# target to generate assembly for a file
-src/discordpp/Core/WebSocket/Gateway.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Core/WebSocket/Gateway.cpp.s
-.PHONY : src/discordpp/Core/WebSocket/Gateway.cpp.s
-
 src/discordpp/Discordpp.o: src/discordpp/Discordpp.cpp.o
 
 .PHONY : src/discordpp/Discordpp.o
@@ -474,734 +231,977 @@ src/discordpp/Discordpp.cpp.s:
 	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Discordpp.cpp.s
 .PHONY : src/discordpp/Discordpp.cpp.s
 
-src/discordpp/Events/ChannelCreateEvent.o: src/discordpp/Events/ChannelCreateEvent.cpp.o
+src/discordpp/commands/Command.o: src/discordpp/commands/Command.cpp.o
 
-.PHONY : src/discordpp/Events/ChannelCreateEvent.o
-
-# target to build an object file
-src/discordpp/Events/ChannelCreateEvent.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Events/ChannelCreateEvent.cpp.o
-.PHONY : src/discordpp/Events/ChannelCreateEvent.cpp.o
-
-src/discordpp/Events/ChannelCreateEvent.i: src/discordpp/Events/ChannelCreateEvent.cpp.i
-
-.PHONY : src/discordpp/Events/ChannelCreateEvent.i
-
-# target to preprocess a source file
-src/discordpp/Events/ChannelCreateEvent.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Events/ChannelCreateEvent.cpp.i
-.PHONY : src/discordpp/Events/ChannelCreateEvent.cpp.i
-
-src/discordpp/Events/ChannelCreateEvent.s: src/discordpp/Events/ChannelCreateEvent.cpp.s
-
-.PHONY : src/discordpp/Events/ChannelCreateEvent.s
-
-# target to generate assembly for a file
-src/discordpp/Events/ChannelCreateEvent.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Events/ChannelCreateEvent.cpp.s
-.PHONY : src/discordpp/Events/ChannelCreateEvent.cpp.s
-
-src/discordpp/Events/DispatchEvent.o: src/discordpp/Events/DispatchEvent.cpp.o
-
-.PHONY : src/discordpp/Events/DispatchEvent.o
+.PHONY : src/discordpp/commands/Command.o
 
 # target to build an object file
-src/discordpp/Events/DispatchEvent.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Events/DispatchEvent.cpp.o
-.PHONY : src/discordpp/Events/DispatchEvent.cpp.o
+src/discordpp/commands/Command.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/commands/Command.cpp.o
+.PHONY : src/discordpp/commands/Command.cpp.o
 
-src/discordpp/Events/DispatchEvent.i: src/discordpp/Events/DispatchEvent.cpp.i
+src/discordpp/commands/Command.i: src/discordpp/commands/Command.cpp.i
 
-.PHONY : src/discordpp/Events/DispatchEvent.i
+.PHONY : src/discordpp/commands/Command.i
 
 # target to preprocess a source file
-src/discordpp/Events/DispatchEvent.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Events/DispatchEvent.cpp.i
-.PHONY : src/discordpp/Events/DispatchEvent.cpp.i
+src/discordpp/commands/Command.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/commands/Command.cpp.i
+.PHONY : src/discordpp/commands/Command.cpp.i
 
-src/discordpp/Events/DispatchEvent.s: src/discordpp/Events/DispatchEvent.cpp.s
+src/discordpp/commands/Command.s: src/discordpp/commands/Command.cpp.s
 
-.PHONY : src/discordpp/Events/DispatchEvent.s
+.PHONY : src/discordpp/commands/Command.s
 
 # target to generate assembly for a file
-src/discordpp/Events/DispatchEvent.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Events/DispatchEvent.cpp.s
-.PHONY : src/discordpp/Events/DispatchEvent.cpp.s
+src/discordpp/commands/Command.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/commands/Command.cpp.s
+.PHONY : src/discordpp/commands/Command.cpp.s
 
-src/discordpp/Events/Event.o: src/discordpp/Events/Event.cpp.o
+src/discordpp/commands/CommandManager.o: src/discordpp/commands/CommandManager.cpp.o
 
-.PHONY : src/discordpp/Events/Event.o
+.PHONY : src/discordpp/commands/CommandManager.o
 
 # target to build an object file
-src/discordpp/Events/Event.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Events/Event.cpp.o
-.PHONY : src/discordpp/Events/Event.cpp.o
+src/discordpp/commands/CommandManager.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/commands/CommandManager.cpp.o
+.PHONY : src/discordpp/commands/CommandManager.cpp.o
 
-src/discordpp/Events/Event.i: src/discordpp/Events/Event.cpp.i
+src/discordpp/commands/CommandManager.i: src/discordpp/commands/CommandManager.cpp.i
 
-.PHONY : src/discordpp/Events/Event.i
+.PHONY : src/discordpp/commands/CommandManager.i
 
 # target to preprocess a source file
-src/discordpp/Events/Event.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Events/Event.cpp.i
-.PHONY : src/discordpp/Events/Event.cpp.i
+src/discordpp/commands/CommandManager.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/commands/CommandManager.cpp.i
+.PHONY : src/discordpp/commands/CommandManager.cpp.i
 
-src/discordpp/Events/Event.s: src/discordpp/Events/Event.cpp.s
+src/discordpp/commands/CommandManager.s: src/discordpp/commands/CommandManager.cpp.s
 
-.PHONY : src/discordpp/Events/Event.s
+.PHONY : src/discordpp/commands/CommandManager.s
 
 # target to generate assembly for a file
-src/discordpp/Events/Event.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Events/Event.cpp.s
-.PHONY : src/discordpp/Events/Event.cpp.s
+src/discordpp/commands/CommandManager.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/commands/CommandManager.cpp.s
+.PHONY : src/discordpp/commands/CommandManager.cpp.s
 
-src/discordpp/Events/GuildCreateEvent.o: src/discordpp/Events/GuildCreateEvent.cpp.o
+src/discordpp/commands/PingCommand.o: src/discordpp/commands/PingCommand.cpp.o
 
-.PHONY : src/discordpp/Events/GuildCreateEvent.o
+.PHONY : src/discordpp/commands/PingCommand.o
 
 # target to build an object file
-src/discordpp/Events/GuildCreateEvent.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Events/GuildCreateEvent.cpp.o
-.PHONY : src/discordpp/Events/GuildCreateEvent.cpp.o
+src/discordpp/commands/PingCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/commands/PingCommand.cpp.o
+.PHONY : src/discordpp/commands/PingCommand.cpp.o
 
-src/discordpp/Events/GuildCreateEvent.i: src/discordpp/Events/GuildCreateEvent.cpp.i
+src/discordpp/commands/PingCommand.i: src/discordpp/commands/PingCommand.cpp.i
 
-.PHONY : src/discordpp/Events/GuildCreateEvent.i
+.PHONY : src/discordpp/commands/PingCommand.i
 
 # target to preprocess a source file
-src/discordpp/Events/GuildCreateEvent.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Events/GuildCreateEvent.cpp.i
-.PHONY : src/discordpp/Events/GuildCreateEvent.cpp.i
+src/discordpp/commands/PingCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/commands/PingCommand.cpp.i
+.PHONY : src/discordpp/commands/PingCommand.cpp.i
 
-src/discordpp/Events/GuildCreateEvent.s: src/discordpp/Events/GuildCreateEvent.cpp.s
+src/discordpp/commands/PingCommand.s: src/discordpp/commands/PingCommand.cpp.s
 
-.PHONY : src/discordpp/Events/GuildCreateEvent.s
+.PHONY : src/discordpp/commands/PingCommand.s
 
 # target to generate assembly for a file
-src/discordpp/Events/GuildCreateEvent.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Events/GuildCreateEvent.cpp.s
-.PHONY : src/discordpp/Events/GuildCreateEvent.cpp.s
+src/discordpp/commands/PingCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/commands/PingCommand.cpp.s
+.PHONY : src/discordpp/commands/PingCommand.cpp.s
 
-src/discordpp/Events/HeartbeatACKEvent.o: src/discordpp/Events/HeartbeatACKEvent.cpp.o
+src/discordpp/databases/SQLiteDatabase.o: src/discordpp/databases/SQLiteDatabase.cpp.o
 
-.PHONY : src/discordpp/Events/HeartbeatACKEvent.o
+.PHONY : src/discordpp/databases/SQLiteDatabase.o
 
 # target to build an object file
-src/discordpp/Events/HeartbeatACKEvent.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Events/HeartbeatACKEvent.cpp.o
-.PHONY : src/discordpp/Events/HeartbeatACKEvent.cpp.o
+src/discordpp/databases/SQLiteDatabase.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/databases/SQLiteDatabase.cpp.o
+.PHONY : src/discordpp/databases/SQLiteDatabase.cpp.o
 
-src/discordpp/Events/HeartbeatACKEvent.i: src/discordpp/Events/HeartbeatACKEvent.cpp.i
+src/discordpp/databases/SQLiteDatabase.i: src/discordpp/databases/SQLiteDatabase.cpp.i
 
-.PHONY : src/discordpp/Events/HeartbeatACKEvent.i
+.PHONY : src/discordpp/databases/SQLiteDatabase.i
 
 # target to preprocess a source file
-src/discordpp/Events/HeartbeatACKEvent.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Events/HeartbeatACKEvent.cpp.i
-.PHONY : src/discordpp/Events/HeartbeatACKEvent.cpp.i
+src/discordpp/databases/SQLiteDatabase.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/databases/SQLiteDatabase.cpp.i
+.PHONY : src/discordpp/databases/SQLiteDatabase.cpp.i
 
-src/discordpp/Events/HeartbeatACKEvent.s: src/discordpp/Events/HeartbeatACKEvent.cpp.s
+src/discordpp/databases/SQLiteDatabase.s: src/discordpp/databases/SQLiteDatabase.cpp.s
 
-.PHONY : src/discordpp/Events/HeartbeatACKEvent.s
+.PHONY : src/discordpp/databases/SQLiteDatabase.s
 
 # target to generate assembly for a file
-src/discordpp/Events/HeartbeatACKEvent.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Events/HeartbeatACKEvent.cpp.s
-.PHONY : src/discordpp/Events/HeartbeatACKEvent.cpp.s
+src/discordpp/databases/SQLiteDatabase.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/databases/SQLiteDatabase.cpp.s
+.PHONY : src/discordpp/databases/SQLiteDatabase.cpp.s
 
-src/discordpp/Events/HelloEvent.o: src/discordpp/Events/HelloEvent.cpp.o
+src/discordpp/events/ChannelCreateEvent.o: src/discordpp/events/ChannelCreateEvent.cpp.o
 
-.PHONY : src/discordpp/Events/HelloEvent.o
+.PHONY : src/discordpp/events/ChannelCreateEvent.o
 
 # target to build an object file
-src/discordpp/Events/HelloEvent.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Events/HelloEvent.cpp.o
-.PHONY : src/discordpp/Events/HelloEvent.cpp.o
+src/discordpp/events/ChannelCreateEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/events/ChannelCreateEvent.cpp.o
+.PHONY : src/discordpp/events/ChannelCreateEvent.cpp.o
 
-src/discordpp/Events/HelloEvent.i: src/discordpp/Events/HelloEvent.cpp.i
+src/discordpp/events/ChannelCreateEvent.i: src/discordpp/events/ChannelCreateEvent.cpp.i
 
-.PHONY : src/discordpp/Events/HelloEvent.i
+.PHONY : src/discordpp/events/ChannelCreateEvent.i
 
 # target to preprocess a source file
-src/discordpp/Events/HelloEvent.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Events/HelloEvent.cpp.i
-.PHONY : src/discordpp/Events/HelloEvent.cpp.i
+src/discordpp/events/ChannelCreateEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/events/ChannelCreateEvent.cpp.i
+.PHONY : src/discordpp/events/ChannelCreateEvent.cpp.i
 
-src/discordpp/Events/HelloEvent.s: src/discordpp/Events/HelloEvent.cpp.s
+src/discordpp/events/ChannelCreateEvent.s: src/discordpp/events/ChannelCreateEvent.cpp.s
 
-.PHONY : src/discordpp/Events/HelloEvent.s
+.PHONY : src/discordpp/events/ChannelCreateEvent.s
 
 # target to generate assembly for a file
-src/discordpp/Events/HelloEvent.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Events/HelloEvent.cpp.s
-.PHONY : src/discordpp/Events/HelloEvent.cpp.s
+src/discordpp/events/ChannelCreateEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/events/ChannelCreateEvent.cpp.s
+.PHONY : src/discordpp/events/ChannelCreateEvent.cpp.s
 
-src/discordpp/Events/MessageCreateEvent.o: src/discordpp/Events/MessageCreateEvent.cpp.o
+src/discordpp/events/DispatchEvent.o: src/discordpp/events/DispatchEvent.cpp.o
 
-.PHONY : src/discordpp/Events/MessageCreateEvent.o
+.PHONY : src/discordpp/events/DispatchEvent.o
 
 # target to build an object file
-src/discordpp/Events/MessageCreateEvent.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Events/MessageCreateEvent.cpp.o
-.PHONY : src/discordpp/Events/MessageCreateEvent.cpp.o
+src/discordpp/events/DispatchEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/events/DispatchEvent.cpp.o
+.PHONY : src/discordpp/events/DispatchEvent.cpp.o
 
-src/discordpp/Events/MessageCreateEvent.i: src/discordpp/Events/MessageCreateEvent.cpp.i
+src/discordpp/events/DispatchEvent.i: src/discordpp/events/DispatchEvent.cpp.i
 
-.PHONY : src/discordpp/Events/MessageCreateEvent.i
+.PHONY : src/discordpp/events/DispatchEvent.i
 
 # target to preprocess a source file
-src/discordpp/Events/MessageCreateEvent.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Events/MessageCreateEvent.cpp.i
-.PHONY : src/discordpp/Events/MessageCreateEvent.cpp.i
+src/discordpp/events/DispatchEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/events/DispatchEvent.cpp.i
+.PHONY : src/discordpp/events/DispatchEvent.cpp.i
 
-src/discordpp/Events/MessageCreateEvent.s: src/discordpp/Events/MessageCreateEvent.cpp.s
+src/discordpp/events/DispatchEvent.s: src/discordpp/events/DispatchEvent.cpp.s
 
-.PHONY : src/discordpp/Events/MessageCreateEvent.s
+.PHONY : src/discordpp/events/DispatchEvent.s
 
 # target to generate assembly for a file
-src/discordpp/Events/MessageCreateEvent.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Events/MessageCreateEvent.cpp.s
-.PHONY : src/discordpp/Events/MessageCreateEvent.cpp.s
+src/discordpp/events/DispatchEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/events/DispatchEvent.cpp.s
+.PHONY : src/discordpp/events/DispatchEvent.cpp.s
 
-src/discordpp/Events/MessageReactionAddEvent.o: src/discordpp/Events/MessageReactionAddEvent.cpp.o
+src/discordpp/events/Event.o: src/discordpp/events/Event.cpp.o
 
-.PHONY : src/discordpp/Events/MessageReactionAddEvent.o
+.PHONY : src/discordpp/events/Event.o
 
 # target to build an object file
-src/discordpp/Events/MessageReactionAddEvent.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Events/MessageReactionAddEvent.cpp.o
-.PHONY : src/discordpp/Events/MessageReactionAddEvent.cpp.o
+src/discordpp/events/Event.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/events/Event.cpp.o
+.PHONY : src/discordpp/events/Event.cpp.o
 
-src/discordpp/Events/MessageReactionAddEvent.i: src/discordpp/Events/MessageReactionAddEvent.cpp.i
+src/discordpp/events/Event.i: src/discordpp/events/Event.cpp.i
 
-.PHONY : src/discordpp/Events/MessageReactionAddEvent.i
+.PHONY : src/discordpp/events/Event.i
 
 # target to preprocess a source file
-src/discordpp/Events/MessageReactionAddEvent.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Events/MessageReactionAddEvent.cpp.i
-.PHONY : src/discordpp/Events/MessageReactionAddEvent.cpp.i
+src/discordpp/events/Event.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/events/Event.cpp.i
+.PHONY : src/discordpp/events/Event.cpp.i
 
-src/discordpp/Events/MessageReactionAddEvent.s: src/discordpp/Events/MessageReactionAddEvent.cpp.s
+src/discordpp/events/Event.s: src/discordpp/events/Event.cpp.s
 
-.PHONY : src/discordpp/Events/MessageReactionAddEvent.s
+.PHONY : src/discordpp/events/Event.s
 
 # target to generate assembly for a file
-src/discordpp/Events/MessageReactionAddEvent.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Events/MessageReactionAddEvent.cpp.s
-.PHONY : src/discordpp/Events/MessageReactionAddEvent.cpp.s
+src/discordpp/events/Event.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/events/Event.cpp.s
+.PHONY : src/discordpp/events/Event.cpp.s
 
-src/discordpp/Events/PresenceUpdateEvent.o: src/discordpp/Events/PresenceUpdateEvent.cpp.o
+src/discordpp/events/GuildCreateEvent.o: src/discordpp/events/GuildCreateEvent.cpp.o
 
-.PHONY : src/discordpp/Events/PresenceUpdateEvent.o
+.PHONY : src/discordpp/events/GuildCreateEvent.o
 
 # target to build an object file
-src/discordpp/Events/PresenceUpdateEvent.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Events/PresenceUpdateEvent.cpp.o
-.PHONY : src/discordpp/Events/PresenceUpdateEvent.cpp.o
+src/discordpp/events/GuildCreateEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/events/GuildCreateEvent.cpp.o
+.PHONY : src/discordpp/events/GuildCreateEvent.cpp.o
 
-src/discordpp/Events/PresenceUpdateEvent.i: src/discordpp/Events/PresenceUpdateEvent.cpp.i
+src/discordpp/events/GuildCreateEvent.i: src/discordpp/events/GuildCreateEvent.cpp.i
 
-.PHONY : src/discordpp/Events/PresenceUpdateEvent.i
+.PHONY : src/discordpp/events/GuildCreateEvent.i
 
 # target to preprocess a source file
-src/discordpp/Events/PresenceUpdateEvent.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Events/PresenceUpdateEvent.cpp.i
-.PHONY : src/discordpp/Events/PresenceUpdateEvent.cpp.i
+src/discordpp/events/GuildCreateEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/events/GuildCreateEvent.cpp.i
+.PHONY : src/discordpp/events/GuildCreateEvent.cpp.i
 
-src/discordpp/Events/PresenceUpdateEvent.s: src/discordpp/Events/PresenceUpdateEvent.cpp.s
+src/discordpp/events/GuildCreateEvent.s: src/discordpp/events/GuildCreateEvent.cpp.s
 
-.PHONY : src/discordpp/Events/PresenceUpdateEvent.s
+.PHONY : src/discordpp/events/GuildCreateEvent.s
 
 # target to generate assembly for a file
-src/discordpp/Events/PresenceUpdateEvent.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Events/PresenceUpdateEvent.cpp.s
-.PHONY : src/discordpp/Events/PresenceUpdateEvent.cpp.s
+src/discordpp/events/GuildCreateEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/events/GuildCreateEvent.cpp.s
+.PHONY : src/discordpp/events/GuildCreateEvent.cpp.s
 
-src/discordpp/Events/ReadyEvent.o: src/discordpp/Events/ReadyEvent.cpp.o
+src/discordpp/events/HeartbeatACKEvent.o: src/discordpp/events/HeartbeatACKEvent.cpp.o
 
-.PHONY : src/discordpp/Events/ReadyEvent.o
+.PHONY : src/discordpp/events/HeartbeatACKEvent.o
 
 # target to build an object file
-src/discordpp/Events/ReadyEvent.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Events/ReadyEvent.cpp.o
-.PHONY : src/discordpp/Events/ReadyEvent.cpp.o
+src/discordpp/events/HeartbeatACKEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/events/HeartbeatACKEvent.cpp.o
+.PHONY : src/discordpp/events/HeartbeatACKEvent.cpp.o
 
-src/discordpp/Events/ReadyEvent.i: src/discordpp/Events/ReadyEvent.cpp.i
+src/discordpp/events/HeartbeatACKEvent.i: src/discordpp/events/HeartbeatACKEvent.cpp.i
 
-.PHONY : src/discordpp/Events/ReadyEvent.i
+.PHONY : src/discordpp/events/HeartbeatACKEvent.i
 
 # target to preprocess a source file
-src/discordpp/Events/ReadyEvent.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Events/ReadyEvent.cpp.i
-.PHONY : src/discordpp/Events/ReadyEvent.cpp.i
+src/discordpp/events/HeartbeatACKEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/events/HeartbeatACKEvent.cpp.i
+.PHONY : src/discordpp/events/HeartbeatACKEvent.cpp.i
 
-src/discordpp/Events/ReadyEvent.s: src/discordpp/Events/ReadyEvent.cpp.s
+src/discordpp/events/HeartbeatACKEvent.s: src/discordpp/events/HeartbeatACKEvent.cpp.s
 
-.PHONY : src/discordpp/Events/ReadyEvent.s
+.PHONY : src/discordpp/events/HeartbeatACKEvent.s
 
 # target to generate assembly for a file
-src/discordpp/Events/ReadyEvent.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Events/ReadyEvent.cpp.s
-.PHONY : src/discordpp/Events/ReadyEvent.cpp.s
+src/discordpp/events/HeartbeatACKEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/events/HeartbeatACKEvent.cpp.s
+.PHONY : src/discordpp/events/HeartbeatACKEvent.cpp.s
 
-src/discordpp/Events/TypingStartEvent.o: src/discordpp/Events/TypingStartEvent.cpp.o
+src/discordpp/events/HelloEvent.o: src/discordpp/events/HelloEvent.cpp.o
 
-.PHONY : src/discordpp/Events/TypingStartEvent.o
+.PHONY : src/discordpp/events/HelloEvent.o
 
 # target to build an object file
-src/discordpp/Events/TypingStartEvent.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Events/TypingStartEvent.cpp.o
-.PHONY : src/discordpp/Events/TypingStartEvent.cpp.o
+src/discordpp/events/HelloEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/events/HelloEvent.cpp.o
+.PHONY : src/discordpp/events/HelloEvent.cpp.o
 
-src/discordpp/Events/TypingStartEvent.i: src/discordpp/Events/TypingStartEvent.cpp.i
+src/discordpp/events/HelloEvent.i: src/discordpp/events/HelloEvent.cpp.i
 
-.PHONY : src/discordpp/Events/TypingStartEvent.i
+.PHONY : src/discordpp/events/HelloEvent.i
 
 # target to preprocess a source file
-src/discordpp/Events/TypingStartEvent.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Events/TypingStartEvent.cpp.i
-.PHONY : src/discordpp/Events/TypingStartEvent.cpp.i
+src/discordpp/events/HelloEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/events/HelloEvent.cpp.i
+.PHONY : src/discordpp/events/HelloEvent.cpp.i
 
-src/discordpp/Events/TypingStartEvent.s: src/discordpp/Events/TypingStartEvent.cpp.s
+src/discordpp/events/HelloEvent.s: src/discordpp/events/HelloEvent.cpp.s
 
-.PHONY : src/discordpp/Events/TypingStartEvent.s
+.PHONY : src/discordpp/events/HelloEvent.s
 
 # target to generate assembly for a file
-src/discordpp/Events/TypingStartEvent.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Events/TypingStartEvent.cpp.s
-.PHONY : src/discordpp/Events/TypingStartEvent.cpp.s
+src/discordpp/events/HelloEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/events/HelloEvent.cpp.s
+.PHONY : src/discordpp/events/HelloEvent.cpp.s
 
-src/discordpp/Guilds/Guild.o: src/discordpp/Guilds/Guild.cpp.o
+src/discordpp/events/MessageCreateEvent.o: src/discordpp/events/MessageCreateEvent.cpp.o
 
-.PHONY : src/discordpp/Guilds/Guild.o
+.PHONY : src/discordpp/events/MessageCreateEvent.o
 
 # target to build an object file
-src/discordpp/Guilds/Guild.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Guilds/Guild.cpp.o
-.PHONY : src/discordpp/Guilds/Guild.cpp.o
+src/discordpp/events/MessageCreateEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/events/MessageCreateEvent.cpp.o
+.PHONY : src/discordpp/events/MessageCreateEvent.cpp.o
 
-src/discordpp/Guilds/Guild.i: src/discordpp/Guilds/Guild.cpp.i
+src/discordpp/events/MessageCreateEvent.i: src/discordpp/events/MessageCreateEvent.cpp.i
 
-.PHONY : src/discordpp/Guilds/Guild.i
+.PHONY : src/discordpp/events/MessageCreateEvent.i
 
 # target to preprocess a source file
-src/discordpp/Guilds/Guild.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Guilds/Guild.cpp.i
-.PHONY : src/discordpp/Guilds/Guild.cpp.i
+src/discordpp/events/MessageCreateEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/events/MessageCreateEvent.cpp.i
+.PHONY : src/discordpp/events/MessageCreateEvent.cpp.i
 
-src/discordpp/Guilds/Guild.s: src/discordpp/Guilds/Guild.cpp.s
+src/discordpp/events/MessageCreateEvent.s: src/discordpp/events/MessageCreateEvent.cpp.s
 
-.PHONY : src/discordpp/Guilds/Guild.s
+.PHONY : src/discordpp/events/MessageCreateEvent.s
 
 # target to generate assembly for a file
-src/discordpp/Guilds/Guild.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Guilds/Guild.cpp.s
-.PHONY : src/discordpp/Guilds/Guild.cpp.s
+src/discordpp/events/MessageCreateEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/events/MessageCreateEvent.cpp.s
+.PHONY : src/discordpp/events/MessageCreateEvent.cpp.s
 
-src/discordpp/Guilds/GuildManager.o: src/discordpp/Guilds/GuildManager.cpp.o
+src/discordpp/events/MessageReactionAddEvent.o: src/discordpp/events/MessageReactionAddEvent.cpp.o
 
-.PHONY : src/discordpp/Guilds/GuildManager.o
+.PHONY : src/discordpp/events/MessageReactionAddEvent.o
 
 # target to build an object file
-src/discordpp/Guilds/GuildManager.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Guilds/GuildManager.cpp.o
-.PHONY : src/discordpp/Guilds/GuildManager.cpp.o
+src/discordpp/events/MessageReactionAddEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/events/MessageReactionAddEvent.cpp.o
+.PHONY : src/discordpp/events/MessageReactionAddEvent.cpp.o
 
-src/discordpp/Guilds/GuildManager.i: src/discordpp/Guilds/GuildManager.cpp.i
+src/discordpp/events/MessageReactionAddEvent.i: src/discordpp/events/MessageReactionAddEvent.cpp.i
 
-.PHONY : src/discordpp/Guilds/GuildManager.i
+.PHONY : src/discordpp/events/MessageReactionAddEvent.i
 
 # target to preprocess a source file
-src/discordpp/Guilds/GuildManager.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Guilds/GuildManager.cpp.i
-.PHONY : src/discordpp/Guilds/GuildManager.cpp.i
+src/discordpp/events/MessageReactionAddEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/events/MessageReactionAddEvent.cpp.i
+.PHONY : src/discordpp/events/MessageReactionAddEvent.cpp.i
 
-src/discordpp/Guilds/GuildManager.s: src/discordpp/Guilds/GuildManager.cpp.s
+src/discordpp/events/MessageReactionAddEvent.s: src/discordpp/events/MessageReactionAddEvent.cpp.s
 
-.PHONY : src/discordpp/Guilds/GuildManager.s
+.PHONY : src/discordpp/events/MessageReactionAddEvent.s
 
 # target to generate assembly for a file
-src/discordpp/Guilds/GuildManager.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Guilds/GuildManager.cpp.s
-.PHONY : src/discordpp/Guilds/GuildManager.cpp.s
+src/discordpp/events/MessageReactionAddEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/events/MessageReactionAddEvent.cpp.s
+.PHONY : src/discordpp/events/MessageReactionAddEvent.cpp.s
 
-src/discordpp/Money/Commands/ClaimMoneyCommand.o: src/discordpp/Money/Commands/ClaimMoneyCommand.cpp.o
+src/discordpp/events/PresenceUpdateEvent.o: src/discordpp/events/PresenceUpdateEvent.cpp.o
 
-.PHONY : src/discordpp/Money/Commands/ClaimMoneyCommand.o
+.PHONY : src/discordpp/events/PresenceUpdateEvent.o
 
 # target to build an object file
-src/discordpp/Money/Commands/ClaimMoneyCommand.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Money/Commands/ClaimMoneyCommand.cpp.o
-.PHONY : src/discordpp/Money/Commands/ClaimMoneyCommand.cpp.o
+src/discordpp/events/PresenceUpdateEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/events/PresenceUpdateEvent.cpp.o
+.PHONY : src/discordpp/events/PresenceUpdateEvent.cpp.o
 
-src/discordpp/Money/Commands/ClaimMoneyCommand.i: src/discordpp/Money/Commands/ClaimMoneyCommand.cpp.i
+src/discordpp/events/PresenceUpdateEvent.i: src/discordpp/events/PresenceUpdateEvent.cpp.i
 
-.PHONY : src/discordpp/Money/Commands/ClaimMoneyCommand.i
+.PHONY : src/discordpp/events/PresenceUpdateEvent.i
 
 # target to preprocess a source file
-src/discordpp/Money/Commands/ClaimMoneyCommand.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Money/Commands/ClaimMoneyCommand.cpp.i
-.PHONY : src/discordpp/Money/Commands/ClaimMoneyCommand.cpp.i
+src/discordpp/events/PresenceUpdateEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/events/PresenceUpdateEvent.cpp.i
+.PHONY : src/discordpp/events/PresenceUpdateEvent.cpp.i
 
-src/discordpp/Money/Commands/ClaimMoneyCommand.s: src/discordpp/Money/Commands/ClaimMoneyCommand.cpp.s
+src/discordpp/events/PresenceUpdateEvent.s: src/discordpp/events/PresenceUpdateEvent.cpp.s
 
-.PHONY : src/discordpp/Money/Commands/ClaimMoneyCommand.s
+.PHONY : src/discordpp/events/PresenceUpdateEvent.s
 
 # target to generate assembly for a file
-src/discordpp/Money/Commands/ClaimMoneyCommand.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Money/Commands/ClaimMoneyCommand.cpp.s
-.PHONY : src/discordpp/Money/Commands/ClaimMoneyCommand.cpp.s
+src/discordpp/events/PresenceUpdateEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/events/PresenceUpdateEvent.cpp.s
+.PHONY : src/discordpp/events/PresenceUpdateEvent.cpp.s
 
-src/discordpp/Money/Commands/DailyMoneyCommand.o: src/discordpp/Money/Commands/DailyMoneyCommand.cpp.o
+src/discordpp/events/ReadyEvent.o: src/discordpp/events/ReadyEvent.cpp.o
 
-.PHONY : src/discordpp/Money/Commands/DailyMoneyCommand.o
+.PHONY : src/discordpp/events/ReadyEvent.o
 
 # target to build an object file
-src/discordpp/Money/Commands/DailyMoneyCommand.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Money/Commands/DailyMoneyCommand.cpp.o
-.PHONY : src/discordpp/Money/Commands/DailyMoneyCommand.cpp.o
+src/discordpp/events/ReadyEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/events/ReadyEvent.cpp.o
+.PHONY : src/discordpp/events/ReadyEvent.cpp.o
 
-src/discordpp/Money/Commands/DailyMoneyCommand.i: src/discordpp/Money/Commands/DailyMoneyCommand.cpp.i
+src/discordpp/events/ReadyEvent.i: src/discordpp/events/ReadyEvent.cpp.i
 
-.PHONY : src/discordpp/Money/Commands/DailyMoneyCommand.i
+.PHONY : src/discordpp/events/ReadyEvent.i
 
 # target to preprocess a source file
-src/discordpp/Money/Commands/DailyMoneyCommand.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Money/Commands/DailyMoneyCommand.cpp.i
-.PHONY : src/discordpp/Money/Commands/DailyMoneyCommand.cpp.i
+src/discordpp/events/ReadyEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/events/ReadyEvent.cpp.i
+.PHONY : src/discordpp/events/ReadyEvent.cpp.i
 
-src/discordpp/Money/Commands/DailyMoneyCommand.s: src/discordpp/Money/Commands/DailyMoneyCommand.cpp.s
+src/discordpp/events/ReadyEvent.s: src/discordpp/events/ReadyEvent.cpp.s
 
-.PHONY : src/discordpp/Money/Commands/DailyMoneyCommand.s
+.PHONY : src/discordpp/events/ReadyEvent.s
 
 # target to generate assembly for a file
-src/discordpp/Money/Commands/DailyMoneyCommand.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Money/Commands/DailyMoneyCommand.cpp.s
-.PHONY : src/discordpp/Money/Commands/DailyMoneyCommand.cpp.s
+src/discordpp/events/ReadyEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/events/ReadyEvent.cpp.s
+.PHONY : src/discordpp/events/ReadyEvent.cpp.s
 
-src/discordpp/Money/Commands/LeaderboardCommand.o: src/discordpp/Money/Commands/LeaderboardCommand.cpp.o
+src/discordpp/events/TypingStartEvent.o: src/discordpp/events/TypingStartEvent.cpp.o
 
-.PHONY : src/discordpp/Money/Commands/LeaderboardCommand.o
+.PHONY : src/discordpp/events/TypingStartEvent.o
 
 # target to build an object file
-src/discordpp/Money/Commands/LeaderboardCommand.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Money/Commands/LeaderboardCommand.cpp.o
-.PHONY : src/discordpp/Money/Commands/LeaderboardCommand.cpp.o
+src/discordpp/events/TypingStartEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/events/TypingStartEvent.cpp.o
+.PHONY : src/discordpp/events/TypingStartEvent.cpp.o
 
-src/discordpp/Money/Commands/LeaderboardCommand.i: src/discordpp/Money/Commands/LeaderboardCommand.cpp.i
+src/discordpp/events/TypingStartEvent.i: src/discordpp/events/TypingStartEvent.cpp.i
 
-.PHONY : src/discordpp/Money/Commands/LeaderboardCommand.i
+.PHONY : src/discordpp/events/TypingStartEvent.i
 
 # target to preprocess a source file
-src/discordpp/Money/Commands/LeaderboardCommand.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Money/Commands/LeaderboardCommand.cpp.i
-.PHONY : src/discordpp/Money/Commands/LeaderboardCommand.cpp.i
+src/discordpp/events/TypingStartEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/events/TypingStartEvent.cpp.i
+.PHONY : src/discordpp/events/TypingStartEvent.cpp.i
 
-src/discordpp/Money/Commands/LeaderboardCommand.s: src/discordpp/Money/Commands/LeaderboardCommand.cpp.s
+src/discordpp/events/TypingStartEvent.s: src/discordpp/events/TypingStartEvent.cpp.s
 
-.PHONY : src/discordpp/Money/Commands/LeaderboardCommand.s
+.PHONY : src/discordpp/events/TypingStartEvent.s
 
 # target to generate assembly for a file
-src/discordpp/Money/Commands/LeaderboardCommand.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Money/Commands/LeaderboardCommand.cpp.s
-.PHONY : src/discordpp/Money/Commands/LeaderboardCommand.cpp.s
+src/discordpp/events/TypingStartEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/events/TypingStartEvent.cpp.s
+.PHONY : src/discordpp/events/TypingStartEvent.cpp.s
 
-src/discordpp/Money/Money.o: src/discordpp/Money/Money.cpp.o
+src/discordpp/guilds/Guild.o: src/discordpp/guilds/Guild.cpp.o
 
-.PHONY : src/discordpp/Money/Money.o
+.PHONY : src/discordpp/guilds/Guild.o
 
 # target to build an object file
-src/discordpp/Money/Money.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Money/Money.cpp.o
-.PHONY : src/discordpp/Money/Money.cpp.o
+src/discordpp/guilds/Guild.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/guilds/Guild.cpp.o
+.PHONY : src/discordpp/guilds/Guild.cpp.o
 
-src/discordpp/Money/Money.i: src/discordpp/Money/Money.cpp.i
+src/discordpp/guilds/Guild.i: src/discordpp/guilds/Guild.cpp.i
 
-.PHONY : src/discordpp/Money/Money.i
+.PHONY : src/discordpp/guilds/Guild.i
 
 # target to preprocess a source file
-src/discordpp/Money/Money.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Money/Money.cpp.i
-.PHONY : src/discordpp/Money/Money.cpp.i
+src/discordpp/guilds/Guild.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/guilds/Guild.cpp.i
+.PHONY : src/discordpp/guilds/Guild.cpp.i
 
-src/discordpp/Money/Money.s: src/discordpp/Money/Money.cpp.s
+src/discordpp/guilds/Guild.s: src/discordpp/guilds/Guild.cpp.s
 
-.PHONY : src/discordpp/Money/Money.s
+.PHONY : src/discordpp/guilds/Guild.s
 
 # target to generate assembly for a file
-src/discordpp/Money/Money.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Money/Money.cpp.s
-.PHONY : src/discordpp/Money/Money.cpp.s
+src/discordpp/guilds/Guild.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/guilds/Guild.cpp.s
+.PHONY : src/discordpp/guilds/Guild.cpp.s
 
-src/discordpp/Money/MoneyManager.o: src/discordpp/Money/MoneyManager.cpp.o
+src/discordpp/guilds/GuildManager.o: src/discordpp/guilds/GuildManager.cpp.o
 
-.PHONY : src/discordpp/Money/MoneyManager.o
+.PHONY : src/discordpp/guilds/GuildManager.o
 
 # target to build an object file
-src/discordpp/Money/MoneyManager.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Money/MoneyManager.cpp.o
-.PHONY : src/discordpp/Money/MoneyManager.cpp.o
+src/discordpp/guilds/GuildManager.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/guilds/GuildManager.cpp.o
+.PHONY : src/discordpp/guilds/GuildManager.cpp.o
 
-src/discordpp/Money/MoneyManager.i: src/discordpp/Money/MoneyManager.cpp.i
+src/discordpp/guilds/GuildManager.i: src/discordpp/guilds/GuildManager.cpp.i
 
-.PHONY : src/discordpp/Money/MoneyManager.i
+.PHONY : src/discordpp/guilds/GuildManager.i
 
 # target to preprocess a source file
-src/discordpp/Money/MoneyManager.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Money/MoneyManager.cpp.i
-.PHONY : src/discordpp/Money/MoneyManager.cpp.i
+src/discordpp/guilds/GuildManager.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/guilds/GuildManager.cpp.i
+.PHONY : src/discordpp/guilds/GuildManager.cpp.i
 
-src/discordpp/Money/MoneyManager.s: src/discordpp/Money/MoneyManager.cpp.s
+src/discordpp/guilds/GuildManager.s: src/discordpp/guilds/GuildManager.cpp.s
 
-.PHONY : src/discordpp/Money/MoneyManager.s
+.PHONY : src/discordpp/guilds/GuildManager.s
 
 # target to generate assembly for a file
-src/discordpp/Money/MoneyManager.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Money/MoneyManager.cpp.s
-.PHONY : src/discordpp/Money/MoneyManager.cpp.s
+src/discordpp/guilds/GuildManager.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/guilds/GuildManager.cpp.s
+.PHONY : src/discordpp/guilds/GuildManager.cpp.s
 
-src/discordpp/Objects/Channel.o: src/discordpp/Objects/Channel.cpp.o
+src/discordpp/money/Commands/ClaimMoneyCommand.o: src/discordpp/money/Commands/ClaimMoneyCommand.cpp.o
 
-.PHONY : src/discordpp/Objects/Channel.o
+.PHONY : src/discordpp/money/Commands/ClaimMoneyCommand.o
 
 # target to build an object file
-src/discordpp/Objects/Channel.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Objects/Channel.cpp.o
-.PHONY : src/discordpp/Objects/Channel.cpp.o
+src/discordpp/money/Commands/ClaimMoneyCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/money/Commands/ClaimMoneyCommand.cpp.o
+.PHONY : src/discordpp/money/Commands/ClaimMoneyCommand.cpp.o
 
-src/discordpp/Objects/Channel.i: src/discordpp/Objects/Channel.cpp.i
+src/discordpp/money/Commands/ClaimMoneyCommand.i: src/discordpp/money/Commands/ClaimMoneyCommand.cpp.i
 
-.PHONY : src/discordpp/Objects/Channel.i
+.PHONY : src/discordpp/money/Commands/ClaimMoneyCommand.i
 
 # target to preprocess a source file
-src/discordpp/Objects/Channel.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Objects/Channel.cpp.i
-.PHONY : src/discordpp/Objects/Channel.cpp.i
+src/discordpp/money/Commands/ClaimMoneyCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/money/Commands/ClaimMoneyCommand.cpp.i
+.PHONY : src/discordpp/money/Commands/ClaimMoneyCommand.cpp.i
 
-src/discordpp/Objects/Channel.s: src/discordpp/Objects/Channel.cpp.s
+src/discordpp/money/Commands/ClaimMoneyCommand.s: src/discordpp/money/Commands/ClaimMoneyCommand.cpp.s
 
-.PHONY : src/discordpp/Objects/Channel.s
+.PHONY : src/discordpp/money/Commands/ClaimMoneyCommand.s
 
 # target to generate assembly for a file
-src/discordpp/Objects/Channel.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Objects/Channel.cpp.s
-.PHONY : src/discordpp/Objects/Channel.cpp.s
+src/discordpp/money/Commands/ClaimMoneyCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/money/Commands/ClaimMoneyCommand.cpp.s
+.PHONY : src/discordpp/money/Commands/ClaimMoneyCommand.cpp.s
 
-src/discordpp/Objects/Emoji.o: src/discordpp/Objects/Emoji.cpp.o
+src/discordpp/money/Commands/DailyMoneyCommand.o: src/discordpp/money/Commands/DailyMoneyCommand.cpp.o
 
-.PHONY : src/discordpp/Objects/Emoji.o
+.PHONY : src/discordpp/money/Commands/DailyMoneyCommand.o
 
 # target to build an object file
-src/discordpp/Objects/Emoji.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Objects/Emoji.cpp.o
-.PHONY : src/discordpp/Objects/Emoji.cpp.o
+src/discordpp/money/Commands/DailyMoneyCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/money/Commands/DailyMoneyCommand.cpp.o
+.PHONY : src/discordpp/money/Commands/DailyMoneyCommand.cpp.o
 
-src/discordpp/Objects/Emoji.i: src/discordpp/Objects/Emoji.cpp.i
+src/discordpp/money/Commands/DailyMoneyCommand.i: src/discordpp/money/Commands/DailyMoneyCommand.cpp.i
 
-.PHONY : src/discordpp/Objects/Emoji.i
+.PHONY : src/discordpp/money/Commands/DailyMoneyCommand.i
 
 # target to preprocess a source file
-src/discordpp/Objects/Emoji.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Objects/Emoji.cpp.i
-.PHONY : src/discordpp/Objects/Emoji.cpp.i
+src/discordpp/money/Commands/DailyMoneyCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/money/Commands/DailyMoneyCommand.cpp.i
+.PHONY : src/discordpp/money/Commands/DailyMoneyCommand.cpp.i
 
-src/discordpp/Objects/Emoji.s: src/discordpp/Objects/Emoji.cpp.s
+src/discordpp/money/Commands/DailyMoneyCommand.s: src/discordpp/money/Commands/DailyMoneyCommand.cpp.s
 
-.PHONY : src/discordpp/Objects/Emoji.s
+.PHONY : src/discordpp/money/Commands/DailyMoneyCommand.s
 
 # target to generate assembly for a file
-src/discordpp/Objects/Emoji.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Objects/Emoji.cpp.s
-.PHONY : src/discordpp/Objects/Emoji.cpp.s
+src/discordpp/money/Commands/DailyMoneyCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/money/Commands/DailyMoneyCommand.cpp.s
+.PHONY : src/discordpp/money/Commands/DailyMoneyCommand.cpp.s
 
-src/discordpp/Objects/Message.o: src/discordpp/Objects/Message.cpp.o
+src/discordpp/money/Commands/LeaderboardCommand.o: src/discordpp/money/Commands/LeaderboardCommand.cpp.o
 
-.PHONY : src/discordpp/Objects/Message.o
+.PHONY : src/discordpp/money/Commands/LeaderboardCommand.o
 
 # target to build an object file
-src/discordpp/Objects/Message.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Objects/Message.cpp.o
-.PHONY : src/discordpp/Objects/Message.cpp.o
+src/discordpp/money/Commands/LeaderboardCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/money/Commands/LeaderboardCommand.cpp.o
+.PHONY : src/discordpp/money/Commands/LeaderboardCommand.cpp.o
 
-src/discordpp/Objects/Message.i: src/discordpp/Objects/Message.cpp.i
+src/discordpp/money/Commands/LeaderboardCommand.i: src/discordpp/money/Commands/LeaderboardCommand.cpp.i
 
-.PHONY : src/discordpp/Objects/Message.i
+.PHONY : src/discordpp/money/Commands/LeaderboardCommand.i
 
 # target to preprocess a source file
-src/discordpp/Objects/Message.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Objects/Message.cpp.i
-.PHONY : src/discordpp/Objects/Message.cpp.i
+src/discordpp/money/Commands/LeaderboardCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/money/Commands/LeaderboardCommand.cpp.i
+.PHONY : src/discordpp/money/Commands/LeaderboardCommand.cpp.i
 
-src/discordpp/Objects/Message.s: src/discordpp/Objects/Message.cpp.s
+src/discordpp/money/Commands/LeaderboardCommand.s: src/discordpp/money/Commands/LeaderboardCommand.cpp.s
 
-.PHONY : src/discordpp/Objects/Message.s
+.PHONY : src/discordpp/money/Commands/LeaderboardCommand.s
 
 # target to generate assembly for a file
-src/discordpp/Objects/Message.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Objects/Message.cpp.s
-.PHONY : src/discordpp/Objects/Message.cpp.s
+src/discordpp/money/Commands/LeaderboardCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/money/Commands/LeaderboardCommand.cpp.s
+.PHONY : src/discordpp/money/Commands/LeaderboardCommand.cpp.s
 
-src/discordpp/Objects/Role.o: src/discordpp/Objects/Role.cpp.o
+src/discordpp/money/Money.o: src/discordpp/money/Money.cpp.o
 
-.PHONY : src/discordpp/Objects/Role.o
+.PHONY : src/discordpp/money/Money.o
 
 # target to build an object file
-src/discordpp/Objects/Role.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Objects/Role.cpp.o
-.PHONY : src/discordpp/Objects/Role.cpp.o
+src/discordpp/money/Money.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/money/Money.cpp.o
+.PHONY : src/discordpp/money/Money.cpp.o
 
-src/discordpp/Objects/Role.i: src/discordpp/Objects/Role.cpp.i
+src/discordpp/money/Money.i: src/discordpp/money/Money.cpp.i
 
-.PHONY : src/discordpp/Objects/Role.i
+.PHONY : src/discordpp/money/Money.i
 
 # target to preprocess a source file
-src/discordpp/Objects/Role.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Objects/Role.cpp.i
-.PHONY : src/discordpp/Objects/Role.cpp.i
+src/discordpp/money/Money.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/money/Money.cpp.i
+.PHONY : src/discordpp/money/Money.cpp.i
 
-src/discordpp/Objects/Role.s: src/discordpp/Objects/Role.cpp.s
+src/discordpp/money/Money.s: src/discordpp/money/Money.cpp.s
 
-.PHONY : src/discordpp/Objects/Role.s
+.PHONY : src/discordpp/money/Money.s
 
 # target to generate assembly for a file
-src/discordpp/Objects/Role.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Objects/Role.cpp.s
-.PHONY : src/discordpp/Objects/Role.cpp.s
+src/discordpp/money/Money.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/money/Money.cpp.s
+.PHONY : src/discordpp/money/Money.cpp.s
 
-src/discordpp/Objects/Snowflake.o: src/discordpp/Objects/Snowflake.cpp.o
+src/discordpp/money/MoneyManager.o: src/discordpp/money/MoneyManager.cpp.o
 
-.PHONY : src/discordpp/Objects/Snowflake.o
+.PHONY : src/discordpp/money/MoneyManager.o
 
 # target to build an object file
-src/discordpp/Objects/Snowflake.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Objects/Snowflake.cpp.o
-.PHONY : src/discordpp/Objects/Snowflake.cpp.o
+src/discordpp/money/MoneyManager.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/money/MoneyManager.cpp.o
+.PHONY : src/discordpp/money/MoneyManager.cpp.o
 
-src/discordpp/Objects/Snowflake.i: src/discordpp/Objects/Snowflake.cpp.i
+src/discordpp/money/MoneyManager.i: src/discordpp/money/MoneyManager.cpp.i
 
-.PHONY : src/discordpp/Objects/Snowflake.i
+.PHONY : src/discordpp/money/MoneyManager.i
 
 # target to preprocess a source file
-src/discordpp/Objects/Snowflake.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Objects/Snowflake.cpp.i
-.PHONY : src/discordpp/Objects/Snowflake.cpp.i
+src/discordpp/money/MoneyManager.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/money/MoneyManager.cpp.i
+.PHONY : src/discordpp/money/MoneyManager.cpp.i
 
-src/discordpp/Objects/Snowflake.s: src/discordpp/Objects/Snowflake.cpp.s
+src/discordpp/money/MoneyManager.s: src/discordpp/money/MoneyManager.cpp.s
 
-.PHONY : src/discordpp/Objects/Snowflake.s
+.PHONY : src/discordpp/money/MoneyManager.s
 
 # target to generate assembly for a file
-src/discordpp/Objects/Snowflake.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Objects/Snowflake.cpp.s
-.PHONY : src/discordpp/Objects/Snowflake.cpp.s
+src/discordpp/money/MoneyManager.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/money/MoneyManager.cpp.s
+.PHONY : src/discordpp/money/MoneyManager.cpp.s
 
-src/discordpp/Tasks/HeartbeatTask.o: src/discordpp/Tasks/HeartbeatTask.cpp.o
+src/discordpp/objects/Channel.o: src/discordpp/objects/Channel.cpp.o
 
-.PHONY : src/discordpp/Tasks/HeartbeatTask.o
+.PHONY : src/discordpp/objects/Channel.o
 
 # target to build an object file
-src/discordpp/Tasks/HeartbeatTask.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Tasks/HeartbeatTask.cpp.o
-.PHONY : src/discordpp/Tasks/HeartbeatTask.cpp.o
+src/discordpp/objects/Channel.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/objects/Channel.cpp.o
+.PHONY : src/discordpp/objects/Channel.cpp.o
 
-src/discordpp/Tasks/HeartbeatTask.i: src/discordpp/Tasks/HeartbeatTask.cpp.i
+src/discordpp/objects/Channel.i: src/discordpp/objects/Channel.cpp.i
 
-.PHONY : src/discordpp/Tasks/HeartbeatTask.i
+.PHONY : src/discordpp/objects/Channel.i
 
 # target to preprocess a source file
-src/discordpp/Tasks/HeartbeatTask.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Tasks/HeartbeatTask.cpp.i
-.PHONY : src/discordpp/Tasks/HeartbeatTask.cpp.i
+src/discordpp/objects/Channel.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/objects/Channel.cpp.i
+.PHONY : src/discordpp/objects/Channel.cpp.i
 
-src/discordpp/Tasks/HeartbeatTask.s: src/discordpp/Tasks/HeartbeatTask.cpp.s
+src/discordpp/objects/Channel.s: src/discordpp/objects/Channel.cpp.s
 
-.PHONY : src/discordpp/Tasks/HeartbeatTask.s
+.PHONY : src/discordpp/objects/Channel.s
 
 # target to generate assembly for a file
-src/discordpp/Tasks/HeartbeatTask.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Tasks/HeartbeatTask.cpp.s
-.PHONY : src/discordpp/Tasks/HeartbeatTask.cpp.s
+src/discordpp/objects/Channel.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/objects/Channel.cpp.s
+.PHONY : src/discordpp/objects/Channel.cpp.s
 
-src/discordpp/Tasks/Task.o: src/discordpp/Tasks/Task.cpp.o
+src/discordpp/objects/Emoji.o: src/discordpp/objects/Emoji.cpp.o
 
-.PHONY : src/discordpp/Tasks/Task.o
+.PHONY : src/discordpp/objects/Emoji.o
 
 # target to build an object file
-src/discordpp/Tasks/Task.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Tasks/Task.cpp.o
-.PHONY : src/discordpp/Tasks/Task.cpp.o
+src/discordpp/objects/Emoji.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/objects/Emoji.cpp.o
+.PHONY : src/discordpp/objects/Emoji.cpp.o
 
-src/discordpp/Tasks/Task.i: src/discordpp/Tasks/Task.cpp.i
+src/discordpp/objects/Emoji.i: src/discordpp/objects/Emoji.cpp.i
 
-.PHONY : src/discordpp/Tasks/Task.i
+.PHONY : src/discordpp/objects/Emoji.i
 
 # target to preprocess a source file
-src/discordpp/Tasks/Task.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Tasks/Task.cpp.i
-.PHONY : src/discordpp/Tasks/Task.cpp.i
+src/discordpp/objects/Emoji.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/objects/Emoji.cpp.i
+.PHONY : src/discordpp/objects/Emoji.cpp.i
 
-src/discordpp/Tasks/Task.s: src/discordpp/Tasks/Task.cpp.s
+src/discordpp/objects/Emoji.s: src/discordpp/objects/Emoji.cpp.s
 
-.PHONY : src/discordpp/Tasks/Task.s
+.PHONY : src/discordpp/objects/Emoji.s
 
 # target to generate assembly for a file
-src/discordpp/Tasks/Task.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Tasks/Task.cpp.s
-.PHONY : src/discordpp/Tasks/Task.cpp.s
+src/discordpp/objects/Emoji.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/objects/Emoji.cpp.s
+.PHONY : src/discordpp/objects/Emoji.cpp.s
 
-src/discordpp/Users/User.o: src/discordpp/Users/User.cpp.o
+src/discordpp/objects/Message.o: src/discordpp/objects/Message.cpp.o
 
-.PHONY : src/discordpp/Users/User.o
+.PHONY : src/discordpp/objects/Message.o
 
 # target to build an object file
-src/discordpp/Users/User.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Users/User.cpp.o
-.PHONY : src/discordpp/Users/User.cpp.o
+src/discordpp/objects/Message.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/objects/Message.cpp.o
+.PHONY : src/discordpp/objects/Message.cpp.o
 
-src/discordpp/Users/User.i: src/discordpp/Users/User.cpp.i
+src/discordpp/objects/Message.i: src/discordpp/objects/Message.cpp.i
 
-.PHONY : src/discordpp/Users/User.i
+.PHONY : src/discordpp/objects/Message.i
 
 # target to preprocess a source file
-src/discordpp/Users/User.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Users/User.cpp.i
-.PHONY : src/discordpp/Users/User.cpp.i
+src/discordpp/objects/Message.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/objects/Message.cpp.i
+.PHONY : src/discordpp/objects/Message.cpp.i
 
-src/discordpp/Users/User.s: src/discordpp/Users/User.cpp.s
+src/discordpp/objects/Message.s: src/discordpp/objects/Message.cpp.s
 
-.PHONY : src/discordpp/Users/User.s
+.PHONY : src/discordpp/objects/Message.s
 
 # target to generate assembly for a file
-src/discordpp/Users/User.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Users/User.cpp.s
-.PHONY : src/discordpp/Users/User.cpp.s
+src/discordpp/objects/Message.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/objects/Message.cpp.s
+.PHONY : src/discordpp/objects/Message.cpp.s
 
-src/discordpp/Users/UserManager.o: src/discordpp/Users/UserManager.cpp.o
+src/discordpp/objects/Role.o: src/discordpp/objects/Role.cpp.o
 
-.PHONY : src/discordpp/Users/UserManager.o
+.PHONY : src/discordpp/objects/Role.o
 
 # target to build an object file
-src/discordpp/Users/UserManager.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Users/UserManager.cpp.o
-.PHONY : src/discordpp/Users/UserManager.cpp.o
+src/discordpp/objects/Role.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/objects/Role.cpp.o
+.PHONY : src/discordpp/objects/Role.cpp.o
 
-src/discordpp/Users/UserManager.i: src/discordpp/Users/UserManager.cpp.i
+src/discordpp/objects/Role.i: src/discordpp/objects/Role.cpp.i
 
-.PHONY : src/discordpp/Users/UserManager.i
+.PHONY : src/discordpp/objects/Role.i
 
 # target to preprocess a source file
-src/discordpp/Users/UserManager.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Users/UserManager.cpp.i
-.PHONY : src/discordpp/Users/UserManager.cpp.i
+src/discordpp/objects/Role.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/objects/Role.cpp.i
+.PHONY : src/discordpp/objects/Role.cpp.i
 
-src/discordpp/Users/UserManager.s: src/discordpp/Users/UserManager.cpp.s
+src/discordpp/objects/Role.s: src/discordpp/objects/Role.cpp.s
 
-.PHONY : src/discordpp/Users/UserManager.s
+.PHONY : src/discordpp/objects/Role.s
 
 # target to generate assembly for a file
-src/discordpp/Users/UserManager.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Users/UserManager.cpp.s
-.PHONY : src/discordpp/Users/UserManager.cpp.s
+src/discordpp/objects/Role.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/objects/Role.cpp.s
+.PHONY : src/discordpp/objects/Role.cpp.s
+
+src/discordpp/objects/Snowflake.o: src/discordpp/objects/Snowflake.cpp.o
+
+.PHONY : src/discordpp/objects/Snowflake.o
+
+# target to build an object file
+src/discordpp/objects/Snowflake.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/objects/Snowflake.cpp.o
+.PHONY : src/discordpp/objects/Snowflake.cpp.o
+
+src/discordpp/objects/Snowflake.i: src/discordpp/objects/Snowflake.cpp.i
+
+.PHONY : src/discordpp/objects/Snowflake.i
+
+# target to preprocess a source file
+src/discordpp/objects/Snowflake.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/objects/Snowflake.cpp.i
+.PHONY : src/discordpp/objects/Snowflake.cpp.i
+
+src/discordpp/objects/Snowflake.s: src/discordpp/objects/Snowflake.cpp.s
+
+.PHONY : src/discordpp/objects/Snowflake.s
+
+# target to generate assembly for a file
+src/discordpp/objects/Snowflake.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/objects/Snowflake.cpp.s
+.PHONY : src/discordpp/objects/Snowflake.cpp.s
+
+src/discordpp/rest/DiscordAPI.o: src/discordpp/rest/DiscordAPI.cpp.o
+
+.PHONY : src/discordpp/rest/DiscordAPI.o
+
+# target to build an object file
+src/discordpp/rest/DiscordAPI.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/rest/DiscordAPI.cpp.o
+.PHONY : src/discordpp/rest/DiscordAPI.cpp.o
+
+src/discordpp/rest/DiscordAPI.i: src/discordpp/rest/DiscordAPI.cpp.i
+
+.PHONY : src/discordpp/rest/DiscordAPI.i
+
+# target to preprocess a source file
+src/discordpp/rest/DiscordAPI.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/rest/DiscordAPI.cpp.i
+.PHONY : src/discordpp/rest/DiscordAPI.cpp.i
+
+src/discordpp/rest/DiscordAPI.s: src/discordpp/rest/DiscordAPI.cpp.s
+
+.PHONY : src/discordpp/rest/DiscordAPI.s
+
+# target to generate assembly for a file
+src/discordpp/rest/DiscordAPI.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/rest/DiscordAPI.cpp.s
+.PHONY : src/discordpp/rest/DiscordAPI.cpp.s
+
+src/discordpp/rest/PicartoAPI.o: src/discordpp/rest/PicartoAPI.cpp.o
+
+.PHONY : src/discordpp/rest/PicartoAPI.o
+
+# target to build an object file
+src/discordpp/rest/PicartoAPI.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/rest/PicartoAPI.cpp.o
+.PHONY : src/discordpp/rest/PicartoAPI.cpp.o
+
+src/discordpp/rest/PicartoAPI.i: src/discordpp/rest/PicartoAPI.cpp.i
+
+.PHONY : src/discordpp/rest/PicartoAPI.i
+
+# target to preprocess a source file
+src/discordpp/rest/PicartoAPI.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/rest/PicartoAPI.cpp.i
+.PHONY : src/discordpp/rest/PicartoAPI.cpp.i
+
+src/discordpp/rest/PicartoAPI.s: src/discordpp/rest/PicartoAPI.cpp.s
+
+.PHONY : src/discordpp/rest/PicartoAPI.s
+
+# target to generate assembly for a file
+src/discordpp/rest/PicartoAPI.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/rest/PicartoAPI.cpp.s
+.PHONY : src/discordpp/rest/PicartoAPI.cpp.s
+
+src/discordpp/rest/RestAPI.o: src/discordpp/rest/RestAPI.cpp.o
+
+.PHONY : src/discordpp/rest/RestAPI.o
+
+# target to build an object file
+src/discordpp/rest/RestAPI.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/rest/RestAPI.cpp.o
+.PHONY : src/discordpp/rest/RestAPI.cpp.o
+
+src/discordpp/rest/RestAPI.i: src/discordpp/rest/RestAPI.cpp.i
+
+.PHONY : src/discordpp/rest/RestAPI.i
+
+# target to preprocess a source file
+src/discordpp/rest/RestAPI.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/rest/RestAPI.cpp.i
+.PHONY : src/discordpp/rest/RestAPI.cpp.i
+
+src/discordpp/rest/RestAPI.s: src/discordpp/rest/RestAPI.cpp.s
+
+.PHONY : src/discordpp/rest/RestAPI.s
+
+# target to generate assembly for a file
+src/discordpp/rest/RestAPI.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/rest/RestAPI.cpp.s
+.PHONY : src/discordpp/rest/RestAPI.cpp.s
+
+src/discordpp/rest/TwitchAPI.o: src/discordpp/rest/TwitchAPI.cpp.o
+
+.PHONY : src/discordpp/rest/TwitchAPI.o
+
+# target to build an object file
+src/discordpp/rest/TwitchAPI.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/rest/TwitchAPI.cpp.o
+.PHONY : src/discordpp/rest/TwitchAPI.cpp.o
+
+src/discordpp/rest/TwitchAPI.i: src/discordpp/rest/TwitchAPI.cpp.i
+
+.PHONY : src/discordpp/rest/TwitchAPI.i
+
+# target to preprocess a source file
+src/discordpp/rest/TwitchAPI.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/rest/TwitchAPI.cpp.i
+.PHONY : src/discordpp/rest/TwitchAPI.cpp.i
+
+src/discordpp/rest/TwitchAPI.s: src/discordpp/rest/TwitchAPI.cpp.s
+
+.PHONY : src/discordpp/rest/TwitchAPI.s
+
+# target to generate assembly for a file
+src/discordpp/rest/TwitchAPI.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/rest/TwitchAPI.cpp.s
+.PHONY : src/discordpp/rest/TwitchAPI.cpp.s
+
+src/discordpp/tasks/HeartbeatTask.o: src/discordpp/tasks/HeartbeatTask.cpp.o
+
+.PHONY : src/discordpp/tasks/HeartbeatTask.o
+
+# target to build an object file
+src/discordpp/tasks/HeartbeatTask.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/tasks/HeartbeatTask.cpp.o
+.PHONY : src/discordpp/tasks/HeartbeatTask.cpp.o
+
+src/discordpp/tasks/HeartbeatTask.i: src/discordpp/tasks/HeartbeatTask.cpp.i
+
+.PHONY : src/discordpp/tasks/HeartbeatTask.i
+
+# target to preprocess a source file
+src/discordpp/tasks/HeartbeatTask.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/tasks/HeartbeatTask.cpp.i
+.PHONY : src/discordpp/tasks/HeartbeatTask.cpp.i
+
+src/discordpp/tasks/HeartbeatTask.s: src/discordpp/tasks/HeartbeatTask.cpp.s
+
+.PHONY : src/discordpp/tasks/HeartbeatTask.s
+
+# target to generate assembly for a file
+src/discordpp/tasks/HeartbeatTask.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/tasks/HeartbeatTask.cpp.s
+.PHONY : src/discordpp/tasks/HeartbeatTask.cpp.s
+
+src/discordpp/tasks/Task.o: src/discordpp/tasks/Task.cpp.o
+
+.PHONY : src/discordpp/tasks/Task.o
+
+# target to build an object file
+src/discordpp/tasks/Task.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/tasks/Task.cpp.o
+.PHONY : src/discordpp/tasks/Task.cpp.o
+
+src/discordpp/tasks/Task.i: src/discordpp/tasks/Task.cpp.i
+
+.PHONY : src/discordpp/tasks/Task.i
+
+# target to preprocess a source file
+src/discordpp/tasks/Task.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/tasks/Task.cpp.i
+.PHONY : src/discordpp/tasks/Task.cpp.i
+
+src/discordpp/tasks/Task.s: src/discordpp/tasks/Task.cpp.s
+
+.PHONY : src/discordpp/tasks/Task.s
+
+# target to generate assembly for a file
+src/discordpp/tasks/Task.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/tasks/Task.cpp.s
+.PHONY : src/discordpp/tasks/Task.cpp.s
+
+src/discordpp/users/User.o: src/discordpp/users/User.cpp.o
+
+.PHONY : src/discordpp/users/User.o
+
+# target to build an object file
+src/discordpp/users/User.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/users/User.cpp.o
+.PHONY : src/discordpp/users/User.cpp.o
+
+src/discordpp/users/User.i: src/discordpp/users/User.cpp.i
+
+.PHONY : src/discordpp/users/User.i
+
+# target to preprocess a source file
+src/discordpp/users/User.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/users/User.cpp.i
+.PHONY : src/discordpp/users/User.cpp.i
+
+src/discordpp/users/User.s: src/discordpp/users/User.cpp.s
+
+.PHONY : src/discordpp/users/User.s
+
+# target to generate assembly for a file
+src/discordpp/users/User.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/users/User.cpp.s
+.PHONY : src/discordpp/users/User.cpp.s
+
+src/discordpp/users/UserManager.o: src/discordpp/users/UserManager.cpp.o
+
+.PHONY : src/discordpp/users/UserManager.o
+
+# target to build an object file
+src/discordpp/users/UserManager.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/users/UserManager.cpp.o
+.PHONY : src/discordpp/users/UserManager.cpp.o
+
+src/discordpp/users/UserManager.i: src/discordpp/users/UserManager.cpp.i
+
+.PHONY : src/discordpp/users/UserManager.i
+
+# target to preprocess a source file
+src/discordpp/users/UserManager.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/users/UserManager.cpp.i
+.PHONY : src/discordpp/users/UserManager.cpp.i
+
+src/discordpp/users/UserManager.s: src/discordpp/users/UserManager.cpp.s
+
+.PHONY : src/discordpp/users/UserManager.s
+
+# target to generate assembly for a file
+src/discordpp/users/UserManager.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/users/UserManager.cpp.s
+.PHONY : src/discordpp/users/UserManager.cpp.s
+
+src/discordpp/websocket/Gateway.o: src/discordpp/websocket/Gateway.cpp.o
+
+.PHONY : src/discordpp/websocket/Gateway.o
+
+# target to build an object file
+src/discordpp/websocket/Gateway.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/websocket/Gateway.cpp.o
+.PHONY : src/discordpp/websocket/Gateway.cpp.o
+
+src/discordpp/websocket/Gateway.i: src/discordpp/websocket/Gateway.cpp.i
+
+.PHONY : src/discordpp/websocket/Gateway.i
+
+# target to preprocess a source file
+src/discordpp/websocket/Gateway.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/websocket/Gateway.cpp.i
+.PHONY : src/discordpp/websocket/Gateway.cpp.i
+
+src/discordpp/websocket/Gateway.s: src/discordpp/websocket/Gateway.cpp.s
+
+.PHONY : src/discordpp/websocket/Gateway.s
+
+# target to generate assembly for a file
+src/discordpp/websocket/Gateway.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/websocket/Gateway.cpp.s
+.PHONY : src/discordpp/websocket/Gateway.cpp.s
 
 # Help Target
 help:
@@ -1221,117 +1221,117 @@ help:
 	@echo "... example/main.o"
 	@echo "... example/main.i"
 	@echo "... example/main.s"
-	@echo "... src/discordpp/Commands/Command.o"
-	@echo "... src/discordpp/Commands/Command.i"
-	@echo "... src/discordpp/Commands/Command.s"
-	@echo "... src/discordpp/Commands/CommandManager.o"
-	@echo "... src/discordpp/Commands/CommandManager.i"
-	@echo "... src/discordpp/Commands/CommandManager.s"
-	@echo "... src/discordpp/Commands/PingCommand.o"
-	@echo "... src/discordpp/Commands/PingCommand.i"
-	@echo "... src/discordpp/Commands/PingCommand.s"
-	@echo "... src/discordpp/Core/Databases/SQLiteDatabase.o"
-	@echo "... src/discordpp/Core/Databases/SQLiteDatabase.i"
-	@echo "... src/discordpp/Core/Databases/SQLiteDatabase.s"
-	@echo "... src/discordpp/Core/Rest/DiscordAPI.o"
-	@echo "... src/discordpp/Core/Rest/DiscordAPI.i"
-	@echo "... src/discordpp/Core/Rest/DiscordAPI.s"
-	@echo "... src/discordpp/Core/Rest/PicartoAPI.o"
-	@echo "... src/discordpp/Core/Rest/PicartoAPI.i"
-	@echo "... src/discordpp/Core/Rest/PicartoAPI.s"
-	@echo "... src/discordpp/Core/Rest/RestAPI.o"
-	@echo "... src/discordpp/Core/Rest/RestAPI.i"
-	@echo "... src/discordpp/Core/Rest/RestAPI.s"
-	@echo "... src/discordpp/Core/Rest/TwitchAPI.o"
-	@echo "... src/discordpp/Core/Rest/TwitchAPI.i"
-	@echo "... src/discordpp/Core/Rest/TwitchAPI.s"
-	@echo "... src/discordpp/Core/WebSocket/Gateway.o"
-	@echo "... src/discordpp/Core/WebSocket/Gateway.i"
-	@echo "... src/discordpp/Core/WebSocket/Gateway.s"
 	@echo "... src/discordpp/Discordpp.o"
 	@echo "... src/discordpp/Discordpp.i"
 	@echo "... src/discordpp/Discordpp.s"
-	@echo "... src/discordpp/Events/ChannelCreateEvent.o"
-	@echo "... src/discordpp/Events/ChannelCreateEvent.i"
-	@echo "... src/discordpp/Events/ChannelCreateEvent.s"
-	@echo "... src/discordpp/Events/DispatchEvent.o"
-	@echo "... src/discordpp/Events/DispatchEvent.i"
-	@echo "... src/discordpp/Events/DispatchEvent.s"
-	@echo "... src/discordpp/Events/Event.o"
-	@echo "... src/discordpp/Events/Event.i"
-	@echo "... src/discordpp/Events/Event.s"
-	@echo "... src/discordpp/Events/GuildCreateEvent.o"
-	@echo "... src/discordpp/Events/GuildCreateEvent.i"
-	@echo "... src/discordpp/Events/GuildCreateEvent.s"
-	@echo "... src/discordpp/Events/HeartbeatACKEvent.o"
-	@echo "... src/discordpp/Events/HeartbeatACKEvent.i"
-	@echo "... src/discordpp/Events/HeartbeatACKEvent.s"
-	@echo "... src/discordpp/Events/HelloEvent.o"
-	@echo "... src/discordpp/Events/HelloEvent.i"
-	@echo "... src/discordpp/Events/HelloEvent.s"
-	@echo "... src/discordpp/Events/MessageCreateEvent.o"
-	@echo "... src/discordpp/Events/MessageCreateEvent.i"
-	@echo "... src/discordpp/Events/MessageCreateEvent.s"
-	@echo "... src/discordpp/Events/MessageReactionAddEvent.o"
-	@echo "... src/discordpp/Events/MessageReactionAddEvent.i"
-	@echo "... src/discordpp/Events/MessageReactionAddEvent.s"
-	@echo "... src/discordpp/Events/PresenceUpdateEvent.o"
-	@echo "... src/discordpp/Events/PresenceUpdateEvent.i"
-	@echo "... src/discordpp/Events/PresenceUpdateEvent.s"
-	@echo "... src/discordpp/Events/ReadyEvent.o"
-	@echo "... src/discordpp/Events/ReadyEvent.i"
-	@echo "... src/discordpp/Events/ReadyEvent.s"
-	@echo "... src/discordpp/Events/TypingStartEvent.o"
-	@echo "... src/discordpp/Events/TypingStartEvent.i"
-	@echo "... src/discordpp/Events/TypingStartEvent.s"
-	@echo "... src/discordpp/Guilds/Guild.o"
-	@echo "... src/discordpp/Guilds/Guild.i"
-	@echo "... src/discordpp/Guilds/Guild.s"
-	@echo "... src/discordpp/Guilds/GuildManager.o"
-	@echo "... src/discordpp/Guilds/GuildManager.i"
-	@echo "... src/discordpp/Guilds/GuildManager.s"
-	@echo "... src/discordpp/Money/Commands/ClaimMoneyCommand.o"
-	@echo "... src/discordpp/Money/Commands/ClaimMoneyCommand.i"
-	@echo "... src/discordpp/Money/Commands/ClaimMoneyCommand.s"
-	@echo "... src/discordpp/Money/Commands/DailyMoneyCommand.o"
-	@echo "... src/discordpp/Money/Commands/DailyMoneyCommand.i"
-	@echo "... src/discordpp/Money/Commands/DailyMoneyCommand.s"
-	@echo "... src/discordpp/Money/Commands/LeaderboardCommand.o"
-	@echo "... src/discordpp/Money/Commands/LeaderboardCommand.i"
-	@echo "... src/discordpp/Money/Commands/LeaderboardCommand.s"
-	@echo "... src/discordpp/Money/Money.o"
-	@echo "... src/discordpp/Money/Money.i"
-	@echo "... src/discordpp/Money/Money.s"
-	@echo "... src/discordpp/Money/MoneyManager.o"
-	@echo "... src/discordpp/Money/MoneyManager.i"
-	@echo "... src/discordpp/Money/MoneyManager.s"
-	@echo "... src/discordpp/Objects/Channel.o"
-	@echo "... src/discordpp/Objects/Channel.i"
-	@echo "... src/discordpp/Objects/Channel.s"
-	@echo "... src/discordpp/Objects/Emoji.o"
-	@echo "... src/discordpp/Objects/Emoji.i"
-	@echo "... src/discordpp/Objects/Emoji.s"
-	@echo "... src/discordpp/Objects/Message.o"
-	@echo "... src/discordpp/Objects/Message.i"
-	@echo "... src/discordpp/Objects/Message.s"
-	@echo "... src/discordpp/Objects/Role.o"
-	@echo "... src/discordpp/Objects/Role.i"
-	@echo "... src/discordpp/Objects/Role.s"
-	@echo "... src/discordpp/Objects/Snowflake.o"
-	@echo "... src/discordpp/Objects/Snowflake.i"
-	@echo "... src/discordpp/Objects/Snowflake.s"
-	@echo "... src/discordpp/Tasks/HeartbeatTask.o"
-	@echo "... src/discordpp/Tasks/HeartbeatTask.i"
-	@echo "... src/discordpp/Tasks/HeartbeatTask.s"
-	@echo "... src/discordpp/Tasks/Task.o"
-	@echo "... src/discordpp/Tasks/Task.i"
-	@echo "... src/discordpp/Tasks/Task.s"
-	@echo "... src/discordpp/Users/User.o"
-	@echo "... src/discordpp/Users/User.i"
-	@echo "... src/discordpp/Users/User.s"
-	@echo "... src/discordpp/Users/UserManager.o"
-	@echo "... src/discordpp/Users/UserManager.i"
-	@echo "... src/discordpp/Users/UserManager.s"
+	@echo "... src/discordpp/commands/Command.o"
+	@echo "... src/discordpp/commands/Command.i"
+	@echo "... src/discordpp/commands/Command.s"
+	@echo "... src/discordpp/commands/CommandManager.o"
+	@echo "... src/discordpp/commands/CommandManager.i"
+	@echo "... src/discordpp/commands/CommandManager.s"
+	@echo "... src/discordpp/commands/PingCommand.o"
+	@echo "... src/discordpp/commands/PingCommand.i"
+	@echo "... src/discordpp/commands/PingCommand.s"
+	@echo "... src/discordpp/databases/SQLiteDatabase.o"
+	@echo "... src/discordpp/databases/SQLiteDatabase.i"
+	@echo "... src/discordpp/databases/SQLiteDatabase.s"
+	@echo "... src/discordpp/events/ChannelCreateEvent.o"
+	@echo "... src/discordpp/events/ChannelCreateEvent.i"
+	@echo "... src/discordpp/events/ChannelCreateEvent.s"
+	@echo "... src/discordpp/events/DispatchEvent.o"
+	@echo "... src/discordpp/events/DispatchEvent.i"
+	@echo "... src/discordpp/events/DispatchEvent.s"
+	@echo "... src/discordpp/events/Event.o"
+	@echo "... src/discordpp/events/Event.i"
+	@echo "... src/discordpp/events/Event.s"
+	@echo "... src/discordpp/events/GuildCreateEvent.o"
+	@echo "... src/discordpp/events/GuildCreateEvent.i"
+	@echo "... src/discordpp/events/GuildCreateEvent.s"
+	@echo "... src/discordpp/events/HeartbeatACKEvent.o"
+	@echo "... src/discordpp/events/HeartbeatACKEvent.i"
+	@echo "... src/discordpp/events/HeartbeatACKEvent.s"
+	@echo "... src/discordpp/events/HelloEvent.o"
+	@echo "... src/discordpp/events/HelloEvent.i"
+	@echo "... src/discordpp/events/HelloEvent.s"
+	@echo "... src/discordpp/events/MessageCreateEvent.o"
+	@echo "... src/discordpp/events/MessageCreateEvent.i"
+	@echo "... src/discordpp/events/MessageCreateEvent.s"
+	@echo "... src/discordpp/events/MessageReactionAddEvent.o"
+	@echo "... src/discordpp/events/MessageReactionAddEvent.i"
+	@echo "... src/discordpp/events/MessageReactionAddEvent.s"
+	@echo "... src/discordpp/events/PresenceUpdateEvent.o"
+	@echo "... src/discordpp/events/PresenceUpdateEvent.i"
+	@echo "... src/discordpp/events/PresenceUpdateEvent.s"
+	@echo "... src/discordpp/events/ReadyEvent.o"
+	@echo "... src/discordpp/events/ReadyEvent.i"
+	@echo "... src/discordpp/events/ReadyEvent.s"
+	@echo "... src/discordpp/events/TypingStartEvent.o"
+	@echo "... src/discordpp/events/TypingStartEvent.i"
+	@echo "... src/discordpp/events/TypingStartEvent.s"
+	@echo "... src/discordpp/guilds/Guild.o"
+	@echo "... src/discordpp/guilds/Guild.i"
+	@echo "... src/discordpp/guilds/Guild.s"
+	@echo "... src/discordpp/guilds/GuildManager.o"
+	@echo "... src/discordpp/guilds/GuildManager.i"
+	@echo "... src/discordpp/guilds/GuildManager.s"
+	@echo "... src/discordpp/money/Commands/ClaimMoneyCommand.o"
+	@echo "... src/discordpp/money/Commands/ClaimMoneyCommand.i"
+	@echo "... src/discordpp/money/Commands/ClaimMoneyCommand.s"
+	@echo "... src/discordpp/money/Commands/DailyMoneyCommand.o"
+	@echo "... src/discordpp/money/Commands/DailyMoneyCommand.i"
+	@echo "... src/discordpp/money/Commands/DailyMoneyCommand.s"
+	@echo "... src/discordpp/money/Commands/LeaderboardCommand.o"
+	@echo "... src/discordpp/money/Commands/LeaderboardCommand.i"
+	@echo "... src/discordpp/money/Commands/LeaderboardCommand.s"
+	@echo "... src/discordpp/money/Money.o"
+	@echo "... src/discordpp/money/Money.i"
+	@echo "... src/discordpp/money/Money.s"
+	@echo "... src/discordpp/money/MoneyManager.o"
+	@echo "... src/discordpp/money/MoneyManager.i"
+	@echo "... src/discordpp/money/MoneyManager.s"
+	@echo "... src/discordpp/objects/Channel.o"
+	@echo "... src/discordpp/objects/Channel.i"
+	@echo "... src/discordpp/objects/Channel.s"
+	@echo "... src/discordpp/objects/Emoji.o"
+	@echo "... src/discordpp/objects/Emoji.i"
+	@echo "... src/discordpp/objects/Emoji.s"
+	@echo "... src/discordpp/objects/Message.o"
+	@echo "... src/discordpp/objects/Message.i"
+	@echo "... src/discordpp/objects/Message.s"
+	@echo "... src/discordpp/objects/Role.o"
+	@echo "... src/discordpp/objects/Role.i"
+	@echo "... src/discordpp/objects/Role.s"
+	@echo "... src/discordpp/objects/Snowflake.o"
+	@echo "... src/discordpp/objects/Snowflake.i"
+	@echo "... src/discordpp/objects/Snowflake.s"
+	@echo "... src/discordpp/rest/DiscordAPI.o"
+	@echo "... src/discordpp/rest/DiscordAPI.i"
+	@echo "... src/discordpp/rest/DiscordAPI.s"
+	@echo "... src/discordpp/rest/PicartoAPI.o"
+	@echo "... src/discordpp/rest/PicartoAPI.i"
+	@echo "... src/discordpp/rest/PicartoAPI.s"
+	@echo "... src/discordpp/rest/RestAPI.o"
+	@echo "... src/discordpp/rest/RestAPI.i"
+	@echo "... src/discordpp/rest/RestAPI.s"
+	@echo "... src/discordpp/rest/TwitchAPI.o"
+	@echo "... src/discordpp/rest/TwitchAPI.i"
+	@echo "... src/discordpp/rest/TwitchAPI.s"
+	@echo "... src/discordpp/tasks/HeartbeatTask.o"
+	@echo "... src/discordpp/tasks/HeartbeatTask.i"
+	@echo "... src/discordpp/tasks/HeartbeatTask.s"
+	@echo "... src/discordpp/tasks/Task.o"
+	@echo "... src/discordpp/tasks/Task.i"
+	@echo "... src/discordpp/tasks/Task.s"
+	@echo "... src/discordpp/users/User.o"
+	@echo "... src/discordpp/users/User.i"
+	@echo "... src/discordpp/users/User.s"
+	@echo "... src/discordpp/users/UserManager.o"
+	@echo "... src/discordpp/users/UserManager.i"
+	@echo "... src/discordpp/users/UserManager.s"
+	@echo "... src/discordpp/websocket/Gateway.o"
+	@echo "... src/discordpp/websocket/Gateway.i"
+	@echo "... src/discordpp/websocket/Gateway.s"
 .PHONY : help
 
 

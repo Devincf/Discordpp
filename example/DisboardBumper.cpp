@@ -12,8 +12,8 @@
 #include "DisboardBumper.hpp"
 #include "Discordpp.hpp"
 
-#include "Util/Singleton.hpp"
-#include "Core/Databases/SQLiteDatabase.hpp"
+#include "util/Singleton.hpp"
+#include "databases/SQLiteDatabase.hpp"
 
 #include <boost/date_time/posix_time/posix_time.hpp>
 

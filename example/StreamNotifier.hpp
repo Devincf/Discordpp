@@ -12,7 +12,7 @@
 #ifndef STREAMNOTIFIER_HPP
 #define STREAMNOTIFIER_HPP
 
-#include "Tasks/Task.hpp"
+#include "tasks/Task.hpp"
 #include "structs.hpp"
 
 const std::string streamChannel = "301933844876230657";
