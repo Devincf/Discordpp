@@ -123,6 +123,87 @@ Discordpp/fast:
 	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/build
 .PHONY : Discordpp/fast
 
+example/AddStreamCommand.o: example/AddStreamCommand.cpp.o
+
+.PHONY : example/AddStreamCommand.o
+
+# target to build an object file
+example/AddStreamCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/example/AddStreamCommand.cpp.o
+.PHONY : example/AddStreamCommand.cpp.o
+
+example/AddStreamCommand.i: example/AddStreamCommand.cpp.i
+
+.PHONY : example/AddStreamCommand.i
+
+# target to preprocess a source file
+example/AddStreamCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/example/AddStreamCommand.cpp.i
+.PHONY : example/AddStreamCommand.cpp.i
+
+example/AddStreamCommand.s: example/AddStreamCommand.cpp.s
+
+.PHONY : example/AddStreamCommand.s
+
+# target to generate assembly for a file
+example/AddStreamCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/example/AddStreamCommand.cpp.s
+.PHONY : example/AddStreamCommand.cpp.s
+
+example/StreamNotifier.o: example/StreamNotifier.cpp.o
+
+.PHONY : example/StreamNotifier.o
+
+# target to build an object file
+example/StreamNotifier.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/example/StreamNotifier.cpp.o
+.PHONY : example/StreamNotifier.cpp.o
+
+example/StreamNotifier.i: example/StreamNotifier.cpp.i
+
+.PHONY : example/StreamNotifier.i
+
+# target to preprocess a source file
+example/StreamNotifier.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/example/StreamNotifier.cpp.i
+.PHONY : example/StreamNotifier.cpp.i
+
+example/StreamNotifier.s: example/StreamNotifier.cpp.s
+
+.PHONY : example/StreamNotifier.s
+
+# target to generate assembly for a file
+example/StreamNotifier.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/example/StreamNotifier.cpp.s
+.PHONY : example/StreamNotifier.cpp.s
+
+example/main.o: example/main.cpp.o
+
+.PHONY : example/main.o
+
+# target to build an object file
+example/main.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/example/main.cpp.o
+.PHONY : example/main.cpp.o
+
+example/main.i: example/main.cpp.i
+
+.PHONY : example/main.i
+
+# target to preprocess a source file
+example/main.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/example/main.cpp.i
+.PHONY : example/main.cpp.i
+
+example/main.s: example/main.cpp.s
+
+.PHONY : example/main.s
+
+# target to generate assembly for a file
+example/main.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/example/main.cpp.s
+.PHONY : example/main.cpp.s
+
 src/discordpp/Commands/Command.o: src/discordpp/Commands/Command.cpp.o
 
 .PHONY : src/discordpp/Commands/Command.o
@@ -1122,87 +1203,6 @@ src/discordpp/Users/UserManager.cpp.s:
 	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Users/UserManager.cpp.s
 .PHONY : src/discordpp/Users/UserManager.cpp.s
 
-src/example/AddStreamCommand.o: src/example/AddStreamCommand.cpp.o
-
-.PHONY : src/example/AddStreamCommand.o
-
-# target to build an object file
-src/example/AddStreamCommand.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/example/AddStreamCommand.cpp.o
-.PHONY : src/example/AddStreamCommand.cpp.o
-
-src/example/AddStreamCommand.i: src/example/AddStreamCommand.cpp.i
-
-.PHONY : src/example/AddStreamCommand.i
-
-# target to preprocess a source file
-src/example/AddStreamCommand.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/example/AddStreamCommand.cpp.i
-.PHONY : src/example/AddStreamCommand.cpp.i
-
-src/example/AddStreamCommand.s: src/example/AddStreamCommand.cpp.s
-
-.PHONY : src/example/AddStreamCommand.s
-
-# target to generate assembly for a file
-src/example/AddStreamCommand.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/example/AddStreamCommand.cpp.s
-.PHONY : src/example/AddStreamCommand.cpp.s
-
-src/example/StreamNotifier.o: src/example/StreamNotifier.cpp.o
-
-.PHONY : src/example/StreamNotifier.o
-
-# target to build an object file
-src/example/StreamNotifier.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/example/StreamNotifier.cpp.o
-.PHONY : src/example/StreamNotifier.cpp.o
-
-src/example/StreamNotifier.i: src/example/StreamNotifier.cpp.i
-
-.PHONY : src/example/StreamNotifier.i
-
-# target to preprocess a source file
-src/example/StreamNotifier.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/example/StreamNotifier.cpp.i
-.PHONY : src/example/StreamNotifier.cpp.i
-
-src/example/StreamNotifier.s: src/example/StreamNotifier.cpp.s
-
-.PHONY : src/example/StreamNotifier.s
-
-# target to generate assembly for a file
-src/example/StreamNotifier.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/example/StreamNotifier.cpp.s
-.PHONY : src/example/StreamNotifier.cpp.s
-
-src/example/main.o: src/example/main.cpp.o
-
-.PHONY : src/example/main.o
-
-# target to build an object file
-src/example/main.cpp.o:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/example/main.cpp.o
-.PHONY : src/example/main.cpp.o
-
-src/example/main.i: src/example/main.cpp.i
-
-.PHONY : src/example/main.i
-
-# target to preprocess a source file
-src/example/main.cpp.i:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/example/main.cpp.i
-.PHONY : src/example/main.cpp.i
-
-src/example/main.s: src/example/main.cpp.s
-
-.PHONY : src/example/main.s
-
-# target to generate assembly for a file
-src/example/main.cpp.s:
-	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/example/main.cpp.s
-.PHONY : src/example/main.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1212,6 +1212,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Discordpp"
 	@echo "... edit_cache"
+	@echo "... example/AddStreamCommand.o"
+	@echo "... example/AddStreamCommand.i"
+	@echo "... example/AddStreamCommand.s"
+	@echo "... example/StreamNotifier.o"
+	@echo "... example/StreamNotifier.i"
+	@echo "... example/StreamNotifier.s"
+	@echo "... example/main.o"
+	@echo "... example/main.i"
+	@echo "... example/main.s"
 	@echo "... src/discordpp/Commands/Command.o"
 	@echo "... src/discordpp/Commands/Command.i"
 	@echo "... src/discordpp/Commands/Command.s"
@@ -1323,15 +1332,6 @@ help:
 	@echo "... src/discordpp/Users/UserManager.o"
 	@echo "... src/discordpp/Users/UserManager.i"
 	@echo "... src/discordpp/Users/UserManager.s"
-	@echo "... src/example/AddStreamCommand.o"
-	@echo "... src/example/AddStreamCommand.i"
-	@echo "... src/example/AddStreamCommand.s"
-	@echo "... src/example/StreamNotifier.o"
-	@echo "... src/example/StreamNotifier.i"
-	@echo "... src/example/StreamNotifier.s"
-	@echo "... src/example/main.o"
-	@echo "... src/example/main.i"
-	@echo "... src/example/main.s"
 .PHONY : help
 
 

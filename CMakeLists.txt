@@ -97,10 +97,9 @@ add_executable(Discordpp
                             "src/discordpp/Discordpp.cpp"
 
 
-
-                            "src/example/StreamNotifier.cpp"
-                            "src/example/AddStreamCommand.cpp"
-                            "src/example/main.cpp")
+                            "example/StreamNotifier.cpp"
+                            "example/AddStreamCommand.cpp"
+                            "example/main.cpp")
 
 target_include_directories(Discordpp PRIVATE "src/submodules/nlohmannjson/single_include/" "src/submodules/websocketpp/websocketpp/" "src/submodules/curlpp/include/" "src/discordpp")
 
