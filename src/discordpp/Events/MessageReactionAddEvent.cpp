@@ -14,7 +14,6 @@ namespace discordpp
 {
     bool MessageReactionAddEvent::proc(const nlohmann::json& packet)
     {
-        
         DEBUG(packet.dump(2));
         return true;
     }
