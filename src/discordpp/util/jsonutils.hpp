@@ -4,7 +4,7 @@
 #include "nlohmann/json.hpp"
 #include <string>
 
-#include "objects/Snowflake.hpp"
+#include "Snowflake.hpp"
 
 
 namespace discordpp::util{

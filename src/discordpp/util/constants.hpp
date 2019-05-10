@@ -58,6 +58,13 @@ enum OpCodes
     HeartbeatACK = 11
 };
 
+namespace emoji
+{
+    const std::string pizza = "🍕";
+    const std::string key = "🔑";
+    const std::string coffee = "☕";
+}
+
 /**
  * @brief Default database name to be used
  */
