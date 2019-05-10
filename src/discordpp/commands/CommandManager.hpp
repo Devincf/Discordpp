@@ -16,7 +16,7 @@
 #include <map>
 #include <memory>
 
-#include "objects/Snowflake.hpp"
+#include "util/Snowflake.hpp"
 
 #include "commands/Command.hpp"
 

@@ -11,7 +11,7 @@
 #ifndef ROLE_HPP
 #define ROLE_HPP
 
-#include "Snowflake.hpp"
+#include "util/Snowflake.hpp"
 
 namespace discordpp
 {

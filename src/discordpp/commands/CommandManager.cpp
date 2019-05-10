@@ -27,12 +27,12 @@ bool CommandManager::addCommand(Snowflake guildId, const std::string &cmdStr, Co
     if (guildit == m_commandMap.end())
     {
         m_commandMap.insert({guildId, std::map<std::string,std::shared_ptr<Command>>()});
-        m_commandMap[guildId].insert(std::make_pair(cmdStr, std::shared_ptr<Command>(cmdPtr)));
+        m_commandMap[guildId].insert({cmdStr, std::shared_ptr<Command>(cmdPtr)});
         return true;
     }
     else
     {
-        auto ret = (*guildit).second.insert(std::make_pair(cmdStr, std::shared_ptr<Command>(cmdPtr)));
+        auto ret = (*guildit).second.insert({cmdStr, std::shared_ptr<Command>(cmdPtr)});
         if (!ret.second)
         {
             DEBUG("element already existed");

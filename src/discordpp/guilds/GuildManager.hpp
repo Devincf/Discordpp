@@ -15,7 +15,7 @@
 #include <map>
 #include <memory>
 
-#include "objects/Snowflake.hpp"
+#include "util/Snowflake.hpp"
 #include "Guild.hpp"
 
 namespace discordpp{
@@ -27,7 +27,7 @@ namespace discordpp{
         bool addGuild(std::pair<const Snowflake&,std::shared_ptr<Guild>>);
         bool addGuild(const Snowflake&,std::shared_ptr<Guild>);
 
-        std::shared_ptr<Guild> findGuild(const Snowflake&);
+        std::shared_ptr<Guild> findGuild(const Snowflake& id);
 
         
         private:

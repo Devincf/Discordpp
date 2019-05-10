@@ -12,7 +12,7 @@
 #ifndef CHANNEL_HPP
 #define CHANNEL_HPP
 
-#include "Snowflake.hpp"
+#include "util/Snowflake.hpp"
 
 namespace discordpp
 {

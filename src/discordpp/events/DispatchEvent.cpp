@@ -18,6 +18,7 @@
 #include "MessageCreateEvent.hpp"
 #include "PresenceUpdateEvent.hpp"
 #include "MessageReactionAddEvent.hpp"
+#include "MessageReactionRemoveEvent.hpp"
 
 
 namespace discordpp
@@ -31,6 +32,7 @@ DispatchEvent::DispatchEvent(Discordpp *dscpp) : Event(dscpp)
     m_dispatchEvents["MESSAGE_CREATE"] = std::unique_ptr<Event>(new MessageCreateEvent(dscpp));
     m_dispatchEvents["PRESENCE_UPDATE"] = std::unique_ptr<Event>(new PresenceUpdateEvent(dscpp));
     m_dispatchEvents["MESSAGE_REACTION_ADD"] = std::unique_ptr<Event>(new MessageReactionAddEvent(dscpp));
+    m_dispatchEvents["MESSAGE_REACTION_REMOVE"] = std::unique_ptr<Event>(new MessageReactionRemoveEvent(dscpp));
 }
 
 bool DispatchEvent::proc(const nlohmann::json &packet)

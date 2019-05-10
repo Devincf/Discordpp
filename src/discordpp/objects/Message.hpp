@@ -12,7 +12,7 @@
 #ifndef MESSAGE_HPP
 #define MESSAGE_HPP
 
-#include "Snowflake.hpp"
+#include "util/Snowflake.hpp"
 #include "util/Timestamp.hpp"
 
 namespace discordpp
@@ -29,13 +29,18 @@ enum MessageType
     GUILD_MEMBER_JOIN = 7,
 };
 
+class Guild;
+class User;
+
 class Message{
     private:
-    bool _tts;
-    Snowflake _id;
-    util::Timestamp _timestamp;
-    std::string _content;
-    Snowflake _channelId;
+    bool m_tts;
+    Snowflake m_id;
+    util::Timestamp m_timestamp;
+    std::string m_content;
+    Snowflake m_channelId;
+    std::shared_ptr<Guild> m_guild;
+    std::shared_ptr<User> m_author;
     public:
 
     /**

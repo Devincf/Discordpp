@@ -50,9 +50,11 @@ public:
    * @brief Manually adds a User to the Guild. This should always be called after first checking the global user map.
    * @param user The shared_ptr of the User that should be added to the Guild
    */
-  void addUser(std::shared_ptr<User> user);
+  void addUser(const Snowflake& id, std::shared_ptr<User> user);
 
   Channel getChannel(const Snowflake& id);
+
+  std::shared_ptr<User> getUser(const Snowflake& id);
 
   /**
    * @brief The Guild id
@@ -166,7 +168,7 @@ public:
   /**
    * @brief Vector of shared_ptr of all the users in the Guild
    */
-  std::vector<std::shared_ptr<User>> members;
+  std::map<Snowflake,std::shared_ptr<User>> members;
 
   /**
      * @brief vector of all the channels within the guild

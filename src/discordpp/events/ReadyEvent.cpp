@@ -19,6 +19,7 @@ bool ReadyEvent::proc(const nlohmann::json &packet)
     //DEBUG("Ready Event proc!");
     DEBUG(packet.dump(2));
     m_dscpp->setSessionId(packet["d"]["session_id"].get<std::string>());
+    m_dscpp->setCurrentBotState(constants::Running);
     return true;
 }
 } // namespace discordpp

@@ -13,7 +13,7 @@
 
 #include <string>
 #include <cstdint>
-#include "objects/Snowflake.hpp"
+#include "util/Snowflake.hpp"
 #include "money/Money.hpp"
 
 namespace discordpp

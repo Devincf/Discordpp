@@ -26,8 +26,10 @@
 #include "guilds/GuildManager.hpp"
 #include "commands/CommandManager.hpp"
 #include "money/MoneyManager.hpp"
+#include "reactions/ReactionManager.hpp"
 
 #include "tasks/HeartbeatTask.hpp"
+#include "tasks/DistributeMoneyTask.hpp"
 
 namespace discordpp
 {
@@ -36,6 +38,7 @@ Discordpp::Discordpp(const std::string &token) : m_botToken(token), m_running(fa
     Singleton<UserManager>::create();
     Singleton<GuildManager>::create();
     Singleton<CommandManager>::create();
+    Singleton<ReactionManager>::create();
     Singleton<MoneyManager>::create();
 
     Singleton<DiscordAPI>::create();
@@ -50,8 +53,14 @@ Discordpp::Discordpp(const std::string &token) : m_botToken(token), m_running(fa
     Singleton<SQLiteDatabase>::create();
     //DEBUG(Singleton<PicartoAPI>::get()->getChannelInfo("Kiraki").dump(2));
 
+    
+    Singleton<ReactionManager>::get()->addReactableMessage(576457333765308422, 0);
+    Singleton<ReactionManager>::get()->addReactableMessage(576457678604337162, 0);
+
+
     registerEvents();
     registerGlobalCommands();
+    addTask(new DistributeMoneyTask(this,20000));
 }
 Discordpp::Discordpp() : m_heartbeat_timer(m_ioservice, m_heartbeatInterval)
 {
@@ -65,6 +74,7 @@ Discordpp::~Discordpp()
     Singleton<PicartoAPI>::destroy();
     Singleton<DiscordAPI>::destroy();
     Singleton<MoneyManager>::destroy();
+    Singleton<ReactionManager>::destroy();
     Singleton<CommandManager>::destroy();
     Singleton<GuildManager>::destroy();
     Singleton<UserManager>::destroy();
@@ -79,17 +89,16 @@ Discordpp::~Discordpp()
 
 void Discordpp::registerEvents()
 {
-
     m_gatewayEvents[0] = std::unique_ptr<Event>(new DispatchEvent(this));
     m_gatewayEvents[10] = std::unique_ptr<Event>(new HelloEvent(this));
     m_gatewayEvents[11] = std::unique_ptr<Event>(new HeartbeatACKEvent(this));
 }
 void Discordpp::registerGlobalCommands()
 {
-    Singleton<CommandManager>::get()->addCommand("!ping", new PingCommand(this));
-    Singleton<CommandManager>::get()->addCommand("!daily", new DailyMoneyCommand(this));
-    Singleton<CommandManager>::get()->addCommand("!claim", new ClaimMoneyCommand(this));
-    Singleton<CommandManager>::get()->addCommand("!leaderboard", new LeaderboardCommand(this));
+    addCommand("!ping", new PingCommand(this));
+    addCommand("!daily", new DailyMoneyCommand(this));
+    addCommand("!claim", new ClaimMoneyCommand(this));
+    addCommand("!leaderboard", new LeaderboardCommand(this));
 }
 
 void Discordpp::addCommand(const std::string &cmdStr, Command *cmd)

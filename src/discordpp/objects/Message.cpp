@@ -12,6 +12,9 @@
 #include "Message.hpp"
 
 #include "util/constants.hpp"
+#include "util/jsonutils.hpp"
+#include "util/Singleton.hpp"
+#include "guilds/GuildManager.hpp"
 
 namespace discordpp
 {
@@ -49,12 +52,14 @@ Message::Message(const nlohmann::json &payload)
     "tts":false,
     "type":0}
     */
-    _timestamp = util::Timestamp(payload["timestamp"].get<std::string>());
+    m_timestamp = util::Timestamp(payload["timestamp"].get<std::string>());
 
-    _tts = payload["tts"].get<bool>();
-    _content = payload["content"].get<std::string>();
-    _id = payload["id"];
-    _channelId = payload["channel_id"];
+    m_tts = payload["tts"].get<bool>();
+    m_content = payload["content"].get<std::string>();
+    m_id = payload["id"];
+    m_channelId = payload["channel_id"];
+    m_guild = Singleton<GuildManager>::get()->findGuild(util::tryGetSnowflake("guild_id",payload));
+    m_author = m_guild->getUser(util::tryGetSnowflake("id", payload["author"]));
 }
 
 void Message::printMessage()
@@ -62,11 +67,11 @@ void Message::printMessage()
 
 }
 
-util::Timestamp Message::getTime() { return _timestamp; }
+util::Timestamp Message::getTime() { return m_timestamp; }
 
-std::string Message::getContent() { return _content; }
-Snowflake Message::getChannelId() { return _channelId; }
-Snowflake Message::getId() { return _id; }
-bool Message::hasTTSEnabled() { return _tts; }
+std::string Message::getContent() { return m_content; }
+Snowflake Message::getChannelId() { return m_channelId; }
+Snowflake Message::getId() { return m_id; }
+bool Message::hasTTSEnabled() { return m_tts; }
 
 } // namespace discordpp

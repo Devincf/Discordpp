@@ -3,7 +3,7 @@
 
 #include <memory>
 
-#include "objects/Snowflake.hpp"
+#include "util/Snowflake.hpp"
 #include "User.hpp"
 
 namespace discordpp{

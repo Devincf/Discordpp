@@ -46,7 +46,6 @@ include_directories("${PROJECT_BINARY_DIR}")
 # add the executable
 
 add_executable(Discordpp    
-                            "src/discordpp/objects/Snowflake.cpp"
                             "src/discordpp/objects/Message.cpp"
                             "src/discordpp/objects/Emoji.cpp"
                             "src/discordpp/objects/Role.cpp"
@@ -63,13 +62,14 @@ add_executable(Discordpp
                             "src/discordpp/events/MessageCreateEvent.cpp"
                             "src/discordpp/events/PresenceUpdateEvent.cpp"
                             "src/discordpp/events/MessageReactionAddEvent.cpp"
+                            "src/discordpp/events/MessageReactionRemoveEvent.cpp"
 
 
                             "src/discordpp/money/MoneyManager.cpp"
                             "src/discordpp/money/Money.cpp"
-                            "src/discordpp/money/Commands/ClaimMoneyCommand.cpp"
-                            "src/discordpp/money/Commands/LeaderboardCommand.cpp"
-                            "src/discordpp/money/Commands/DailyMoneyCommand.cpp"
+                            "src/discordpp/money/commands/ClaimMoneyCommand.cpp"
+                            "src/discordpp/money/commands/LeaderboardCommand.cpp"
+                            "src/discordpp/money/commands/DailyMoneyCommand.cpp"
                             
                             "src/discordpp/users/User.cpp"
                             "src/discordpp/users/UserManager.cpp"
@@ -81,9 +81,13 @@ add_executable(Discordpp
                             "src/discordpp/commands/PingCommand.cpp"
                             "src/discordpp/commands/CommandManager.cpp"
 
+                            "src/discordpp/reactions/ReactableMessage.cpp"
+                            "src/discordpp/reactions/ReactionManager.cpp"
+                            "src/discordpp/money/reaction/ClaimMoneyReaction.cpp"
 
                             "src/discordpp/tasks/Task.cpp"
                             "src/discordpp/tasks/HeartbeatTask.cpp"
+                            "src/discordpp/tasks/DistributeMoneyTask.cpp"
                             
                             "src/discordpp/websocket/Gateway.cpp"
 

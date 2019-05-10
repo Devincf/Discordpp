@@ -2,8 +2,8 @@
 #define COMMANDINCLUDES_HPP
 
 #include "PingCommand.hpp"
-#include "money/Commands/ClaimMoneyCommand.hpp"
-#include "money/Commands/LeaderboardCommand.hpp"
-#include "money/Commands/DailyMoneyCommand.hpp"
+#include "money/commands/ClaimMoneyCommand.hpp"
+#include "money/commands/LeaderboardCommand.hpp"
+#include "money/commands/DailyMoneyCommand.hpp"
 
 #endif
