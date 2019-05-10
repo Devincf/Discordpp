@@ -13,7 +13,7 @@
 #define MONEYMANAGER_HPP
 
 #include "Money.hpp"
-#include "objects/Snowflake.hpp"
+#include "util/Snowflake.hpp"
 #include <vector>
 
 namespace discordpp{
