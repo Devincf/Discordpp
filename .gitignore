@@ -13,7 +13,7 @@ CMakeFiles/
 .vscode/
 
 #examples
-src/example
-src/example/
-/src/example
-/src/example/
+example
+example/
+/example
+/example/
