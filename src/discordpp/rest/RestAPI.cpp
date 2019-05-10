@@ -28,6 +28,50 @@ RestAPI::~RestAPI()
 {
 }
 
+const std::string RestAPI::sendPOST(const std::string &url, const std::list<std::string> &headers, const nlohmann::json& json)
+{
+    auto promise = std::shared_ptr<std::promise<std::string>>(new std::promise<std::string>());
+    try
+    {
+        // That's all that is needed to do cleanup of used resources (RAII style).
+        curlpp::Cleanup myCleanup;
+        std::stringstream string;
+
+        std::string responsestr = json.dump();
+
+        // Our request to be sent.
+        curlpp::Easy myRequest;
+        myRequest.setOpt<Url>(url);
+        myRequest.setOpt<HttpHeader>(headers);
+        myRequest.setOpt<PostFields>(responsestr);
+        myRequest.setOpt<PostFieldSize>(responsestr.size());
+        myRequest.setOpt<WriteStream>(&string);
+        /*myRequest.setOpt<WriteFunction>(std::bind([promise](curlpp::Easy *h, char *ptr, size_t size, size_t nmemb) {
+            //promise->set_value({ptr});
+            return size * nmemb;
+        },
+                                                  &myRequest, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3));*/
+        // Send request and get a result.
+        // By default the result goes to standard output.
+        myRequest.perform();
+        return string.str();
+    }
+
+    catch (curlpp::RuntimeError &e)
+    {
+        std::cout << e.what() << std::endl;
+    }
+
+    catch (curlpp::LogicError &e)
+    {
+        std::cout << e.what() << std::endl;
+    }
+    /*auto future = promise->get_future();
+    future.wait();
+    return future.get();*/
+    return "";
+}
+
 const std::string RestAPI::sendPOST(const std::string &url, const std::list<std::string> &headers, const curlpp::Forms &formdata)
 {
     auto promise = std::shared_ptr<std::promise<std::string>>(new std::promise<std::string>());
@@ -66,6 +110,94 @@ const std::string RestAPI::sendPOST(const std::string &url, const std::list<std:
     /*auto future = promise->get_future();
     future.wait();
     return future.get();*/
+    return "";
+}
+
+const std::string RestAPI::sendPUT(const std::string& url)
+{
+    return sendPUT(url,std::list<std::string>());
+}
+
+const std::string RestAPI::sendPUT(const std::string& url, const std::list<std::string>& headers)
+{
+try
+    {
+        curlpp::Cleanup myCleanup;
+        std::stringstream string;
+
+        curlpp::Easy myRequest;
+        myRequest.setOpt<Url>(url);
+        myRequest.setOpt<HttpHeader>(headers);
+        myRequest.setOpt<CustomRequest>("PUT");
+        myRequest.setOpt<WriteStream>(&string);
+        /*myRequest.setOpt<WriteFunction>(std::bind([&string,promise](curlpp::Easy *h, char *ptr, size_t size, size_t nmemb) {
+            string.append(ptr);
+            DEBUG(string << ".");
+            if(string.back() == '\n')//this might be a bug, if some json responses dont end with a newline or have newlines at the end of a response thats not the last
+            {
+                promise->set_value(string);
+            }
+            return size * nmemb;
+        },
+                                                  &myRequest, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3));*/
+        
+        myRequest.perform();
+        return string.str();
+    }
+
+    catch (curlpp::RuntimeError &e)
+    {
+        std::cout << e.what() << std::endl;
+    }
+
+    catch (curlpp::LogicError &e)
+    {
+        std::cout << e.what() << std::endl;
+    }
+    return "";
+}
+
+const std::string RestAPI::sendDELETE(const std::string& url)
+{
+    return sendDELETE(url,std::list<std::string>());
+}
+
+const std::string RestAPI::sendDELETE(const std::string& url, const std::list<std::string>& headers)
+{
+try
+    {
+        curlpp::Cleanup myCleanup;
+        std::stringstream string;
+
+        curlpp::Easy myRequest;
+        myRequest.setOpt<Url>(url);
+        myRequest.setOpt<HttpHeader>(headers);
+        myRequest.setOpt<CustomRequest>("DELETE");
+        myRequest.setOpt<WriteStream>(&string);
+        /*myRequest.setOpt<WriteFunction>(std::bind([&string,promise](curlpp::Easy *h, char *ptr, size_t size, size_t nmemb) {
+            string.append(ptr);
+            DEBUG(string << ".");
+            if(string.back() == '\n')//this might be a bug, if some json responses dont end with a newline or have newlines at the end of a response thats not the last
+            {
+                promise->set_value(string);
+            }
+            return size * nmemb;
+        },
+                                                  &myRequest, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3));*/
+        
+        myRequest.perform();
+        return string.str();
+    }
+
+    catch (curlpp::RuntimeError &e)
+    {
+        std::cout << e.what() << std::endl;
+    }
+
+    catch (curlpp::LogicError &e)
+    {
+        std::cout << e.what() << std::endl;
+    }
     return "";
 }
 

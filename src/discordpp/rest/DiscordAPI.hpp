@@ -18,8 +18,13 @@ namespace discordpp{
 class DiscordAPI : public RestAPI
 {
     public:
-    void sendMessage(const std::string& channel, const std::string& message);
+    std::string sendMessage(const std::string& channel, const std::string& message);
+    std::string deleteMessage(const std::string& channel,const std::string& id);
+    std::string reactToMessage(const std::string& channelid, const std::string& msgid, const std::string& reaction);
     const std::string getGatewayURI();
+
+    void webhookTest();
+    void embedTest();
 
     void setToken(const std::string&);
     private:

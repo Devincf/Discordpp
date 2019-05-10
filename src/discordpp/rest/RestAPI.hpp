@@ -21,6 +21,8 @@
 
 #include <future>
 
+#include "nlohmann/json.hpp"
+
 namespace discordpp{
 class RestAPI
 {
@@ -28,9 +30,14 @@ public:
 RestAPI();
 virtual ~RestAPI();
 protected:
+const std::string sendPOST(const std::string &url, const std::list<std::string> &headers, const nlohmann::json& json);
 const std::string sendPOST(const std::string&, const std::list<std::string>& , const curlpp::Forms&);
 const std::string sendGET(const std::string&);
 const std::string sendGET(const std::string&, const std::list<std::string>&);
+const std::string sendDELETE(const std::string& url);
+const std::string sendDELETE(const std::string& url, const std::list<std::string>& headers);
+const std::string sendPUT(const std::string& url);
+const std::string sendPUT(const std::string& url, const std::list<std::string>& headers);
 
 };
 }
