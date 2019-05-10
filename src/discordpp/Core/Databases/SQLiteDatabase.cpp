@@ -38,7 +38,27 @@ SQLiteDatabase::~SQLiteDatabase()
     sqlite3_close(m_db);
 }
 
-std::vector<std::map<std::string,std::string>> SQLiteDatabase::query(const std::string &queryStr)
+const int SQLiteDatabase::count(const std::string &expression)
+{
+    //auto promise = std::shared_ptr<std::promise<std::string>>(new std::promise<std::string>());
+    int count = 0;
+    char *zErrMsg = 0;
+    std::string finalQuery = "SELECT COUNT(*) FROM " + expression;
+    int rc = sqlite3_exec(m_db, finalQuery.c_str(),
+                          [](void *count, int argc, char **argv, char **azColName) {
+                              int *c = reinterpret_cast<int*>(count);
+                              *c = atoi(argv[0]);
+                              return 0;
+                          },
+                          &count, &zErrMsg);
+    if (rc != SQLITE_OK) {
+        fprintf(stderr, "SQL error: %s\n", zErrMsg);
+        sqlite3_free(zErrMsg);
+    }
+    return count;
+}
+
+std::vector<std::map<std::string, std::string>> SQLiteDatabase::query(const std::string &queryStr)
 {
     //auto promise = std::shared_ptr<std::promise<std::string>>(new std::promise<std::string>());
 
@@ -50,7 +70,7 @@ std::vector<std::map<std::string,std::string>> SQLiteDatabase::query(const std::
         DEBUG("error: " << sqlite3_errmsg(m_db));
         return {};
     }
-    std::vector<std::map<std::string,std::string>> returnvec;
+    std::vector<std::map<std::string, std::string>> returnvec;
     while ((rc = sqlite3_step(stmt)) == SQLITE_ROW)
     {
         std::map<std::string, std::string> a;

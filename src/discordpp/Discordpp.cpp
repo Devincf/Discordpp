@@ -22,9 +22,10 @@
 
 #include "Core/Databases/SQLiteDatabase.hpp"
 
-#include "Managers/UserManager.hpp"
-#include "Managers/GuildManager.hpp"
-#include "Managers/CommandManager.hpp"
+#include "Users/UserManager.hpp"
+#include "Guilds/GuildManager.hpp"
+#include "Commands/CommandManager.hpp"
+#include "Money/MoneyManager.hpp"
 
 #include "Tasks/HeartbeatTask.hpp"
 
@@ -35,6 +36,7 @@ Discordpp::Discordpp(const std::string &token) : m_botToken(token), m_running(fa
     Singleton<UserManager>::create();
     Singleton<GuildManager>::create();
     Singleton<CommandManager>::create();
+    Singleton<MoneyManager>::create();
 
     Singleton<DiscordAPI>::create();
     Singleton<DiscordAPI>::get()->setToken(token);
@@ -50,23 +52,6 @@ Discordpp::Discordpp(const std::string &token) : m_botToken(token), m_running(fa
 
     registerEvents();
     registerGlobalCommands();
-    try
-    {
-        m_gatewayThread = boost::thread(boost::bind(&Gateway::connect, &m_gateway));
-        m_canStart = true;
-    }
-    catch (websocketpp::exception const &e)
-    {
-        std::cerr << e.what() << std::endl;
-    }
-    catch (std::exception const &e)
-    {
-        std::cerr << e.what() << std::endl;
-    }
-    catch (...)
-    {
-        std::cerr << "other exception" << std::endl;
-    }
 }
 Discordpp::Discordpp() : m_heartbeat_timer(m_ioservice, m_heartbeatInterval)
 {
@@ -79,9 +64,17 @@ Discordpp::~Discordpp()
     Singleton<TwitchAPI>::destroy();
     Singleton<PicartoAPI>::destroy();
     Singleton<DiscordAPI>::destroy();
+    Singleton<MoneyManager>::destroy();
     Singleton<CommandManager>::destroy();
     Singleton<GuildManager>::destroy();
     Singleton<UserManager>::destroy();
+
+    for (auto &task : m_tasks)
+    {
+        task->stop();
+    }
+
+    m_gatewayThread.join();
 }
 
 void Discordpp::registerEvents()
@@ -94,6 +87,9 @@ void Discordpp::registerEvents()
 void Discordpp::registerGlobalCommands()
 {
     Singleton<CommandManager>::get()->addCommand("!ping", new PingCommand(this));
+    Singleton<CommandManager>::get()->addCommand("!daily", new DailyMoneyCommand(this));
+    Singleton<CommandManager>::get()->addCommand("!claim", new ClaimMoneyCommand(this));
+    Singleton<CommandManager>::get()->addCommand("!leaderboard", new LeaderboardCommand(this));
 }
 
 void Discordpp::addCommand(const std::string &cmdStr, Command *cmd)
@@ -110,37 +106,64 @@ void Discordpp::addTask(Task *pTask)
 bool Discordpp::startHeartbeat(const int interval)
 {
     DEBUG("Starting Heartbeat Timer with an interval of " << interval << " seconds");
-    addTask(new HeartbeatTask(this,interval));
+    addTask(new HeartbeatTask(this, interval));
     return true;
 }
 
 void Discordpp::run()
 {
-    if (!m_canStart)
-        return;
-
-    DEBUG("Starting Discordpp");
-
     m_running = true;
     while (m_running)
     {
-        std::unique_lock<std::mutex> lk(*m_gateway.getEventMutex());
-        m_gateway.getEventCV()->wait(lk);
-        nlohmann::json event = m_gateway.getNextEvent();
-        auto eventit = m_gatewayEvents.find(event["op"].get<int>());
-        if (eventit != m_gatewayEvents.end())
+        try
         {
-            if (!eventit->second->proc(event))
+            m_gatewayThread = boost::thread(boost::bind(&Gateway::connect, &m_gateway));
+
+            DEBUG("Starting Discordpp");
+            std::unique_lock<std::mutex> connectionlk(*m_gateway.getConnectionMutex());
+            m_gateway.getConnectionCV()->wait(connectionlk);
+            while (m_gateway.getConnectionStatus() == WEBSOCKET_CONNECTED)
             {
-                DEBUG("Error occured during Event printing json data");
-                DEBUG(event.dump(4));
+                std::unique_lock<std::mutex> lk(*m_gateway.getEventMutex());
+                m_gateway.getEventCV()->wait(lk);
+                nlohmann::json event = m_gateway.getNextEvent();
+                if (event.find("s") != event.end() && !event["s"].is_null())
+                {
+                    m_lastS = event["s"].get<int>();
+                    //DEBUG("updated sequence to " << m_lastS);
+                }
+                auto eventit = m_gatewayEvents.find(event["op"].get<int>());
+                if (eventit != m_gatewayEvents.end())
+                {
+                    if (!eventit->second->proc(event))
+                    {
+                        DEBUG("Error occured during Event printing json data");
+                        DEBUG(event.dump(4));
+                    }
+                }
+                else
+                {
+                    DEBUG("Event recieved with opcode " << event["op"].get<int>() << " but no suitable eventhandler found");
+                    DEBUG(event.dump(2));
+                }
             }
         }
-        else
+        catch (websocketpp::exception const &e)
         {
-            DEBUG("Event recieved with opcode " << event["op"].get<int>() << " but no suitable eventhandler found");
-            DEBUG(event.dump(2));
+            std::cout << "Websocket exception : " << e.what() << std::endl;
         }
+        catch (std::exception const &e)
+        {
+            std::cout << "std exception : " << e.what() << std::endl;
+        }
+        catch (...)
+        {
+            std::cout << "other exception" << std::endl;
+        }
+
+        using namespace std::chrono_literals;
+        std::this_thread::sleep_for(5s);
+
     }
 }
 
@@ -151,6 +174,8 @@ bool Discordpp::getLastHeartbeatACK() { return m_lastHeartbeatACK; }
 bool Discordpp::isInitialized() { return m_initialized; }
 void Discordpp::setCurrentBotState(constants::BotState newState) { m_currentState = newState; }
 void Discordpp::setLastHeartbeatACK(bool val) { m_lastHeartbeatACK = val; }
-int Discordpp::getLastS(){return m_lastS;}
+void Discordpp::setSessionId(const std::string &sessid) { m_sessionId = sessid; }
+int Discordpp::getLastS() { return m_lastS; }
+std::string Discordpp::getSessionId(){return m_sessionId;}
 
 } // namespace discordpp

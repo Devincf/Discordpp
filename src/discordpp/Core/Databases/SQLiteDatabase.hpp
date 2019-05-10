@@ -27,6 +27,7 @@ class SQLiteDatabase
     ~SQLiteDatabase();
 
     std::vector<std::map<std::string,std::string>> query(const std::string& queryStr);
+    const int count(const std::string& expression);
 
     private:
 

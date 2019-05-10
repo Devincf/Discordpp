@@ -57,5 +57,7 @@ int main()
     Example ex(token2);
     ex.setup();
 
+    std::cout << "Is this even being called?" << std::endl;
+
     return 1;
 }

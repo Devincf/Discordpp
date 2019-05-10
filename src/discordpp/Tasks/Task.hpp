@@ -28,6 +28,7 @@ namespace discordpp
         virtual ~Task();
 
         void start(boost::asio::io_service& pIo);
+        void stop();
 
 
         boost::thread* getThread();

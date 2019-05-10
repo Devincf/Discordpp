@@ -23,6 +23,9 @@ Gateway::Gateway()
     m_eventCV = new std::condition_variable();
     m_eventQueueMutex = new std::mutex();
 
+    m_connectionCV = new std::condition_variable();
+    m_connectionMutex = new std::mutex();
+
     m_endpoint.set_access_channels(websocketpp::log::alevel::none);
     m_endpoint.set_error_channels(websocketpp::log::elevel::all);
 
@@ -44,6 +47,8 @@ Gateway::~Gateway()
 {
     delete m_eventQueueMutex;
     delete m_eventCV;
+    delete m_connectionMutex;
+    delete m_connectionCV;
 }
 
 void Gateway::connect()
@@ -60,9 +65,12 @@ void Gateway::connect()
 
     m_endpoint.connect(con);
     DEBUG("Connected");
+    m_connectionStatus = WEBSOCKET_CONNECTED;
 
+    m_connectionCV->notify_all();
     // Start the ASIO io_service run loop
     m_endpoint.run();
+    DEBUG("Does this ever get called?");
 }
 websocketpp::connection_hdl &Gateway::getHandle()
 {
@@ -74,6 +82,11 @@ client &Gateway::getEndpoint()
     return m_endpoint;
 }
 
+ConnectionStatus Gateway::getConnectionStatus()
+{
+    return m_connectionStatus;
+}
+
 void Gateway::on_socket_init(const websocketpp::connection_hdl &hdl)
 {
     DEBUG("Gateway::onSocketInit");
@@ -81,6 +94,7 @@ void Gateway::on_socket_init(const websocketpp::connection_hdl &hdl)
 
 context_ptr Gateway::on_tls_init(const websocketpp::connection_hdl &hdl)
 {
+    m_connectionStatus = WEBSOCKET_CONNECTING;
     DEBUG("Gateway::onTlsInit");
     context_ptr ctx = websocketpp::lib::make_shared<boost::asio::ssl::context>(boost::asio::ssl::context::tlsv1);
 
@@ -117,7 +131,6 @@ void Gateway::on_open(const websocketpp::connection_hdl &hdl)
 
 void Gateway::on_message(const websocketpp::connection_hdl &hdl, const message_ptr &msgptr)
 {
-    //DEBUG("Gateway::onMessage");
     {
         std::lock_guard<std::mutex> lk(*m_eventQueueMutex);
         m_eventQueue.push(nlohmann::json::parse(msgptr->get_payload()));
@@ -127,13 +140,20 @@ void Gateway::on_message(const websocketpp::connection_hdl &hdl, const message_p
 
 void Gateway::on_close(const websocketpp::connection_hdl &hdl)
 {
-    DEBUG("Gateway::onClose");
-    m_endpoint.close(hdl, websocketpp::close::status::going_away, "");
+        DEBUG("> Closing connection ");
+        
+        websocketpp::lib::error_code ec;
+        m_endpoint.close(hdl, websocketpp::close::status::going_away, "", ec);
+        if (ec) {
+            DEBUG("> Error closing connection : "  << ec.message());
+        }
+    m_connectionStatus = WEBSOCKET_DISCONNECTED;
 }
 
 void Gateway::sendPayload(const nlohmann::json &payload)
 {
-    m_endpoint.send(m_hdl, payload.dump(), websocketpp::frame::opcode::text);
+    if(m_connectionStatus == WEBSOCKET_CONNECTED)
+        m_endpoint.send(m_hdl, payload.dump(), websocketpp::frame::opcode::text);
 }
 
 bool Gateway::hasEvent()
@@ -156,6 +176,16 @@ std::mutex *Gateway::getEventMutex()
 std::condition_variable *Gateway::getEventCV()
 {
     return m_eventCV;
+}
+
+std::mutex *Gateway::getConnectionMutex()
+{
+    return m_connectionMutex;
+}
+
+std::condition_variable *Gateway::getConnectionCV()
+{
+    return m_connectionCV;
 }
 
 } // namespace discordpp

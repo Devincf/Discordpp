@@ -24,7 +24,7 @@ namespace discordpp
     void HeartbeatTask::proc()
     {
         if (!m_dscpp->getLastHeartbeatACK() && m_dscpp->getCurrentBotState() != constants::Starting)
-        { //Todo: Add ACK Check
+        {   //Todo: Add ACK Check
             //terminate and reconnect/resume
             DEBUG("[ERROR] NO HEARTBEAT ACK RECIEVED ERROR");
         }

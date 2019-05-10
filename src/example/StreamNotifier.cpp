@@ -38,7 +38,7 @@ StreamNotifier::StreamNotifier(discordpp::Discordpp *pDsc, std::map<std::string,
 }
 void StreamNotifier::proc()
 {
-    DEBUG("StreamNotifier proc");
+    //DEBUG("StreamNotifier proc");
     for (Channel &channel : m_channels->at("picarto"))
     {
         //std::cout << "checking " << channel.name << std::endl;

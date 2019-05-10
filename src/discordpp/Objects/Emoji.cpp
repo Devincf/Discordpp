@@ -13,7 +13,7 @@
 #include "Util/jsonutils.hpp"
 
 #include "Util/Singleton.hpp"
-#include "Managers/UserManager.hpp"
+#include "Users/UserManager.hpp"
 
 namespace discordpp
 {

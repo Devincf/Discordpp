@@ -13,7 +13,7 @@
 #define EMOJI_HPP
 
 #include "Snowflake.hpp"
-#include "User.hpp"
+#include "Users/User.hpp"
 
 namespace discordpp
 {

@@ -19,33 +19,49 @@ bool HeartbeatACKEvent::proc(const nlohmann::json &packet)
     DEBUG("ACK");
     if (m_dscpp->getCurrentBotState() == constants::Starting)
     {
-        m_dscpp->setCurrentBotState(constants::FirstHeartbeat);
+        if (m_dscpp->getSessionId() == "")
+        {
+            //Send Verify
+            m_dscpp->setCurrentBotState(constants::FirstHeartbeat);
 
-        DEBUG("sending verify information");
-        nlohmann::json payload;
+            DEBUG("sending verify information");
+            nlohmann::json payload;
 
-        payload["op"] = constants::Identify;
-        payload["d"]["token"] = m_dscpp->getToken();
-        payload["d"]["properties"]["$os"] = "linux";
-        payload["d"]["properties"]["$browser"] = "disco";
-        payload["d"]["properties"]["$device"] = "disco";
-        payload["d"]["compress"] = false;
-        payload["d"]["large_threshold"] = 250;
-        payload["d"]["shard"] = {0, 1};
-        payload["d"]["presence"]["game"] = nullptr;
-        payload["d"]["presence"]["status"] = "online";
-        payload["d"]["presence"]["since"] = nullptr;
-        payload["d"]["presence"]["afk"] = false;
+            payload["op"] = constants::Identify;
+            payload["d"]["token"] = m_dscpp->getToken();
+            payload["d"]["properties"]["$os"] = "linux";
+            payload["d"]["properties"]["$browser"] = "disco";
+            payload["d"]["properties"]["$device"] = "disco";
+            payload["d"]["compress"] = false;
+            payload["d"]["large_threshold"] = 250;
+            payload["d"]["shard"] = {0, 1};
+            payload["d"]["presence"]["game"] = nullptr;
+            payload["d"]["presence"]["status"] = "online";
+            payload["d"]["presence"]["since"] = nullptr;
+            payload["d"]["presence"]["afk"] = false;
 
-        DEBUG("Sending Verify Payload");
-        //DEBUG(payload.dump());
-        nlohmann::json json;
-        json["op"] = 2;
-        m_dscpp->getGateway()->sendPayload(payload);
-        m_dscpp->setCurrentBotState(constants::VerificationSent);
-        m_dscpp->setLastHeartbeatACK(true);
-        DEBUG("verify sent");
-        return true;
+            DEBUG("Sending Verify Payload");
+            //DEBUG(payload.dump());
+            m_dscpp->getGateway()->sendPayload(payload);
+            m_dscpp->setCurrentBotState(constants::VerificationSent);
+            m_dscpp->setLastHeartbeatACK(true);
+            DEBUG("verify sent");
+            return true;
+        }else
+        {
+            //Reconnect
+            m_dscpp->setCurrentBotState(constants::Starting);
+            DEBUG("Sending Resume information");
+            nlohmann::json payload;
+
+            payload["op"] = constants::Resume;
+            payload["d"]["token"] = m_dscpp->getToken();
+            payload["d"]["session_id"] = m_dscpp->getSessionId();
+            payload["d"]["seq"] = m_dscpp->getLastS();
+            m_dscpp->getGateway()->sendPayload(payload);
+            m_dscpp->setCurrentBotState(constants::VerificationSent);
+            m_dscpp->setLastHeartbeatACK(true);
+        }
     }
     else
     {

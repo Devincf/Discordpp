@@ -10,12 +10,15 @@
  */
 
 #include "ReadyEvent.hpp"
+#include "Discordpp.hpp"
 
 namespace discordpp
 {
 bool ReadyEvent::proc(const nlohmann::json &packet)
 {
     //DEBUG("Ready Event proc!");
+    DEBUG(packet.dump(2));
+    m_dscpp->setSessionId(packet["d"]["session_id"].get<std::string>());
     return true;
 }
 } // namespace discordpp

@@ -38,7 +38,17 @@ typedef client::connection_ptr connection_ptr;
 
 namespace discordpp
 {
+
+enum ConnectionStatus
+{
+  WEBSOCKET_DISCONNECTED = 0,
+  WEBSOCKET_CONNECTING = 1,
+  WEBSOCKET_CONNECTED = 2,
+  WEBSOCKET_RECONNECTING = 4
+};
+
 /**
+ * 
  * @brief Class used for communicating with the discord gateway
  */
 class Gateway
@@ -59,7 +69,12 @@ public:
   /**
    * @brief connects to the websocket
    */
-  void connect();
+  void connect();  
+  
+  /**
+   * @brief connects to the websocket
+   */
+  void reconnect(const std::string& sessionid, int sequence);
   /**
    * @brief called when the socket connection is initialized
    * @param handle to the connection
@@ -124,6 +139,13 @@ public:
 
   std::condition_variable* getEventCV();
 
+  std::mutex* getConnectionMutex();
+
+  std::condition_variable* getConnectionCV();
+
+
+  ConnectionStatus getConnectionStatus();
+
 private:
   /**
    * @brief client endpoint for the gateway connection
@@ -142,6 +164,12 @@ private:
   std::mutex* m_eventQueueMutex;
 
   std::condition_variable* m_eventCV;
+
+  std::mutex* m_connectionMutex;
+
+  std::condition_variable* m_connectionCV;
+
+  ConnectionStatus m_connectionStatus;
 };
 } // namespace discordpp
 

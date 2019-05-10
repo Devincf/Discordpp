@@ -39,11 +39,13 @@ class Discordpp
     const std::string getToken();
     Gateway* getGateway();
     bool getLastHeartbeatACK();
-    void setCurrentBotState(constants::BotState);
-    void setLastHeartbeatACK(bool);
-    bool startHeartbeat(const int);
+    void setCurrentBotState(constants::BotState newState);
+    void setLastHeartbeatACK(bool ack);
+    void setSessionId(const std::string& sessid);
+    bool startHeartbeat(const int interval);
     bool isInitialized();
     int getLastS();
+    std::string getSessionId();
     virtual void setup() = 0;
   protected:
     void run();
@@ -65,6 +67,8 @@ class Discordpp
     */
     int m_lastS;
 
+    std::string m_sessionId;
+
     /**
     * @brief The current status of the bot. See Util/constants.hpp for more
     */
@@ -85,7 +89,6 @@ class Discordpp
     Gateway m_gateway;
 
     boost::thread m_gatewayThread;
-    boost::thread m_heartbeatThread;
 
     std::map<int, std::unique_ptr<Event>> m_gatewayEvents;
 

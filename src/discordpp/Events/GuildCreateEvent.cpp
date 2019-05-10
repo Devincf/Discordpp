@@ -12,7 +12,7 @@
 #include "GuildCreateEvent.hpp"
 
 #include "Util/Singleton.hpp"
-#include "Managers/GuildManager.hpp"
+#include "Guilds/GuildManager.hpp"
 
 namespace discordpp{
     bool GuildCreateEvent::proc(const nlohmann::json& packet)

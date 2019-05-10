@@ -23,6 +23,8 @@
 #define DEBUG(x)
 #endif
 
+#define PRINT_MAP(x) for( auto const& [key, val] : x ){DEBUG(key<<':'<< val);}
+
 
 namespace discordpp::constants
 {

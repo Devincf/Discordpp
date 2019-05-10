@@ -19,6 +19,7 @@ namespace discordpp
 Task::Task(){}
 Task::~Task() 
 {
+    DEBUG("Stopping Task");
     delete m_taskTimer;
     m_taskTimer = nullptr;
 }
@@ -37,6 +38,11 @@ void Task::start(boost::asio::io_service& pIo)
     m_taskTimer->async_wait(boost::bind(&Task::proc, this));
     DEBUG("Starting Task timer with an interval of " << m_interval.count() << " millisecconds");
     m_taskThread = boost::thread(boost::bind(&boost::asio::io_service::run, &pIo));
+}
+
+void Task::stop()
+{
+    pthread_cancel(m_taskThread.native_handle());
 }
 
 void Task::resetTimer()

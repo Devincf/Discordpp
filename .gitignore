@@ -11,3 +11,6 @@ CMakeFiles/
 
 #vscode
 .vscode/
+
+#examples
+src/example

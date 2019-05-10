@@ -14,8 +14,8 @@
 #include "Util/jsonutils.hpp"
 
 #include "Util/Singleton.hpp"
-#include "Managers/UserManager.hpp"
-#include "Managers/GuildManager.hpp"
+#include "Users/UserManager.hpp"
+#include "Guilds/GuildManager.hpp"
 
 namespace discordpp
 {

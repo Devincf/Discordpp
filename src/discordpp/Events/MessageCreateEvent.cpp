@@ -14,9 +14,9 @@
 #include "Util/Singleton.hpp"
 #include "Util/jsonutils.hpp"
 #include "Util/constants.hpp"
-#include "Managers/CommandManager.hpp"
-#include "Managers/GuildManager.hpp"
-#include "Managers/UserManager.hpp"
+#include "Commands/CommandManager.hpp"
+#include "Guilds/GuildManager.hpp"
+#include "Users/UserManager.hpp"
 #include "Objects/Message.hpp"
 
 namespace discordpp

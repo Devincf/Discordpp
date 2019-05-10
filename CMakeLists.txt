@@ -48,11 +48,9 @@ include_directories("${PROJECT_BINARY_DIR}")
 add_executable(Discordpp    
                             "src/discordpp/Objects/Snowflake.cpp"
                             "src/discordpp/Objects/Message.cpp"
-                            "src/discordpp/Objects/User.cpp"
                             "src/discordpp/Objects/Emoji.cpp"
                             "src/discordpp/Objects/Role.cpp"
                             "src/discordpp/Objects/Channel.cpp"
-                            "src/discordpp/Objects/Guild.cpp"
 
                             "src/discordpp/Events/Event.cpp"
                             "src/discordpp/Events/HelloEvent.cpp"
@@ -64,16 +62,28 @@ add_executable(Discordpp
                             "src/discordpp/Events/TypingStartEvent.cpp"
                             "src/discordpp/Events/MessageCreateEvent.cpp"
                             "src/discordpp/Events/PresenceUpdateEvent.cpp"
+                            "src/discordpp/Events/MessageReactionAddEvent.cpp"
+
+
+                            "src/discordpp/Money/MoneyManager.cpp"
+                            "src/discordpp/Money/Money.cpp"
+                            "src/discordpp/Money/Commands/ClaimMoneyCommand.cpp"
+                            "src/discordpp/Money/Commands/LeaderboardCommand.cpp"
+                            "src/discordpp/Money/Commands/DailyMoneyCommand.cpp"
+                            
+                            "src/discordpp/Users/User.cpp"
+                            "src/discordpp/Users/UserManager.cpp"
+
+                            "src/discordpp/Guilds/Guild.cpp"
+                            "src/discordpp/Guilds/GuildManager.cpp"
 
                             "src/discordpp/Commands/Command.cpp"
                             "src/discordpp/Commands/PingCommand.cpp"
+                            "src/discordpp/Commands/CommandManager.cpp"
+
 
                             "src/discordpp/Tasks/Task.cpp"
                             "src/discordpp/Tasks/HeartbeatTask.cpp"
-                            
-                            "src/discordpp/Managers/UserManager.cpp"
-                            "src/discordpp/Managers/GuildManager.cpp"
-                            "src/discordpp/Managers/CommandManager.cpp"
                             
                             "src/discordpp/Core/WebSocket/Gateway.cpp"
 

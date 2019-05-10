@@ -47,11 +47,15 @@ class Snowflake
      * @brief Destroy the Snowflake object
      */
     ~Snowflake();
+
     /**
      * @brief Returns the Snowflake
      * @return uint64_t the snowflake
      */
     operator uint64_t() const { return m_snowflake; }
+    
+    operator std::string() const { return std::to_string(m_snowflake); }
+
 
     /**
      * @brief returns the timestamp contained within the snowflake
