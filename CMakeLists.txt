@@ -60,6 +60,7 @@ add_executable(Discordpp
                             "src/discordpp/events/ChannelCreateEvent.cpp"
                             "src/discordpp/events/TypingStartEvent.cpp"
                             "src/discordpp/events/MessageCreateEvent.cpp"
+                            "src/discordpp/events/MessageUpdateEvent.cpp"
                             "src/discordpp/events/PresenceUpdateEvent.cpp"
                             "src/discordpp/events/MessageReactionAddEvent.cpp"
                             "src/discordpp/events/MessageReactionRemoveEvent.cpp"
@@ -79,6 +80,7 @@ add_executable(Discordpp
 
                             "src/discordpp/commands/Command.cpp"
                             "src/discordpp/commands/PingCommand.cpp"
+                            "src/discordpp/commands/AboutCommand.cpp"
                             "src/discordpp/commands/CommandManager.cpp"
 
                             "src/discordpp/reactions/ReactableMessage.cpp"

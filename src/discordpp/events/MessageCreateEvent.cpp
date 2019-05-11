@@ -24,29 +24,36 @@ namespace discordpp
 bool MessageCreateEvent::proc(const nlohmann::json &packet)
 {
     //DEBUG("MessageCreateProc");
-    std::string content = packet["d"]["content"].get<std::string>();
-    Message m(packet["d"]);
-    if (packet["d"]["author"]["id"] == "444648378199048214")
+    nlohmann::json data = packet["d"];
+    if (data.find("author") == data.end())
+    {
+        DEBUG("No author for MessageCreateEvent found error");
+        return false;
+    }
+    std::string authorID = data["author"]["id"].get<std::string>();
+    if (authorID== "444648378199048214")
     {
         //bot message
         return true;
     }
+    std::string content = data["content"].get<std::string>();
+    Message m(data);
 
-    auto cmdit = Singleton<CommandManager>::get()->findCommand(util::tryGetSnowflake("guild_id", packet["d"]), content);
+    auto cmdit = Singleton<CommandManager>::get()->findCommand(util::tryGetSnowflake("guild_id", data), content);
     if (cmdit != nullptr)
     {
         return cmdit->proc(packet);
     }
 
 
-    auto user = Singleton<UserManager>::get()->findUser(packet["d"]["author"]["id"]);
+    auto user = Singleton<UserManager>::get()->findUser(authorID);
         if (user == nullptr)
         {
             DEBUG("Unknown user in MESSAGE_CREATE event");
             return false;
         }
 
-    auto guildit = Singleton<GuildManager>::get()->findGuild(packet["d"]["guild_id"]);
+    auto guildit = Singleton<GuildManager>::get()->findGuild(data["guild_id"]);
     if (guildit != nullptr)
     {
         //guild message

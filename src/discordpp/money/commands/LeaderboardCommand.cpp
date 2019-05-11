@@ -28,21 +28,32 @@ namespace discordpp
         Snowflake userId = packet["d"]["author"]["id"];
         auto leaderboard = Singleton<MoneyManager>::get()->getLeaderboard(10);
         std::stringstream ss;
-        for(auto i : leaderboard)
+        for(int i = 0;i<leaderboard.size();i++)
         {
-            auto userptr = Singleton<UserManager>::get()->findUser(i.first);
+            auto current = leaderboard.at(i);
+            auto userptr = Singleton<UserManager>::get()->findUser(current.first);
             if(userptr != nullptr)
             {
-                //DEBUG(userptr->userName << " : " << i.second);
-                ss << userptr->userName << " : " << i.second << "\n";
+                ss << m_rankingEmojis.at(i+1) << " **" << userptr->userName << "**      ( " << current.second << " )\n\n";
             }
             else
             {
-                DEBUG("Couldnt find user with userid " << i.first);
+                DEBUG("Couldnt find user with userid " << current.first);
             }
             
         }
-        Singleton<DiscordAPI>::get()->sendMessage(packet["d"]["channel_id"].get<std::string>(), ss.str());
+        nlohmann::json json;
+        //https://news.bitcoin.com/wp-content/uploads/2018/07/ranking-300x237.jpg
+
+        nlohmann::json embed;
+        embed["title"] = ":trophy:  Rankings";
+        embed["description"] = ss.str();
+        embed["thumbnail"]["url"] = "https://news.bitcoin.com/wp-content/uploads/2018/07/ranking-300x237.jpg";
+        embed["color"] = 8388352;
+
+        json["embed"] = embed;
+
+        Singleton<DiscordAPI>::get()->sendMessageExtended(packet["d"]["channel_id"].get<std::string>(), json);
         return true;
     }
 }

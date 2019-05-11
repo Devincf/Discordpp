@@ -65,6 +65,7 @@ namespace emoji
     const std::string coffee = "☕";
 }
 
+
 /**
  * @brief Default database name to be used
  */

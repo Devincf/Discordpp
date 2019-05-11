@@ -53,14 +53,10 @@ Discordpp::Discordpp(const std::string &token) : m_botToken(token), m_running(fa
     Singleton<SQLiteDatabase>::create();
     //DEBUG(Singleton<PicartoAPI>::get()->getChannelInfo("Kiraki").dump(2));
 
-    
-    Singleton<ReactionManager>::get()->addReactableMessage(576457333765308422, 0);
-    Singleton<ReactionManager>::get()->addReactableMessage(576457678604337162, 0);
-
 
     registerEvents();
     registerGlobalCommands();
-    addTask(new DistributeMoneyTask(this,20000));
+    addTask(new DistributeMoneyTask(this,1000000));
 }
 Discordpp::Discordpp() : m_heartbeat_timer(m_ioservice, m_heartbeatInterval)
 {
@@ -96,6 +92,7 @@ void Discordpp::registerEvents()
 void Discordpp::registerGlobalCommands()
 {
     addCommand("!ping", new PingCommand(this));
+    addCommand("!about", new AboutCommand(this));
     addCommand("!daily", new DailyMoneyCommand(this));
     addCommand("!claim", new ClaimMoneyCommand(this));
     addCommand("!leaderboard", new LeaderboardCommand(this));

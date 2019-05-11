@@ -54,10 +54,19 @@ void DistributeMoneyTask::proc()
 
     //auto channel = Singleton<GuildManager>::get()->findGuild(guildID)->getChannel(channelID);
 
-    auto a = nlohmann::json::parse(Singleton<DiscordAPI>::get()->sendMessage(std::to_string(channelID), "React to this message to receive 100 coins!"));
+    nlohmann::json json;
+    nlohmann::json embed;
+    embed["title"] = "Coin drop";
+    embed["color"] = 10824234;
+    embed["description"] = "w-would u like a drink master?";
+    embed["image"]["url"] = "https://cdn.discordapp.com/attachments/439065048628068365/576535445123629064/20190510_172533.jpg";
+    json["embed"] = embed;
+
+    auto a = nlohmann::json::parse(Singleton<DiscordAPI>::get()->sendMessageExtended(std::to_string(channelID), json));
     //DEBUG(a.dump(2));
     std::string messageId = a["id"].get<std::string>();
     Singleton<ReactionManager>::get()->addReactableMessage(messageId, 0);
+    
     DEBUG(Singleton<DiscordAPI>::get()->reactToMessage(a["channel_id"].get<std::string>(), messageId, constants::emoji::coffee));
 
     this->resetTimer();

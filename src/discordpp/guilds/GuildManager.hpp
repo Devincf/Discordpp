@@ -27,6 +27,8 @@ namespace discordpp{
         bool addGuild(std::pair<const Snowflake&,std::shared_ptr<Guild>>);
         bool addGuild(const Snowflake&,std::shared_ptr<Guild>);
 
+        int amount() const;
+
         std::shared_ptr<Guild> findGuild(const Snowflake& id);
 
         

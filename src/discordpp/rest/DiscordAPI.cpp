@@ -33,6 +33,16 @@ std::string DiscordAPI::sendMessage(const std::string &channel, const std::strin
     return this->sendPOST("https://discordapp.com/api/v6/channels/" + channel + "/messages", headers, json);
 }
 
+std::string DiscordAPI::sendMessageExtended(const std::string &channel, const nlohmann::json& json)
+{
+
+    std::list<std::string> headers;
+    headers.push_back("Authorization: Bot " + m_token);
+    headers.push_back("Content-Type: multipart/form-data");
+
+    return this->sendPOST("https://discordapp.com/api/v6/channels/" + channel + "/messages", headers, json);
+}
+
 std::string DiscordAPI::deleteMessage(const std::string &channel, const std::string &id)
 {
     std::list<std::string> headers;
@@ -77,12 +87,12 @@ void DiscordAPI::embedTest()
     headers.push_back("Content-Type: multipart/form-data");
 
     nlohmann::json json;
-    json["content"] = "Test Embed Message";
     nlohmann::json embed;
-    embed["title"] = "Embed Title";
-    embed["description"] = "Embed Description";
     embed["url"] = "https://www.google.com/";
-    embed["color"] = 17;
+    embed["title"] = "Coin drop";
+    embed["color"] = 10824234;
+    embed["description"] = "w-would u like a drink master?";
+    embed["image"]["url"] = "https://cdn.discordapp.com/attachments/439065048628068365/576535445123629064/20190510_172533.jpg";
     json["embed"] = embed;
 
     this->sendPOST("https://discordapp.com/api/v6/channels/445942826534961153/messages", headers, json);

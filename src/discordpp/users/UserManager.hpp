@@ -15,6 +15,8 @@ namespace discordpp{
         bool addUser(std::pair<Snowflake,std::shared_ptr<User>>);
         bool addUser(Snowflake,std::shared_ptr<User>);
 
+        int amount() const;
+
         std::shared_ptr<User> findUser(const Snowflake& snowflake);
 
         private:

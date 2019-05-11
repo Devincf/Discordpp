@@ -11,6 +11,11 @@ UserManager::~UserManager()
 {
 }
 
+int UserManager::amount() const
+{
+    return m_globalUsers.size();
+}
+
 bool UserManager::addUser(std::pair<Snowflake, std::shared_ptr<User>> userdata)
 {
     auto ret = m_globalUsers.insert(userdata);
@@ -35,7 +40,7 @@ bool UserManager::addUser(Snowflake id, std::shared_ptr<User> userptr)
     return true;
 }
 
-std::shared_ptr<User> UserManager::findUser(const Snowflake& snowflake)
+std::shared_ptr<User> UserManager::findUser(const Snowflake &snowflake)
 {
     std::map<Snowflake, std::shared_ptr<User>>::iterator it = m_globalUsers.find(snowflake);
     if (it != m_globalUsers.end())

@@ -231,6 +231,33 @@ src/discordpp/Discordpp.cpp.s:
 	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/Discordpp.cpp.s
 .PHONY : src/discordpp/Discordpp.cpp.s
 
+src/discordpp/commands/AboutCommand.o: src/discordpp/commands/AboutCommand.cpp.o
+
+.PHONY : src/discordpp/commands/AboutCommand.o
+
+# target to build an object file
+src/discordpp/commands/AboutCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/commands/AboutCommand.cpp.o
+.PHONY : src/discordpp/commands/AboutCommand.cpp.o
+
+src/discordpp/commands/AboutCommand.i: src/discordpp/commands/AboutCommand.cpp.i
+
+.PHONY : src/discordpp/commands/AboutCommand.i
+
+# target to preprocess a source file
+src/discordpp/commands/AboutCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/commands/AboutCommand.cpp.i
+.PHONY : src/discordpp/commands/AboutCommand.cpp.i
+
+src/discordpp/commands/AboutCommand.s: src/discordpp/commands/AboutCommand.cpp.s
+
+.PHONY : src/discordpp/commands/AboutCommand.s
+
+# target to generate assembly for a file
+src/discordpp/commands/AboutCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/commands/AboutCommand.cpp.s
+.PHONY : src/discordpp/commands/AboutCommand.cpp.s
+
 src/discordpp/commands/Command.o: src/discordpp/commands/Command.cpp.o
 
 .PHONY : src/discordpp/commands/Command.o
@@ -581,6 +608,33 @@ src/discordpp/events/MessageReactionRemoveEvent.s: src/discordpp/events/MessageR
 src/discordpp/events/MessageReactionRemoveEvent.cpp.s:
 	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/events/MessageReactionRemoveEvent.cpp.s
 .PHONY : src/discordpp/events/MessageReactionRemoveEvent.cpp.s
+
+src/discordpp/events/MessageUpdateEvent.o: src/discordpp/events/MessageUpdateEvent.cpp.o
+
+.PHONY : src/discordpp/events/MessageUpdateEvent.o
+
+# target to build an object file
+src/discordpp/events/MessageUpdateEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/events/MessageUpdateEvent.cpp.o
+.PHONY : src/discordpp/events/MessageUpdateEvent.cpp.o
+
+src/discordpp/events/MessageUpdateEvent.i: src/discordpp/events/MessageUpdateEvent.cpp.i
+
+.PHONY : src/discordpp/events/MessageUpdateEvent.i
+
+# target to preprocess a source file
+src/discordpp/events/MessageUpdateEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/events/MessageUpdateEvent.cpp.i
+.PHONY : src/discordpp/events/MessageUpdateEvent.cpp.i
+
+src/discordpp/events/MessageUpdateEvent.s: src/discordpp/events/MessageUpdateEvent.cpp.s
+
+.PHONY : src/discordpp/events/MessageUpdateEvent.s
+
+# target to generate assembly for a file
+src/discordpp/events/MessageUpdateEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/Discordpp.dir/build.make CMakeFiles/Discordpp.dir/src/discordpp/events/MessageUpdateEvent.cpp.s
+.PHONY : src/discordpp/events/MessageUpdateEvent.cpp.s
 
 src/discordpp/events/PresenceUpdateEvent.o: src/discordpp/events/PresenceUpdateEvent.cpp.o
 
@@ -1332,6 +1386,9 @@ help:
 	@echo "... src/discordpp/Discordpp.o"
 	@echo "... src/discordpp/Discordpp.i"
 	@echo "... src/discordpp/Discordpp.s"
+	@echo "... src/discordpp/commands/AboutCommand.o"
+	@echo "... src/discordpp/commands/AboutCommand.i"
+	@echo "... src/discordpp/commands/AboutCommand.s"
 	@echo "... src/discordpp/commands/Command.o"
 	@echo "... src/discordpp/commands/Command.i"
 	@echo "... src/discordpp/commands/Command.s"
@@ -1371,6 +1428,9 @@ help:
 	@echo "... src/discordpp/events/MessageReactionRemoveEvent.o"
 	@echo "... src/discordpp/events/MessageReactionRemoveEvent.i"
 	@echo "... src/discordpp/events/MessageReactionRemoveEvent.s"
+	@echo "... src/discordpp/events/MessageUpdateEvent.o"
+	@echo "... src/discordpp/events/MessageUpdateEvent.i"
+	@echo "... src/discordpp/events/MessageUpdateEvent.s"
 	@echo "... src/discordpp/events/PresenceUpdateEvent.o"
 	@echo "... src/discordpp/events/PresenceUpdateEvent.i"
 	@echo "... src/discordpp/events/PresenceUpdateEvent.s"

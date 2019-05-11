@@ -19,6 +19,7 @@ class DiscordAPI : public RestAPI
 {
     public:
     std::string sendMessage(const std::string& channel, const std::string& message);
+    std::string sendMessageExtended(const std::string &channel, const nlohmann::json& json);
     std::string deleteMessage(const std::string& channel,const std::string& id);
     std::string reactToMessage(const std::string& channelid, const std::string& msgid, const std::string& reaction);
     const std::string getGatewayURI();

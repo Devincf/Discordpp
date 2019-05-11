@@ -39,6 +39,11 @@ bool GuildManager::addGuild(const Snowflake & id, std::shared_ptr<Guild>guildptr
     return true;
 }
 
+int GuildManager::amount() const
+{
+    return m_guildMap.size();
+}
+
 std::shared_ptr<Guild> GuildManager::findGuild(const Snowflake &id)
 {
     auto it = m_guildMap.find(id);
